@@ -1,4 +1,6 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+
+import { MapContainer, TileLayer, Marker } from "react-leaflet";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapPin, faPhone, faClock } from "@fortawesome/free-solid-svg-icons";
@@ -28,6 +30,8 @@ function Contactos() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+
+  const markerLocation = [41.117898438010876, -8.589363463863062];
   return (
     <>
       <div>
@@ -41,85 +45,105 @@ function Contactos() {
         className="bg-[#101010] pt-[250px] pb-[70px] px-[15%]"
         id="informacoes"
       >
-        <div className="flex flex-col items-center">
-          <div className="flex justify-center flex-wrap gap-[100px]">
-            <h1 className="text-7xl text-[#FFFFFF]">MAPA</h1>
-            <div className="flex flex-col items-start">
-              <div className="relative w-full">
-                <div className="relative flex items-center w-full">
-                  <h1 className="text-xl uppercase text-[#727171] font-bold pr-4">
-                    Contactos
-                  </h1>
-                  <span className="absolute left-full border-t-2 border-[#727171] w-[40vw] translate-x-[-345px]"></span>
-                </div>
+        <div className="flex flex-row justify-center items-center gap-[100px] flex-wrap">
+          {/* Mapa */}
+          <div className="h-[500px] w-[50%] min-w-[400px]">
+            <MapContainer
+              style={{ height: "500px", width: "100%" }}
+              center={markerLocation}
+              zoom={15}
+              scrollWheelZoom={false}
+            >
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+              <Marker position={markerLocation}></Marker>
+            </MapContainer>
+          </div>
 
-                <h1
-                  className="text-5xl text-[#FFFFFF] font-bold mt-3"
-                  style={{ fontFamily: "'Source Serif 4', serif" }}
-                >
-                  Onde nos encontrar
+          {/* Informações de contacto */}
+          <div className="flex flex-col items-start w-[40%] min-w-[350px]">
+            <div className="relative w-full">
+              <div className="relative flex items-center w-full">
+                <h1 className="text-xl uppercase text-[#727171] font-bold pr-4">
+                  Contactos
                 </h1>
+                <span className="absolute left-full border-t-2 border-[#727171] w-[37vw] translate-x-[-410px]"></span>
               </div>
 
-              <div className="max-w-[500px] text-secondary text-[19px] text-justify leading-[2] font-poppins font-normal animate-[fadeIn_3s] mt-[20px]">
+              <h1
+                className="text-5xl text-[#FFFFFF] font-bold mt-3"
+                style={{ fontFamily: "'Source Serif 4', serif" }}
+              >
+                Onde nos encontrar
+              </h1>
+            </div>
+
+            <div className="max-w-[500px] text-secondary text-[19px] text-justify leading-[2] font-poppins font-normal animate-[fadeIn_3s] mt-[20px]">
+              <p
+                className="text-xl text-[#969595] font-light italic text-justify mt-3 mb-10"
+                style={{ fontFamily: "'Yrsa', serif" }}
+              >
+                Sinta-se à vontade para contactar o nosso estúdio caso tenha
+                alguma questão.
+              </p>
+            </div>
+
+            {/* Detalhes de contato */}
+            <div className="w-full">
+              <div className="bg-black mt-4 p-4 transition-all">
                 <p
-                  className="text-xl text-[#969595] font-light italic text-justify mt-3 mb-10"
+                  className="text-lg text-[#FFFFFF] flex items-center gap-2"
                   style={{ fontFamily: "'Yrsa', serif" }}
                 >
-                  Sinta-se à vontade para contactar o nosso estúdio caso tenha
-                  alguma questão.
+                  <FontAwesomeIcon
+                    icon={faMapPin}
+                    className="ml-2 mr-2 rotate-[20deg]"
+                  />
+                  Rua do Travessas...
                 </p>
               </div>
 
-              <div className="w-full">
-                <div className="bg-black mt-4 p-4 transition-all">
-                  <p
-                    className="text-lg text-[#FFFFFF] flex items-center left-[5px] gap-2"
-                    style={{ fontFamily: "'Yrsa', serif" }}
-                  >
-                    <FontAwesomeIcon
-                      icon={faMapPin}
-                      className="ml-2 mr-2 rotate-[20deg]"
-                    />
-                    Rua do Travessas...
-                  </p>
-                </div>
+              <div className="bg-black mt-4 p-4 transition-all">
+                <p
+                  className="text-lg text-[#FFFFFF] flex items-center gap-2"
+                  style={{ fontFamily: "'Yrsa', serif" }}
+                >
+                  <FontAwesomeIcon
+                    icon={faPhone}
+                    className="ml-2 mr-2 rotate-[10deg]"
+                  />
+                  +351 933 333 333
+                </p>
+              </div>
 
-                <div className="bg-black mt-4 p-4 transition-all">
-                  <p
-                    className="text-lg text-[#FFFFFF] flex items-center gap-2"
-                    style={{ fontFamily: "'Yrsa', serif" }}
-                  >
-                    <FontAwesomeIcon
-                      icon={faPhone}
-                      className="ml-2 mr-2 rotate-[10deg]"
-                    />
-                    +351 933 333 333
-                  </p>
-                </div>
+              <div className="bg-black mt-4 p-4 transition-all">
+                <p
+                  className="text-lg text-[#FFFFFF] flex items-center gap-2"
+                  style={{ fontFamily: "'Yrsa', serif" }}
+                >
+                  <FontAwesomeIcon icon={faInstagram} className="ml-2 mr-2" />
+                  /oopsiinkedagain
+                </p>
+              </div>
 
-                <div className="bg-black mt-4 p-4 transition-all">
-                  <p
-                    className="text-lg text-[#FFFFFF] flex items-center gap-2"
-                    style={{ fontFamily: "'Yrsa', serif" }}
-                  >
-                    <FontAwesomeIcon icon={faInstagram} className="ml-2 mr-2" />
-                    /oopsiinkedagain
-                  </p>
-                </div>
-
-                <div className="bg-black mt-4 p-4 transition-all">
-                  <p
-                    className="text-lg text-[#FFFFFF] flex items-center gap-2"
-                    style={{ fontFamily: "'Yrsa', serif" }}
-                  >
-                    <FontAwesomeIcon
-                      icon={faClock}
-                      className="ml-2 mr-2 rotate-[20deg]"
-                    />
-                    Segunda - Sábado 10h - 19h
-                  </p>
-                </div>
+              <div className="bg-black mt-4 p-4 transition-all">
+                <p
+                  className="text-lg text-[#FFFFFF] flex items-center gap-2"
+                  style={{ fontFamily: "'Yrsa', serif" }}
+                >
+                  <FontAwesomeIcon
+                    icon={faClock}
+                    className="ml-2 mr-2 rotate-[20deg]"
+                  />
+                  Segunda - Sexta <br />
+                  10h - 18h
+                  <br />
+                  Sábado
+                  <br />
+                  9h - 13h
+                </p>
               </div>
             </div>
           </div>
