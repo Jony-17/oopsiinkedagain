@@ -10,6 +10,17 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
         style={{ boxShadow: shadow }}
       >
         <ul className="flex justify-center items-center w-full m-0 p-0 list-none text-base">
+          {location.pathname !== "/pagina-inicial" && (
+            <li className="mx-4">
+              <Link
+                to="/pagina-inicial"
+                className="no-underline hover:text-[#565656] uppercase text-[#FFFFFF]"
+              >
+                Página Inicial
+              </Link>
+            </li>
+          )}
+
           <li className="mx-4">
             <Link
               to="/estudio"
@@ -22,6 +33,7 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
               Estúdio
             </Link>
           </li>
+
           <li className="mx-4">
             <Link
               to="/galeria"
@@ -34,6 +46,7 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
               Galeria
             </Link>
           </li>
+
           <li className="mx-4">
             <Link
               to="/"
@@ -46,6 +59,7 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
               />
             </Link>
           </li>
+
           <li className="mx-4">
             <Link
               to="/informacoes"
@@ -58,6 +72,7 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
               Informações
             </Link>
           </li>
+
           <li className="mx-4">
             <Link
               to="/contactos"
@@ -68,6 +83,19 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
               }`}
             >
               Contactos
+            </Link>
+          </li>
+
+          <li className="mx-4">
+            <Link
+              to="/noticias"
+              className={`no-underline hover:text-[#565656] uppercase ${
+                location.pathname === "/noticias"
+                  ? "text-[#565656]"
+                  : "text-[#FFFFFF]"
+              }`}
+            >
+              Notícias
             </Link>
           </li>
         </ul>

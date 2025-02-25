@@ -25,6 +25,24 @@ function Informacoes() {
       resposta:
         "Após a tatuagem, é essencial manter a área limpa, aplicar pomada cicatrizante e evitar exposição ao sol. Também deve evitar água do mar e piscina nas primeiras semanas.",
     },
+    ,
+    {
+      questao: "Quais são os cuidados a ter depois da tatuagem?",
+      resposta:
+        "Após a tatuagem, é essencial manter a área limpa, aplicar pomada cicatrizante e evitar exposição ao sol. Também deve evitar água do mar e piscina nas primeiras semanas.",
+    },
+    ,
+    {
+      questao: "Quais são os cuidados a ter depois da tatuagem?",
+      resposta:
+        "Após a tatuagem, é essencial manter a área limpa, aplicar pomada cicatrizante e evitar exposição ao sol. Também deve evitar água do mar e piscina nas primeiras semanas.",
+    },
+    ,
+    {
+      questao: "Quais são os cuidados a ter depois da tatuagem?",
+      resposta:
+        "Após a tatuagem, é essencial manter a área limpa, aplicar pomada cicatrizante e evitar exposição ao sol. Também deve evitar água do mar e piscina nas primeiras semanas.",
+    },
   ];
 
   function activeToggle(index) {
