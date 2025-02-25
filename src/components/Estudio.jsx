@@ -58,7 +58,7 @@ function Estudio() {
           Oops I Inked Again
         </h2>
         <p
-          className="text-xl text-[#969595] font-light italic text-justify mt-3 mb-20"
+          className="text-xl text-[#969595] font-light italic text-justify mt-6 mb-20"
           style={{ fontFamily: "'Yrsa', serif" }}
         >
           Fundado em 2024, somos um estúdio de tatuagem no Porto. Fundado em

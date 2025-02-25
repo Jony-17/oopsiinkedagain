@@ -48,20 +48,20 @@ function Galeria() {
             Galeria
           </h2>
           <h1
-            className="text-6xl text-[#FFFFFF] font-bold mt-3"
+            className="text-5xl text-[#FFFFFF] font-bold mt-3"
             style={{ fontFamily: "'Libre Baskerville', serif" }}
           >
             O meu trabalho
           </h1>
 
           <div className="flex gap-[30px]">
-            <button className="mt-12 mb-10 px-6 py-3 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700">
+            <button className="mt-12 mb-10 px-6 py-3 border border-white text-white uppercase hover:bg-white hover:text-black transition duration-700">
               Todas
             </button>
-            <button className="mt-12 mb-10 px-6 py-3 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700">
+            <button className="mt-12 mb-10 px-6 py-3 border border-white text-white uppercase hover:bg-white hover:text-black transition duration-700">
               Estúdio
             </button>
-            <button className="mt-12 mb-10 px-6 py-3 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700">
+            <button className="mt-12 mb-10 px-6 py-3 border border-white text-white uppercase hover:bg-white hover:text-black transition duration-700">
               Tattoos
             </button>
           </div>
@@ -118,6 +118,12 @@ function Galeria() {
               className="w-full h-[300px] object-cover"
             />
           </div>
+        </div>
+
+        <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
+          <button className="mt-12 px-6 py-3 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700">
+            Mostrar mais
+          </button>
         </div>
       </section>
 

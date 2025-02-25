@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from "react";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
@@ -8,11 +7,28 @@ import Footer from "./Footer";
 
 function Informacoes() {
   const [activeIndex, setActiveIndex] = useState([]);
-
   const scrollToTop = useRef(null);
 
+  const listaInformacoes = [
+    {
+      questao: "Quais são os valores e como posso obter um orçamento?",
+      resposta:
+        "O valor é por cada tatuagem, não por hora, porque cada tatuagem é única e diferente. O preço depende da complexidade dos desenhos escolhidos. Algumas tatuagens podem ser feitas no mesmo dia, mas projetos maiores e mais elaborados precisarão de várias sessões. Para obter um orçamento aproximado, por favor preencha o formulário na secção 'informações' ou visite o estúdio.",
+    },
+    {
+      questao: "Quanto tempo demora uma tatuagem?",
+      resposta:
+        "O tempo de execução depende do tamanho, complexidade e localização da tatuagem. Pequenas tatuagens podem ser feitas em minutos, enquanto trabalhos maiores podem levar horas ou várias sessões.",
+    },
+    {
+      questao: "Quais são os cuidados a ter depois da tatuagem?",
+      resposta:
+        "Após a tatuagem, é essencial manter a área limpa, aplicar pomada cicatrizante e evitar exposição ao sol. Também deve evitar água do mar e piscina nas primeiras semanas.",
+    },
+  ];
+
   function activeToggle(index) {
-    setActiveIndex(activeIndex === "active" ? null : index);
+    setActiveIndex(activeIndex === index ? null : index);
   }
 
   useEffect(() => {
@@ -33,20 +49,18 @@ function Informacoes() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+
   return (
     <>
-      <div>
-        <NavBar
-          bgColor="bg-[#101010]"
-          shadow="inset 0 -20px 20px rgb(22, 22, 22)"
-        />
-      </div>
-      {/* Section Informações */}
+      <NavBar
+        bgColor="bg-[#101010]"
+        shadow="inset 0 -20px 20px rgb(22, 22, 22)"
+      />
+
       <section
         className="bg-[#101010] pt-[250px] pb-[70px] px-[15%]"
         id="informacoes"
       >
-        {/* <div className="relative"> */}
         <div className="relative flex items-center">
           <span className="absolute left-[-10px] border-t-2 border-[#727171] w-[35vw] -translate-x-full"></span>
           <h2
@@ -55,6 +69,12 @@ function Informacoes() {
           >
             Informações
           </h2>
+
+          {/* <img
+            src="/src/assets/background2.png"
+            alt="Imagem explicativa"
+            className="w-[300px] h-auto absolute right-[150px] top-0"
+          /> */}
         </div>
         <h2
           className="text-5xl text-[#FFFFFF] font-bold mt-3"
@@ -64,145 +84,54 @@ function Informacoes() {
         </h2>
 
         <div className="w-full">
-          <div
-            className={`bg-black mt-8 rounded-lg p-4 hover:bg-gray-800 transition-all overflow-hidden ${
-              activeIndex === 0 ? "max-h-[600px]" : "max-h-16"
-            }`}
-          >
+          {listaInformacoes.map((item, index) => (
             <div
-              className="w-full flex items-center justify-between cursor-pointer transition duration-300"
-              role="button"
-              onClick={() => activeToggle(activeIndex === 0 ? null : 0)}
+              key={index}
+              className={`bg-[#090909] mt-8 rounded-lg p-[1.5rem] transition-all overflow-hidden ${
+                activeIndex === index ? "max-h-[600px]" : "max-h-17"
+              }`}
             >
-              <h2 className="text-white text-2xl">
-                Quais são os valores e como posso obter um orçamento?
-              </h2>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className={`h-4 w-4 transition-transform ${
-                  activeIndex === 0 ? "rotate-180" : ""
-                }`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="white"
-                strokeWidth={2}
+              <div
+                className="w-full flex items-center justify-between cursor-pointer transition duration-300"
+                role="button"
+                onClick={() => activeToggle(index)}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </div>
-            {activeIndex === 0 && (
-              <div className="overflow-hidden">
-                <p className="pt-[20px] text-white text-base text-justify transition-opacity duration-300">
-                  O valor é por cada tatuagem, não por hora, porque cada
-                  tatuagem é única e diferente. O preço depende da complexidade
-                  dos desenhos escolhidos. Algumas tatuagens podem ser feitas no
-                  mesmo dia mas projectos maiores e mais elaborados precisarão
-                  de várias sessões. Para obter um orçamento aproximado, por
-                  favor preencha o formulário na secção “informações” ou visite
-                  o estúdio.
+                <h2
+                  className="text-white text-xl"
+                  style={{ fontFamily: "'Source Serif 4', serif" }}
+                >
+                  {item.questao}
+                </h2>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className={`h-4 w-4 transition-transform duration-500 ${
+                    activeIndex === index ? "rotate-180" : ""
+                  }`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="white"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+              <div
+                className={`transition-all ease-in-out ${
+                  activeIndex === index
+                    ? "opacity-100 max-h-[600px] mt-4 duration-600"
+                    : "opacity-0 max-h-0 duration-600"
+                }`}
+              >
+                <p className="text-white text-base text-justify">
+                  {item.resposta}
                 </p>
               </div>
-            )}
-          </div>
-
-          <div
-            className={`bg-black mt-8 rounded-lg p-4 hover:bg-gray-800 transition-all overflow-hidden ${
-              activeIndex === 0 ? "max-h-[600px]" : "max-h-16"
-            }`}
-          >
-            <div
-              className="w-full flex items-center justify-between cursor-pointer transition duration-300"
-              role="button"
-              onClick={() => activeToggle(activeIndex === 0 ? null : 0)}
-            >
-              <h2 className="text-white text-2xl">
-                Quais são os valores e como posso obter um orçamento?
-              </h2>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className={`h-4 w-4 transition-transform ${
-                  activeIndex === 0 ? "rotate-180" : ""
-                }`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="white"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
             </div>
-            {activeIndex === 0 && (
-              <div className="overflow-hidden">
-                <p className="pt-[20px] text-white text-base text-justify transition-opacity duration-300">
-                  O valor é por cada tatuagem, não por hora, porque cada
-                  tatuagem é única e diferente. O preço depende da complexidade
-                  dos desenhos escolhidos. Algumas tatuagens podem ser feitas no
-                  mesmo dia mas projectos maiores e mais elaborados precisarão
-                  de várias sessões. Para obter um orçamento aproximado, por
-                  favor preencha o formulário na secção “informações” ou visite
-                  o estúdio.
-                </p>
-              </div>
-            )}
-          </div>
-
-          <div
-            className={`bg-black mt-8 rounded-lg p-4 hover:bg-gray-800 transition-all overflow-hidden ${
-              activeIndex === 0 ? "max-h-[600px]" : "max-h-16"
-            }`}
-          >
-            <div
-              className="w-full flex items-center justify-between cursor-pointer transition duration-300"
-              role="button"
-              onClick={() => activeToggle(activeIndex === 0 ? null : 0)}
-            >
-              <h2 className="text-white text-2xl">
-                Quais são os valores e como posso obter um orçamento?
-              </h2>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className={`h-4 w-4 transition-transform ${
-                  activeIndex === 0 ? "rotate-180" : ""
-                }`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="white"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </div>
-            {activeIndex === 0 && (
-              <div className="overflow-hidden">
-                <p className="pt-[20px] text-white text-base text-justify transition-opacity duration-300">
-                  O valor é por cada tatuagem, não por hora, porque cada
-                  tatuagem é única e diferente. O preço depende da complexidade
-                  dos desenhos escolhidos. Algumas tatuagens podem ser feitas no
-                  mesmo dia mas projectos maiores e mais elaborados precisarão
-                  de várias sessões. Para obter um orçamento aproximado, por
-                  favor preencha o formulário na secção “informações” ou visite
-                  o estúdio.
-                </p>
-              </div>
-            )}
-          </div>
-          <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
-            <button className="mt-12 px-6 py-3 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700">
-              Mostrar mais
-            </button>
-          </div>
+          ))}
         </div>
       </section>
 

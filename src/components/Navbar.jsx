@@ -6,7 +6,7 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
   return (
     <>
       <nav
-        className={`absolute top-0 z-20 w-full h-[20%] flex items-center px-4 ${bgColor} shadow-lg`}
+        className={`absolute top-0 z-20 w-full h-[15%] flex items-center px-4 ${bgColor} shadow-lg`}
         style={{ boxShadow: shadow }}
       >
         <ul className="flex justify-center items-center w-full m-0 p-0 list-none text-base">

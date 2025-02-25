@@ -112,7 +112,7 @@ function Contactos() {
                 >
                   <FontAwesomeIcon
                     icon={faPhone}
-                    className="ml-2 mr-2 rotate-[10deg]"
+                    className="ml-2 mr-2 rotate-[10deg] text-sm"
                   />
                   +351 933 333 333
                 </p>
@@ -137,12 +137,16 @@ function Contactos() {
                     icon={faClock}
                     className="ml-2 mr-2 rotate-[20deg]"
                   />
-                  Segunda - Sexta <br />
-                  10h - 18h
-                  <br />
-                  Sábado
-                  <br />
-                  9h - 13h
+                  <div className="flex flex-col gap-2">
+                    <div className="flex flex-col items-start">
+                      <span className="font-bold">Segunda - Sexta</span>
+                      <span>10h - 18h</span>
+                    </div>
+                    <div className="flex flex-col items-start">
+                      <span className="font-bold">Sábado</span>
+                      <span>9h - 13h</span>
+                    </div>
+                  </div>
                 </p>
               </div>
             </div>
