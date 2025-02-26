@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
@@ -7,6 +7,7 @@ import NavBar from "./Navbar";
 import Footer from "./Footer";
 
 function Galeria() {
+  const [category, setCategory] = useState("Todas");
   const scrollToTop = useRef(null);
 
   useEffect(() => {
@@ -27,6 +28,21 @@ function Galeria() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+
+  const imagens = [
+    { src: "/src/assets/image1.png", alt: "Imagem 1", category: "Estúdio" },
+    { src: "/src/assets/image2.png", alt: "Imagem 2", category: "Tattoos" },
+    { src: "/src/assets/image3.png", alt: "Imagem 3", category: "Estúdio" },
+    { src: "/src/assets/image3.png", alt: "Imagem 4", category: "Tattoos" },
+    { src: "/src/assets/image1.png", alt: "Imagem 5", category: "Estúdio" },
+    { src: "/src/assets/image2.png", alt: "Imagem 6", category: "Tattoos" },
+  ];
+
+  const imagensFiltradas =
+    category === "Todas"
+      ? imagens
+      : imagens.filter((img) => img.category === category);
+
   return (
     <>
       <div>
@@ -54,77 +70,58 @@ function Galeria() {
             O meu trabalho
           </h1>
 
-          <div className="flex gap-[30px]">
-            <button className="mt-12 mb-10 px-6 py-3 border border-white text-white uppercase hover:bg-white hover:text-black transition duration-700">
+          <div className="flex gap-[50px]">
+            <button
+              className={`mt-12 mb-10 px-6 py-3 border uppercase transition duration-700 ${
+                category === "Todas"
+                  ? "border-[#727171] text-[#727171] hover:bg-[#727171] hover:text-white"
+                  : " border-white text-white hover:bg-white hover:text-black"
+              }`}
+              onClick={() => setCategory("Todas")}
+            >
               Todas
             </button>
-            <button className="mt-12 mb-10 px-6 py-3 border border-white text-white uppercase hover:bg-white hover:text-black transition duration-700">
+            <button
+              className={`mt-12 mb-10 px-6 py-3 border uppercase transition duration-700 ${
+                category === "Estúdio"
+                  ? "border-[#727171] text-[#727171] hover:bg-[#727171] hover:text-white"
+                  : " border-white text-white hover:bg-white hover:text-black"
+              }`}
+              onClick={() => setCategory("Estúdio")}
+            >
               Estúdio
             </button>
-            <button className="mt-12 mb-10 px-6 py-3 border border-white text-white uppercase hover:bg-white hover:text-black transition duration-700">
+            <button
+              className={`mt-12 mb-10 px-6 py-3 border uppercase transition duration-700 ${
+                category === "Tattoos"
+                  ? "border-[#727171] text-[#727171] hover:bg-[#727171] hover:text-white"
+                  : " border-white text-white hover:bg-white hover:text-black"
+              }`}
+              onClick={() => setCategory("Tattoos")}
+            >
               Tattoos
             </button>
           </div>
         </div>
 
         <div className="grid grid-cols-3 gap-3 mt-8">
-          {/* Imagem 1*/}
-          <div className="flex justify-center">
-            <img
-              src="/src/assets/image1.png"
-              alt="Imagem 1"
-              className="w-full h-[300px] object-cover"
-            />
-          </div>
-
-          {/* Imagem 2*/}
-          <div className="flex justify-center">
-            <img
-              src="/src/assets/image2.png"
-              alt="Imagem 2"
-              className="w-full h-[300px] object-cover"
-            />
-          </div>
-
-          {/* Imagem 3*/}
-          <div className="flex justify-center">
-            <img
-              src="/src/assets/image3.png"
-              alt="Imagem 3"
-              className="w-full h-[300px] object-cover"
-            />
-          </div>
-
-          {/* Imagem 4*/}
-          <div className="flex justify-center">
-            <img
-              src="/src/assets/image3.png"
-              alt="Imagem 4"
-              className="w-full h-[300px] object-cover"
-            />
-          </div>
-
-          <div className="flex justify-center">
-            <img
-              src="/src/assets/image1.png"
-              alt="Imagem 4"
-              className="w-full h-[300px] object-cover"
-            />
-          </div>
-          <div className="flex justify-center">
-            <img
-              src="/src/assets/image2.png"
-              alt="Imagem 4"
-              className="w-full h-[300px] object-cover"
-            />
-          </div>
+          {imagensFiltradas.map((img, index) => (
+            <div key={index} className="flex justify-center">
+              <img
+                src={img.src}
+                alt={img.alt}
+                className="w-full h-[300px] object-cover"
+                loading="lazy"
+              />
+            </div>
+          ))}
         </div>
 
-        <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
+        {/* <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
           <button className="mt-12 px-6 py-3 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700">
             Mostrar mais
           </button>
-        </div>
+        </div> */}
       </section>
 
       {/* Section Entre em contacto*/}

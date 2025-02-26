@@ -93,9 +93,12 @@ function Home() {
         <h2 className="text-5xl uppercase font-bold mt-3">
           Fineline & Body Art
         </h2>
-        <button className="mt-12 px-6 py-3 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700">
+        <a
+          href="https://wa.me/1234567890"
+          className="mt-12 px-6 py-3 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700"
+        >
           Faça a sua marcação
-        </button>
+        </a>
 
         <div className="absolute bottom-4 right-4 flex flex-col space-y-4">
           <a
@@ -145,7 +148,7 @@ function Home() {
         className="bg-[#101010] pt-[100px] pb-[70px] px-[15%]"
         id="estudio"
       >
-        <div className="flex gap-20 justify-normal items-center">
+        <div className="flex gap-[10rem] justify-normal items-center">
           <div className="relative max-w-lg">
             <h2
               className="text-xl uppercase text-[#727171] font-bold"
@@ -189,13 +192,14 @@ function Home() {
                   Leia a nossa história
                 </a>
                 <svg
-                  style={{ rotate: "270deg" }}
+                  style={{ rotate: "270deg", cursor: "pointer" }}
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-4 w-4"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="white"
                   strokeWidth={2}
+                  onClick={() => (window.location.href = "/estudio")}
                 >
                   <path
                     strokeLinecap="round"
@@ -375,9 +379,12 @@ function Home() {
           ))}
         </div>
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
-          <button className="mt-12 px-6 py-3 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700">
+          <a
+            href="/informacoes"
+            className="mt-12 px-6 py-3 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700"
+          >
             Mostrar mais
-          </button>
+          </a>
         </div>
       </section>
 
@@ -455,9 +462,12 @@ function Home() {
                 boxShadow: "inset 0 10px 10px rgba(9, 9, 9, 100%)",
               }}
             >
-              <button className="mt-6 ml-[50px] mr-[50px] px-6 py-3 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700">
+              <a
+                href="https://wa.me/1234567890"
+                className="mt-6 ml-[50px] mr-[50px] px-6 py-3 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700"
+              >
                 Contacte-nos
-              </button>
+              </a>
             </div>
           </div>
         </div>

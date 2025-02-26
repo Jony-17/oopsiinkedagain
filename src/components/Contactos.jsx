@@ -92,7 +92,7 @@ function Contactos() {
 
             {/* Detalhes de contato */}
             <div className="w-full">
-              <div className="bg-black mt-4 p-4 transition-all">
+              <div className="bg-[#090909] mt-4 p-4 transition-all">
                 <p
                   className="text-lg text-[#FFFFFF] flex items-center gap-2"
                   style={{ fontFamily: "'Yrsa', serif" }}
@@ -105,7 +105,7 @@ function Contactos() {
                 </p>
               </div>
 
-              <div className="bg-black mt-4 p-4 transition-all">
+              <div className="bg-[#090909] mt-4 p-4 transition-all">
                 <p
                   className="text-lg text-[#FFFFFF] flex items-center gap-2"
                   style={{ fontFamily: "'Yrsa', serif" }}
@@ -118,7 +118,7 @@ function Contactos() {
                 </p>
               </div>
 
-              <div className="bg-black mt-4 p-4 transition-all">
+              <div className="bg-[#090909] mt-4 p-4 transition-all">
                 <p
                   className="text-lg text-[#FFFFFF] flex items-center gap-2"
                   style={{ fontFamily: "'Yrsa', serif" }}
@@ -128,7 +128,7 @@ function Contactos() {
                 </p>
               </div>
 
-              <div className="bg-black mt-4 p-4 transition-all">
+              <div className="bg-[#090909] mt-4 p-4 transition-all">
                 <p
                   className="text-lg text-[#FFFFFF] flex items-center gap-2"
                   style={{ fontFamily: "'Yrsa', serif" }}

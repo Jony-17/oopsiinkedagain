@@ -86,7 +86,7 @@ function Estudio() {
         </p>
         {/* </div> */}
 
-        <div className="grid grid-cols-3 gap-3 mt-8">
+        <div className="grid grid-cols-3 gap-3 mt-8 max-w-[80%] mx-auto">
           {/* Imagem 1*/}
           <div className="flex justify-center col-span-2">
             <img
@@ -125,7 +125,7 @@ function Estudio() {
         </div>
 
         <div className="flex flex-col items-center">
-          <div className="flex justify-center flex-wrap gap-[100px] pt-[150px]">
+          <div className="flex justify-center flex-wrap gap-[150px] pt-[150px]">
             <div
               className="h-[400px] w-[400px] bg-[url('/src/assets/foto.jpg')] bg-center bg-no-repeat bg-cover 
              rounded-[60%_40%_30%_70%_/_60%_30%_70%_40%] shadow-[inset_0_0_0_9px_rgba(255,255,255,0.3)] 

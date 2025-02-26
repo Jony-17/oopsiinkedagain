@@ -10,10 +10,10 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
         style={{ boxShadow: shadow }}
       >
         <ul className="flex justify-center items-center w-full m-0 p-0 list-none text-base">
-          {location.pathname !== "/pagina-inicial" && (
+          {!(location.pathname === "/") && (
             <li className="mx-4">
               <Link
-                to="/pagina-inicial"
+                to="/"
                 className="no-underline hover:text-[#565656] uppercase text-[#FFFFFF]"
               >
                 Página Inicial
@@ -88,14 +88,14 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
 
           <li className="mx-4">
             <Link
-              to="/noticias"
+              to="/blog"
               className={`no-underline hover:text-[#565656] uppercase ${
-                location.pathname === "/noticias"
+                location.pathname === "/blog"
                   ? "text-[#565656]"
                   : "text-[#FFFFFF]"
               }`}
             >
-              Notícias
+              Blog
             </Link>
           </li>
         </ul>
