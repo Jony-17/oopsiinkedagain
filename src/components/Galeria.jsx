@@ -127,7 +127,7 @@ function Galeria() {
       {/* Section Entre em contacto*/}
       <section className="bg-[#101010] pt-[150px] pb-[70px]" id="tattoos">
         <div
-          className="relative h-[30vh] bg-cover bg-center"
+          className="relative h-[25vh] bg-cover bg-center"
           style={{ backgroundImage: "url(/src/assets/background1.png)" }}
         >
           {/* Adicionando centralização com flexbox */}

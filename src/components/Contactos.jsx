@@ -1,9 +1,14 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMapPin, faPhone, faClock } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMapPin,
+  faPhone,
+  faClock,
+  faChevronUp,
+} from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 import NavBar from "./Navbar";
@@ -129,7 +134,7 @@ function Contactos() {
               </div>
 
               <div className="bg-[#090909] mt-4 p-4 transition-all">
-                <p
+                <div
                   className="text-lg text-[#FFFFFF] flex items-center gap-2"
                   style={{ fontFamily: "'Yrsa', serif" }}
                 >
@@ -147,7 +152,7 @@ function Contactos() {
                       <span>9h - 13h</span>
                     </div>
                   </div>
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -163,7 +168,7 @@ function Contactos() {
         id="scrollToTopBtn"
         title="Go to top"
       >
-        <FontAwesomeIcon icon={faMapPin} />
+        <FontAwesomeIcon icon={faChevronUp} />
       </button>
     </>
   );

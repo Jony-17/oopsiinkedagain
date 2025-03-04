@@ -95,6 +95,7 @@ function Home() {
         </h2>
         <a
           href="https://wa.me/1234567890"
+          target="_blank"
           className="mt-12 px-6 py-3 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700"
         >
           Faça a sua marcação
@@ -302,7 +303,7 @@ function Home() {
       {/* Section */}
       <section className="bg-[#101010] pt-[150px] pb-[70px]" id="tattoos">
         <div
-          className="relative h-[30vh] bg-cover bg-center"
+          className="relative h-[25vh] bg-cover bg-center"
           style={{ backgroundImage: "url(/src/assets/background1.png)" }}
         >
           {/* Adicionando centralização com flexbox */}
@@ -390,15 +391,15 @@ function Home() {
 
       {/* Section Contactos */}
       <section className="bg-[#101010] pt-[100px] pb-[70px]" id="tattoos">
-        <div className="flex flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0">
+        <div className="flex flex-col md:flex-row justify-between md:items-center space-y-6 md:space-y-0">
           {/* Imagem da galeria */}
-          <div className="relative w-full md:w-[60vh] h-[40vh] md:h-[50vh] bg-[#090909] bg-center mx-auto md:ml-[70px] overflow-hidden">
+          <div className="relative w-full md:w-[60vh] h-[40vh] md:h-[50vh] bg-[#090909] bg-center mx-auto md:ml-[150px] overflow-hidden">
             <div className="relative w-full h-full">
               {images.map((img, index) => (
                 <img
                   key={index}
                   src={img}
-                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
+                  className={`absolute inset-0 rounded-lg w-full h-full object-cover transition-opacity duration-500 ${
                     index === currentIndex ? "opacity-100 z-10" : "opacity-0"
                   }`}
                   alt={`Tattoo ${index + 1}`}
@@ -434,9 +435,9 @@ function Home() {
           </div>
 
           {/* Texto e botão de contato w-[90%] */}
-          <div className="relative w-full md:w-[85vh] h-auto md:h-[60vh] bg-[#090909] bg-center">
+          <div className="relative w-full rounded-lg md:w-[60vh] h-auto md:h-[50vh] bg-[#090909] bg-center">
             {/* Secção do texto h-[200px]*/}
-            <div className="relative z-10 flex flex-col justify-center items-start h-2/3 text-white px-6 md:px-[50px]">
+            <div className="relative z-10 h-[50%] text-white mt-8 px-6 md:px-[50px]">
               <h2
                 className="text-2xl md:text-4xl text-[#FFFFFF] font-bold"
                 style={{ fontFamily: "'Source Serif 4', serif" }}
@@ -456,7 +457,7 @@ function Home() {
 
             {/* Secção com imagem de fundo e botão */}
             <div
-              className="relative h-1/3 bg-cover bg-center"
+              className="relative h-[45%] bg-cover bg-center flex items-baseline justify-between p-6 md:px-[50px]"
               style={{
                 backgroundImage: "url('/src/assets/background1.png')",
                 boxShadow: "inset 0 10px 10px rgba(9, 9, 9, 100%)",
@@ -464,7 +465,7 @@ function Home() {
             >
               <a
                 href="https://wa.me/1234567890"
-                className="mt-6 ml-[50px] mr-[50px] px-6 py-3 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700"
+                className="px-6 py-3 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700"
               >
                 Contacte-nos
               </a>

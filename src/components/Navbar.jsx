@@ -1,7 +1,8 @@
 import { Outlet, Link, useLocation } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 function NavBar({ bgColor = "bg-transparent", shadow }) {
-  const location = useLocation(); // 📌 Obtém a rota atual
+  const location = useLocation();
 
   return (
     <>
@@ -53,7 +54,7 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
               className="no-underline hover:text-[#565656] uppercase"
             >
               <img
-                src="src/assets/logo.png"
+                src={logo}
                 alt="Início"
                 className="max-h-13 max-w-[200px]"
               />
