@@ -1,33 +1,11 @@
-import { useEffect, useRef, useState } from "react";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 import NavBar from "./Navbar";
 import Footer from "./Footer";
+import ScrollTop from "./ScrollTop";
 
 function Galeria() {
   const [category, setCategory] = useState("Todas");
-  const scrollToTop = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 500) {
-        scrollToTop.current.style.display = "block";
-      } else {
-        scrollToTop.current.style.display = "none";
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  function scrollTopFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
 
   const imagens = [
     { src: "/src/assets/image1.png", alt: "Imagem 1", category: "Estúdio" },
@@ -56,6 +34,16 @@ function Galeria() {
         className="bg-[#101010] pt-[250px] pb-[70px] px-[15%]"
         id="estudio"
       >
+        <div
+          className="absolute right-0 top-0 h-full w-[200px]"
+          style={{
+            backgroundImage: "url(/src/assets/background2.png)",
+            backgroundSize: "250px auto",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "20% 30%",
+            transform: "scaleX(-1)",
+          }}
+        ></div>
         <div className="relative flex flex-col items-center">
           <h2
             className="text-xl uppercase text-[#727171] font-bold"
@@ -142,15 +130,7 @@ function Galeria() {
 
       <Footer />
 
-      <button
-        className="hidden fixed bottom-5 right-5 z-[99] text-[16px] border-none outline-none bg-[#616161] text-white cursor-pointer p-4 rounded-[10px]"
-        ref={scrollToTop}
-        onClick={scrollTopFunction}
-        id="scrollToTopBtn"
-        title="Go to top"
-      >
-        <FontAwesomeIcon icon={faChevronUp} />
-      </button>
+      <ScrollTop />
     </>
   );
 }

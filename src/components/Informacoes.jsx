@@ -1,13 +1,11 @@
-import { useState, useEffect, useRef } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 import NavBar from "./Navbar";
 import Footer from "./Footer";
+import ScrollTop from "./ScrollTop";
 
 function Informacoes() {
   const [activeIndex, setActiveIndex] = useState([]);
-  const scrollToTop = useRef(null);
 
   const listaInformacoes = [
     {
@@ -49,25 +47,6 @@ function Informacoes() {
     setActiveIndex(activeIndex === index ? null : index);
   }
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 500) {
-        scrollToTop.current.style.display = "block";
-      } else {
-        scrollToTop.current.style.display = "none";
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  function scrollTopFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-
   return (
     <>
       <NavBar
@@ -79,6 +58,16 @@ function Informacoes() {
         className="bg-[#101010] pt-[250px] pb-[70px] px-[15%]"
         id="informacoes"
       >
+        <div
+          className="absolute right-0 top-0 h-full w-[200px]"
+          style={{
+            backgroundImage: "url(/src/assets/background2.png)",
+            backgroundSize: "250px auto",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "20% 30%",
+            transform: "scaleX(-1)",
+          }}
+        ></div>
         <div className="relative flex items-center">
           <span className="absolute left-[-10px] border-t-2 border-[#727171] w-[35vw] -translate-x-full"></span>
           <h2
@@ -155,15 +144,7 @@ function Informacoes() {
 
       <Footer />
 
-      <button
-        className="hidden fixed bottom-5 right-5 z-[99] text-[16px] border-none outline-none bg-[#616161] text-white cursor-pointer p-4 rounded-[10px]"
-        ref={scrollToTop}
-        onClick={scrollTopFunction}
-        id="scrollToTopBtn"
-        title="Go to top"
-      >
-        <FontAwesomeIcon icon={faChevronUp} />
-      </button>
+      <ScrollTop />
     </>
   );
 }
