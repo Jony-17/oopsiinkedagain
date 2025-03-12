@@ -24,6 +24,54 @@
 html {
   scroll-behavior: smooth;
 }
+/* 
+@keyframes load {
+  0% {
+    left: 0;
+    height: 30px;
+    width: 15px;
+  }
+  50% {
+    height: 8px;
+    width: 40px;
+  }
+  100% {
+    left: 235px;
+    height: 30px;
+    width: 15px;
+  }
+}
+
+.animate-load {
+  animation: load 1.5s infinite alternate ease-in-out;
+}
+
+.loader {
+  position: relative;
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--main-color);
+  transition: opacity 1.1s ease-in-out;
+}
+
+.loader .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ff5722;
+  border-radius: 50%;
+  animation: load 1s ease-in-out infinite;
+  width: 30px;
+  height: 30px;
+} */
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

@@ -7,6 +7,7 @@ import {
 import NavBar from "./Navbar";
 import Footer from "./Footer";
 import ScrollTop from "./ScrollTop";
+// import Loader from "./Loader";
 
 const images = [
   "/src/assets/tattoo1.png",
@@ -64,13 +65,13 @@ function Home() {
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
       {/* Conteúdo principal centralizado */}
       <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
-        <h3 className="text-xl uppercase font-bold">
+        <h3 className="text-lg sm:text-xl uppercase font-bold">
           Bem-vindos ao meu estúdio
         </h3>
-        <h1 className="text-7xl uppercase font-bold mt-3">
+        <h1 className="text-4xl sm:text-7xl uppercase font-bold mt-3">
           Oops I <span className="text-[#50504F]">Inked</span> Again
         </h1>
-        <h2 className="text-5xl uppercase font-bold mt-3">
+        <h2 className="text-5xl sm:text-7xl uppercase font-bold mt-3">
           Fineline & Body Art
         </h2>
         <a
@@ -81,7 +82,7 @@ function Home() {
           Faça a sua marcação
         </a>
 
-        <div className="absolute bottom-4 right-4 flex flex-col space-y-4">
+        <div className="absolute bottom-4 right-[0.3rem] sm:right-4 flex flex-col space-y-4">
           <a
             href="https://www.instagram.com"
             target="_blank"
@@ -126,7 +127,7 @@ function Home() {
 
       {/* Section Estúdio */}
       <section
-        className="bg-[#101010] pt-[100px] pb-[70px] px-[15%]"
+        className="bg-[#101010] pt-[100px] pb-[70px] px-[5%] sm:px-[10%] md:px-[15%]"
         id="estudio"
       >
         <div className="flex gap-[10rem] justify-normal items-center">
@@ -212,7 +213,7 @@ function Home() {
 
       {/* Section Tattoos */}
       <section
-        className="bg-[#101010] pt-[200px] pb-[70px] px-[15%]"
+        className="bg-[#101010] pt-[200px] pb-[70px] px-[5%] sm:px-[10%] md:px-[15%]"
         id="tattoos"
       >
         <div className="w-full">
@@ -232,32 +233,29 @@ function Home() {
             </a>
           </div>
 
-          <div
-            className="grid grid-cols-3 gap-2 mt-8"
-            style={{ gridTemplateRows: "auto auto auto" }}
-          >
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-8">
             {/* Primeira linha com as imagens 1 e 2 */}
             <div className="flex justify-center">
               <img
                 src="/src/assets/tattoo1.png"
                 alt="Imagem 1"
-                className="w-full h-[230px] object-cover mx-auto rounded-tl-3xl	"
+                className="w-full h-[230px] object-cover md:rounded-tl-3xl"
               />
             </div>
             <div className="flex justify-center">
               <img
                 src="/src/assets/tattoo2.png"
                 alt="Imagem 2"
-                className="w-full h-[230px] object-cover mx-auto"
+                className="w-full h-[230px] object-cover"
               />
             </div>
 
             {/* Terceira linha com a imagem 5 ocupando as linhas 2 e 4 */}
-            <div className="flex justify-center col-span-1 row-span-3">
+            <div className="flex justify-center md:col-span-1 md:row-span-3">
               <img
                 src="/src/assets/tattoo5.png"
                 alt="Imagem 5"
-                className="w-full h-[468px] object-cover mx-auto rounded-tr-3xl rounded-br-3xl"
+                className="w-full h-[230px] md:h-[468px] object-cover md:rounded-tr-3xl md:rounded-br-3xl"
               />
             </div>
 
@@ -266,14 +264,14 @@ function Home() {
               <img
                 src="/src/assets/tattoo3.png"
                 alt="Imagem 3"
-                className="w-full h-[230px] object-cover mx-auto rounded-bl-3xl"
+                className="w-full h-[230px] object-cover md:rounded-bl-3xl"
               />
             </div>
             <div className="flex justify-center">
               <img
                 src="/src/assets/tattoo4.png"
                 alt="Imagem 4"
-                className="w-full h-[230px] object-cover mx-auto"
+                className="w-full h-[230px] object-cover"
               />
             </div>
           </div>
@@ -298,7 +296,7 @@ function Home() {
 
       {/* Section Informações */}
       <section
-        className="bg-[#101010] pt-[100px] pb-[70px] px-[15%]"
+        className="bg-[#101010] pt-[100px] pb-[70px] px-[5%] sm:px-[10%] md:px-[15%]"
         id="tattoos"
       >
         <div className="w-full">
@@ -370,7 +368,12 @@ function Home() {
       </section>
 
       {/* Section Contactos */}
-      <section className="bg-[#101010] pt-[100px] pb-[70px]" id="tattoos">
+      <section
+        className="bg-[#101010] pt-[100px] pb-[70px] px-[5%] md:px-0"
+        id="tattoos"
+      >
+        {/* <section className="bg-[#101010] pt-[100px] pb-[70px]" id="tattoos"> */}
+
         <div className="flex flex-col md:flex-row justify-between md:items-center space-y-6 md:space-y-0">
           {/* Imagem da galeria */}
           <div className="relative w-full md:w-[60vh] h-[40vh] md:h-[50vh] bg-[#090909] bg-center mx-auto md:ml-[150px] overflow-hidden">
@@ -414,7 +417,7 @@ function Home() {
             </button>
           </div>
 
-          {/* Texto e botão de contato w-[90%] */}
+          {/* Texto e botão de contacto w-[90%] */}
           <div className="relative w-full rounded-lg md:w-[60vh] h-auto md:h-[50vh] bg-[#090909] bg-center">
             {/* Secção do texto h-[200px]*/}
             <div className="relative z-10 h-[50%] text-white mt-8 px-6 md:px-[50px]">
@@ -457,6 +460,8 @@ function Home() {
       <Footer />
 
       <ScrollTop />
+
+      {/* <Loader /> */}
     </div>
   );
 }

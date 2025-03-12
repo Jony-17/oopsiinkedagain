@@ -31,11 +31,11 @@ function Galeria() {
       </div>
       {/* Section Galeria */}
       <section
-        className="bg-[#101010] pt-[250px] pb-[70px] px-[15%]"
+        className="bg-[#101010] pt-[250px] pb-[70px] px-[5%] sm:px-[10%] lg:px-[15%]"
         id="estudio"
       >
         <div
-          className="absolute right-0 top-0 h-full w-[200px]"
+          className="absolute right-0 top-0 h-full w-[200px] sm:w-[150px] md:w-[200px] hidden sm:block"
           style={{
             backgroundImage: "url(/src/assets/background2.png)",
             backgroundSize: "250px auto",
@@ -58,9 +58,9 @@ function Galeria() {
             O meu trabalho
           </h1>
 
-          <div className="flex gap-[50px]">
+          <div className="flex flex-wrap gap-4 justify-center mt-8">
             <button
-              className={`mt-12 mb-10 px-6 py-3 border uppercase transition duration-700 ${
+              className={`mt-4 mb-6 px-6 py-3 border uppercase transition duration-700 ${
                 category === "Todas"
                   ? "border-[#727171] text-[#727171] hover:bg-[#727171] hover:text-white"
                   : " border-white text-white hover:bg-white hover:text-black"
@@ -70,7 +70,7 @@ function Galeria() {
               Todas
             </button>
             <button
-              className={`mt-12 mb-10 px-6 py-3 border uppercase transition duration-700 ${
+              className={`mt-4 mb-6 px-6 py-3 border uppercase transition duration-700 ${
                 category === "Estúdio"
                   ? "border-[#727171] text-[#727171] hover:bg-[#727171] hover:text-white"
                   : " border-white text-white hover:bg-white hover:text-black"
@@ -80,7 +80,7 @@ function Galeria() {
               Estúdio
             </button>
             <button
-              className={`mt-12 mb-10 px-6 py-3 border uppercase transition duration-700 ${
+              className={`mt-4 mb-6 px-6 py-3 border uppercase transition duration-700 ${
                 category === "Tattoos"
                   ? "border-[#727171] text-[#727171] hover:bg-[#727171] hover:text-white"
                   : " border-white text-white hover:bg-white hover:text-black"
@@ -92,7 +92,7 @@ function Galeria() {
           </div>
         </div>
 
-        <div className="grid grid-cols-3 gap-3 mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8 max-w-[80%] mx-auto">
           {imagensFiltradas.map((img, index) => (
             <div key={index} className="flex justify-center">
               <img
@@ -112,13 +112,11 @@ function Galeria() {
         </div> */}
       </section>
 
-      {/* Section Entre em contacto*/}
       <section className="bg-[#101010] pt-[150px] pb-[70px]" id="tattoos">
         <div
           className="relative h-[25vh] bg-cover bg-center"
           style={{ backgroundImage: "url(/src/assets/background1.png)" }}
         >
-          {/* Adicionando centralização com flexbox */}
           <h2
             className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl uppercase font-bold"
             style={{ fontFamily: "'Source Serif 4', serif" }}

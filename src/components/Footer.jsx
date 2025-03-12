@@ -32,7 +32,7 @@ function Footer() {
                 icon={faMapPin}
                 className="mr-2 rotate-[20deg]"
               />
-              Rua do Travessas...
+              Rua Almeida Garrett 20, Vila Nova de Gaia
             </p>
 
             <div

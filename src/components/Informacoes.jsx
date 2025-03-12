@@ -23,19 +23,16 @@ function Informacoes() {
       resposta:
         "Após a tatuagem, é essencial manter a área limpa, aplicar pomada cicatrizante e evitar exposição ao sol. Também deve evitar água do mar e piscina nas primeiras semanas.",
     },
-    ,
     {
       questao: "Quais são os cuidados a ter depois da tatuagem?",
       resposta:
         "Após a tatuagem, é essencial manter a área limpa, aplicar pomada cicatrizante e evitar exposição ao sol. Também deve evitar água do mar e piscina nas primeiras semanas.",
     },
-    ,
     {
       questao: "Quais são os cuidados a ter depois da tatuagem?",
       resposta:
         "Após a tatuagem, é essencial manter a área limpa, aplicar pomada cicatrizante e evitar exposição ao sol. Também deve evitar água do mar e piscina nas primeiras semanas.",
     },
-    ,
     {
       questao: "Quais são os cuidados a ter depois da tatuagem?",
       resposta:
@@ -55,11 +52,11 @@ function Informacoes() {
       />
 
       <section
-        className="bg-[#101010] pt-[250px] pb-[70px] px-[15%]"
+        className="bg-[#101010] pt-[250px] pb-[70px] px-[5%] sm:px-[10%] lg:px-[15%]"
         id="informacoes"
       >
         <div
-          className="absolute right-0 top-0 h-full w-[200px]"
+          className="absolute right-0 top-0 h-full w-[200px] hidden sm:block"
           style={{
             backgroundImage: "url(/src/assets/background2.png)",
             backgroundSize: "250px auto",
@@ -76,12 +73,6 @@ function Informacoes() {
           >
             Informações
           </h2>
-
-          {/* <img
-            src="/src/assets/background2.png"
-            alt="Imagem explicativa"
-            className="w-[300px] h-auto absolute right-[150px] top-0"
-          /> */}
         </div>
         <h2
           className="text-5xl text-[#FFFFFF] font-bold mt-3"
@@ -104,7 +95,7 @@ function Informacoes() {
                 onClick={() => activeToggle(index)}
               >
                 <h2
-                  className="text-white text-xl"
+                  className="text-white text-xl sm:text-2xl lg:text-xl"
                   style={{ fontFamily: "'Source Serif 4', serif" }}
                 >
                   {item.questao}
