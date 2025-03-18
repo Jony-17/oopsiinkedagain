@@ -52,7 +52,7 @@ function Informacoes() {
       />
 
       <section
-        className="bg-[#101010] pt-[250px] pb-[70px] px-[5%] sm:px-[10%] lg:px-[15%]"
+        className="bg-[#101010] pt-[calc(150px+64px)] pb-[70px] px-[5%] sm:px-[10%] lg:px-[15%]"
         id="informacoes"
       >
         <div

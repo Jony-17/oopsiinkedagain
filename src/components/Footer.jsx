@@ -80,7 +80,7 @@ function Footer() {
           className="text-xl text-[#969595] font-light italic text-center mt-6"
           style={{ fontFamily: "'Yrsa', serif" }}
         >
-          © 2024 Todos os direitos reservados a Oops I Inked Again
+          © 2025 Todos os direitos reservados a Oops I Inked Again
         </p>
       </section>
     </div>

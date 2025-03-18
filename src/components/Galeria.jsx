@@ -31,7 +31,7 @@ function Galeria() {
       </div>
       {/* Section Galeria */}
       <section
-        className="bg-[#101010] pt-[250px] pb-[70px] px-[5%] sm:px-[10%] lg:px-[15%]"
+        className="bg-[#101010] pt-[calc(150px+64px)] pb-[70px] px-[5%] sm:px-[10%] lg:px-[15%]"
         id="estudio"
       >
         <div
@@ -118,7 +118,7 @@ function Galeria() {
           style={{ backgroundImage: "url(/src/assets/background1.png)" }}
         >
           <h2
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl uppercase font-bold"
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl sm:text-3xl md:text-4xl lg:text-4xl uppercase font-bold w-full text-center"
             style={{ fontFamily: "'Source Serif 4', serif" }}
           >
             Entre em contacto e obtenha o seu orçamento

@@ -20,7 +20,7 @@ function Contactos() {
       </div>
       {/* Section Contactos */}
       <section
-        className="bg-[#101010] pt-[250px] pb-[70px] px-[5%] sm:px-[10%] md:px-[15%]"
+        className="bg-[#101010] pt-[calc(150px+64px)] pb-[70px] px-[5%] sm:px-[10%] md:px-[15%]"
         id="informacoes"
       >
         <div className="flex flex-col-reverse sm:flex-row justify-center items-center gap-[50px] sm:gap-[100px] flex-wrap">

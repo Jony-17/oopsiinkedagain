@@ -5,6 +5,7 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import NavBar from "./Navbar";
+import NavBar2 from "./Navbar2";
 import Footer from "./Footer";
 import ScrollTop from "./ScrollTop";
 // import Loader from "./Loader";
@@ -59,7 +60,10 @@ function Home() {
       style={{ backgroundImage: "url(/src/assets/image1.png)" }}
     >
       {/* Navbar fora do fluxo do layout principal */}
-      <NavBar />
+      <NavBar
+        bgColor="bg-[#090909] lg:bg-transparent"
+        shadow="sm:inset 0 -20px 20px rgb(22, 22, 22) lg:inset 0"
+      />
 
       {/* Overlay para escurecer a imagem de fundo */}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
@@ -127,10 +131,10 @@ function Home() {
 
       {/* Section Estúdio */}
       <section
-        className="bg-[#101010] pt-[100px] pb-[70px] px-[5%] sm:px-[10%] md:px-[15%]"
+        className="bg-[#101010] pt-[calc(150px+64px)] pb-[170px] px-[5%] sm:px-[10%] md:px-[15%]"
         id="estudio"
       >
-        <div className="flex gap-[10rem] justify-normal items-center">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-[10rem] justify-normal items-center">
           <div className="relative max-w-lg">
             <h2
               className="text-xl uppercase text-[#727171] font-bold"
@@ -198,14 +202,15 @@ function Home() {
             <img
               src="/src/assets/image2.png"
               alt="Estúdio"
-              className="max-w-full"
+              className="max-w-[70%] sm:max-w-xs md:max-w-sm lg:max-w-md"
             />
 
             {/* Segunda imagem, posicionada absolutamente sobre a primeira */}
             <img
               src="/src/assets/image3.png"
               alt="Estúdio"
-              className="absolute top-64 left-36 max-w-full"
+              className="absolute top-[16rem] left-[8rem] max-w-[70%] sm:max-w-xs md:max-w-sm lg:max-w-md"
+              // className="max-w-full mt-4 md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:max-w-[60%]"
             />
           </div>
         </div>
@@ -284,9 +289,8 @@ function Home() {
           className="relative h-[25vh] bg-cover bg-center"
           style={{ backgroundImage: "url(/src/assets/background1.png)" }}
         >
-          {/* Adicionando centralização com flexbox */}
           <h2
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl uppercase font-bold"
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl sm:text-3xl md:text-4xl lg:text-4xl uppercase font-bold w-full text-center"
             style={{ fontFamily: "'Source Serif 4', serif" }}
           >
             Entre em contacto e obtenha o seu orçamento
@@ -296,7 +300,7 @@ function Home() {
 
       {/* Section Informações */}
       <section
-        className="bg-[#101010] pt-[100px] pb-[70px] px-[5%] sm:px-[10%] md:px-[15%]"
+        className="bg-[#101010] pt-[calc(150px+64px)] pb-[70px] px-[5%] sm:px-[10%] md:px-[15%]"
         id="tattoos"
       >
         <div className="w-full">
@@ -369,10 +373,10 @@ function Home() {
 
       {/* Section Contactos */}
       <section
-        className="bg-[#101010] pt-[100px] pb-[70px] px-[5%] md:px-0"
+        className="bg-[#101010] pt-[calc(150px+64px)] pb-[70px] px-[5%] md:px-0"
         id="tattoos"
       >
-        {/* <section className="bg-[#101010] pt-[100px] pb-[70px]" id="tattoos"> */}
+        {/* <section className="bg-[#101010] pt-[calc(150px+64px)] pb-[70px]" id="tattoos"> */}
 
         <div className="flex flex-col md:flex-row justify-between md:items-center space-y-6 md:space-y-0">
           {/* Imagem da galeria */}
@@ -420,7 +424,7 @@ function Home() {
           {/* Texto e botão de contacto w-[90%] */}
           <div className="relative w-full rounded-lg md:w-[60vh] h-auto md:h-[50vh] bg-[#090909] bg-center">
             {/* Secção do texto h-[200px]*/}
-            <div className="relative z-10 h-[50%] text-white mt-8 px-6 md:px-[50px]">
+            <div className="relative z-10 h-[50%] text-white my-8 px-6 md:px-[50px]">
               <h2
                 className="text-2xl md:text-4xl text-[#FFFFFF] font-bold"
                 style={{ fontFamily: "'Source Serif 4', serif" }}
@@ -428,7 +432,7 @@ function Home() {
                 Entre em contacto
               </h2>
               <p
-                className="text-base md:text-xl text-[#969595] font-light italic text-justify mt-3"
+                className="text-lg md:text-xl text-[#969595] font-light italic text-justify mt-3"
                 style={{ fontFamily: "'Yrsa', serif" }}
               >
                 Fundado em 2024, somos um estúdio de tatuagem no Porto. Fundado
@@ -448,7 +452,7 @@ function Home() {
             >
               <a
                 href="https://wa.me/1234567890"
-                className="px-6 py-3 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700"
+                className="px-6 py-5 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700"
               >
                 Contacte-nos
               </a>

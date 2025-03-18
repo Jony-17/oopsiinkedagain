@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 import NavBar from "./Navbar";
 import Footer from "./Footer";
@@ -63,7 +61,7 @@ function Estudio() {
       </div>
       {/* Section Estúdio */}
       <section
-        className="bg-[#101010] pt-[250px] pb-[70px] px-[5%] sm:px-[10%] lg:px-[15%]"
+        className="bg-[#101010] pt-[calc(150px+64px)] pb-[70px] px-[5%] sm:px-[10%] lg:px-[15%]"
         id="estudio"
       >
         {/* <div className="relative"> */}
