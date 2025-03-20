@@ -16,11 +16,11 @@ function Estudio() {
   const noticias = [
     {
       titulo: "Cuidados a ter com a pele",
-      imagem: "/src/assets/image1.png",
+      imagem: "/assets/image1.png",
     },
     {
       titulo: "Dicas...",
-      imagem: "/src/assets/image2.png",
+      imagem: "/assets/image2.png",
     },
   ];
 
