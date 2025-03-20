@@ -131,7 +131,7 @@ function Home() {
 
       {/* Section Estúdio */}
       <section
-        className="bg-[#101010] pt-[calc(150px+64px)] pb-[170px] px-[5%] sm:px-[10%] md:px-[15%]"
+        className="bg-[#101010] pt-[150px] pb-[170px] px-[5%] sm:px-[10%] md:px-[15%]"
         id="estudio"
       >
         <div className="flex flex-col md:flex-row gap-10 md:gap-[10rem] justify-normal items-center">
@@ -300,7 +300,7 @@ function Home() {
 
       {/* Section Informações */}
       <section
-        className="bg-[#101010] pt-[calc(150px+64px)] pb-[70px] px-[5%] sm:px-[10%] md:px-[15%]"
+        className="bg-[#101010] pt-[150px] pb-[70px] px-[5%] sm:px-[10%] md:px-[15%]"
         id="tattoos"
       >
         <div className="w-full">
@@ -373,11 +373,9 @@ function Home() {
 
       {/* Section Contactos */}
       <section
-        className="bg-[#101010] pt-[calc(150px+64px)] pb-[70px] px-[5%] md:px-0"
+        className="bg-[#101010] pt-[150px] pb-[70px] px-[5%] md:px-0"
         id="tattoos"
       >
-        {/* <section className="bg-[#101010] pt-[calc(150px+64px)] pb-[70px]" id="tattoos"> */}
-
         <div className="flex flex-col md:flex-row justify-between md:items-center space-y-6 md:space-y-0">
           {/* Imagem da galeria */}
           <div className="relative w-full md:w-[60vh] h-[40vh] md:h-[50vh] bg-[#090909] bg-center mx-auto md:ml-[150px] overflow-hidden">

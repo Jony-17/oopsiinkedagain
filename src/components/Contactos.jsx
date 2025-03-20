@@ -48,8 +48,8 @@ function Contactos() {
                   Contactos
                 </h1>
                 <span
-                  className="absolute border-t-2 border-[#727171] w-[37vw] 
-  translate-x-[-635px] sm:translate-x-[-410px] left-full"
+                  className="absolute border-t-2 border-[#727171] w-[34vw] 
+  translate-x-[-635px] sm:translate-x-[-300px] left-full"
                 ></span>
               </div>
 
