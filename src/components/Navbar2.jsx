@@ -1,5 +1,5 @@
 import { Outlet, Link, useLocation } from "react-router-dom";
-import logo from "/assets/logo.png";
+import logo from "//oopsiinkedagain/assets/logo.png";
 
 function NavBar({ bgColor = "bg-transparent", shadow }) {
   const location = useLocation();

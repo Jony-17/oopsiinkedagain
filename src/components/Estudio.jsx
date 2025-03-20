@@ -10,8 +10,8 @@ function Estudio() {
       id: 1,
       name: "Marília",
       role: "Tatuadora",
-      image: "/assets/foto.jpg",
-      hoverImage: "/assets/image1.png",
+      image: "//oopsiinkedagain/assets/foto.jpg",
+      hoverImage: "//oopsiinkedagain/assets/image1.png",
       instagram: "https://www.instagram.com",
       whatsapp: "https://www.whatsapp.com",
     },
@@ -19,8 +19,8 @@ function Estudio() {
       id: 2,
       name: "Ana",
       role: "Designer",
-      image: "/assets/foto.jpg",
-      hoverImage: "/assets/image1.png",
+      image: "//oopsiinkedagain/assets/foto.jpg",
+      hoverImage: "//oopsiinkedagain/assets/image1.png",
       instagram: "https://www.instagram.com",
       whatsapp: "https://www.whatsapp.com",
     },
@@ -28,8 +28,8 @@ function Estudio() {
     //   id: 3,
     //   name: "Carlos",
     //   role: "Fotógrafo",
-    //   image: "/assets/foto.jpg",
-    //   hoverImage: "/assets/image1.png",
+    //   image: "//oopsiinkedagain/assets/foto.jpg",
+    //   hoverImage: "//oopsiinkedagain/assets/image1.png",
     //   instagram: "https://www.instagram.com",
     //   whatsapp: "https://www.whatsapp.com",
     // },
@@ -114,7 +114,7 @@ function Estudio() {
           {/* Imagem 1*/}
           <div className="flex justify-center col-span-1 sm:col-span-2 md:col-span-2">
             <img
-              src="/assets/image1.png"
+              src="//oopsiinkedagain/assets/image1.png"
               alt="Imagem 1"
               className="w-full h-[300px] object-cover"
             />
@@ -123,7 +123,7 @@ function Estudio() {
           {/* Imagem 2*/}
           <div className="flex justify-center">
             <img
-              src="/assets/image2.png"
+              src="//oopsiinkedagain/assets/image2.png"
               alt="Imagem 2"
               className="w-full h-[300px] object-cover"
             />
@@ -132,7 +132,7 @@ function Estudio() {
           {/* Imagem 3*/}
           <div className="flex justify-center">
             <img
-              src="/assets/image3.png"
+              src="//oopsiinkedagain/assets/image3.png"
               alt="Imagem 3"
               className="w-full h-[300px] object-cover"
             />
@@ -141,7 +141,7 @@ function Estudio() {
           {/* Imagem 4*/}
           <div className="flex justify-center col-span-1 sm:col-span-2 md:col-span-2">
             <img
-              src="/assets/image1.png"
+              src="//oopsiinkedagain/assets/image1.png"
               alt="Imagem 4"
               className="w-full h-[300px] object-cover"
             />
@@ -151,7 +151,7 @@ function Estudio() {
         <div className="flex flex-col items-center">
           <div className="flex justify-center flex-wrap gap-[100px] pt-[150px]">
             <div
-              className="h-[400px] w-[400px] bg-[url('/assets/foto.jpg')] bg-center bg-no-repeat bg-cover 
+              className="h-[400px] w-[400px] bg-[url('//oopsiinkedagain/assets/foto.jpg')] bg-center bg-no-repeat bg-cover 
              rounded-[60%_40%_30%_70%_/_60%_30%_70%_40%] shadow-[inset_0_0_0_9px_rgba(255,255,255,0.3)] 
              animate-animate_imgg"
             ></div>

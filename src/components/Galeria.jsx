@@ -8,12 +8,12 @@ function Galeria() {
   const [category, setCategory] = useState("Todas");
 
   const imagens = [
-    { src: "/assets/image1.png", alt: "Imagem 1", category: "Estúdio" },
-    { src: "/assets/image2.png", alt: "Imagem 2", category: "Tattoos" },
-    { src: "/assets/image3.png", alt: "Imagem 3", category: "Estúdio" },
-    { src: "/assets/image3.png", alt: "Imagem 4", category: "Tattoos" },
-    { src: "/assets/image1.png", alt: "Imagem 5", category: "Estúdio" },
-    { src: "/assets/image2.png", alt: "Imagem 6", category: "Tattoos" },
+    { src: "//oopsiinkedagain/assets/image1.png", alt: "Imagem 1", category: "Estúdio" },
+    { src: "//oopsiinkedagain/assets/image2.png", alt: "Imagem 2", category: "Tattoos" },
+    { src: "//oopsiinkedagain/assets/image3.png", alt: "Imagem 3", category: "Estúdio" },
+    { src: "//oopsiinkedagain/assets/image3.png", alt: "Imagem 4", category: "Tattoos" },
+    { src: "//oopsiinkedagain/assets/image1.png", alt: "Imagem 5", category: "Estúdio" },
+    { src: "//oopsiinkedagain/assets/image2.png", alt: "Imagem 6", category: "Tattoos" },
   ];
 
   const imagensFiltradas =
@@ -37,7 +37,7 @@ function Galeria() {
         <div
           className="absolute right-0 top-0 h-full w-[200px] sm:w-[150px] md:w-[200px] hidden sm:block"
           style={{
-            backgroundImage: "url(/assets/background2.png)",
+            backgroundImage: "url(//oopsiinkedagain/assets/background2.png)",
             backgroundSize: "250px auto",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "20% 30%",
@@ -115,7 +115,7 @@ function Galeria() {
       <section className="bg-[#101010] pt-[150px] pb-[70px]" id="tattoos">
         <div
           className="relative h-[25vh] bg-cover bg-center"
-          style={{ backgroundImage: "url(/assets/background1.png)" }}
+          style={{ backgroundImage: "url(//oopsiinkedagain/assets/background1.png)" }}
         >
           <h2
             className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl sm:text-3xl md:text-4xl lg:text-4xl uppercase font-bold w-full text-center"
