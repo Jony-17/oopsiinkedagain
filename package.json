@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Jony-17.github.io/oopsiinkedagain",
+  "homepage": "https://jony-17.github.io/oopsiinkedagain",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
