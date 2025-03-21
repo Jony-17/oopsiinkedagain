@@ -17,7 +17,7 @@ function Footer() {
           {/* Logo */}
           <div className="flex justify-center">
             <img
-              src="//oopsiinkedagain/assetslogo.png"
+              src="//assetslogo.png"
               className="max-h-13 max-w-[200px] w-auto md:max-w-[250px]"
             />
           </div>
