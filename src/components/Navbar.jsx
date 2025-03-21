@@ -1,7 +1,7 @@
 
 
 import { Link, useLocation } from "react-router-dom";
-import logo from "//assetslogo.png";
+import logo from "oopsiinkedagain/assets/logo.png";
 import React, { useState } from "react";
 
 function NavBar({ bgColor = "bg-transparent", shadow }) {

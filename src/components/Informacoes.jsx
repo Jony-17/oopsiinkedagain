@@ -58,7 +58,7 @@ function Informacoes() {
         <div
           className="absolute right-0 top-0 h-full w-[200px] hidden sm:block"
           style={{
-            backgroundImage: "url(//assetsbackground2.png)",
+            backgroundImage: "url(oopsiinkedagain/assetsbackground2.png)",
             backgroundSize: "250px auto",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "20% 30%",
