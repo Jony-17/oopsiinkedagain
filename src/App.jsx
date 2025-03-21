@@ -32,7 +32,7 @@
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// Importando os componentes das páginas
+// Importing components for the pages
 import Home from "./components/Home";
 import Estudio from "./components/Estudio";
 import Galeria from "./components/Galeria";
@@ -44,7 +44,7 @@ import BlogPost from "./components/BlogPost";
 function App() {
   return (
     <div className="min-h-full font-Raleway">
-      {/* Adicionando o basename */}
+      {/* Add basename to BrowserRouter */}
       <BrowserRouter basename="/oopsiinkedagain">
         <Routes>
           <Route path="/" element={<Home />} />
