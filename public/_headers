@@ -1,2 +1,5 @@
-/oopsiinkedagain/assets/*
+/oopsiinkedagain/assets/*.css
   Content-Type: text/css
+
+/oopsiinkedagain/assets/*.js
+  Content-Type: application/javascript
