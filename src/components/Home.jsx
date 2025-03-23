@@ -173,7 +173,7 @@ function Home() {
                 <a
                   className="text-[#FFFFFF] uppercase mx-4"
                   style={{ fontFamily: "'Source Serif 4', serif" }}
-                  href="/estudio"
+                  href="/oopsiinkedagain/estudio"
                 >
                   Leia a nossa história
                 </a>
@@ -232,7 +232,7 @@ function Home() {
             <a
               className="text-[#727171] uppercase mx-4"
               style={{ fontFamily: "'Source Serif 4', serif" }}
-              href="/galeria"
+              href="/oopsiinkedagain/galeria"
             >
               Mostrar mais
             </a>
@@ -363,7 +363,7 @@ function Home() {
         </div>
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
           <a
-            href="/informacoes"
+            href="/oopsiinkedagain/informacoes"
             className="mt-12 px-6 py-3 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700"
           >
             Mostrar mais

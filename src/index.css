@@ -58,7 +58,7 @@ html {
   font-weight: bold;
   text-transform: uppercase;
   color: var(--main-color);
-  transition: opacity 1.1s ease-in-out;
+  transition: opacity 1.1s ease-in-out; q
 }
 
 .loader .circle {

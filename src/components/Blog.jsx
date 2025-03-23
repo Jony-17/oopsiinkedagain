@@ -66,7 +66,7 @@ function Estudio() {
                   {noticia.titulo}
                 </h1>
                 <a
-                  href={`/blog/${slugify(noticia.titulo)}`}
+                  href={`/oopsiinkedagain/blog/${slugify(noticia.titulo)}`}
                   className="outline-none border-none rounded-[5rem] uppercase text-[13px] sm:text-[15px] cursor-pointer mt-[20px] sm:mt-[30px] text-white transition duration-200 flex items-center justify-start gap-5 no-underline"
                 >
                   Saiba mais
