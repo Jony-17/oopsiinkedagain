@@ -45,7 +45,7 @@ function App() {
   return (
     <div className="min-h-full font-Raleway">
       {/* Add basename to BrowserRouter */}
-      <BrowserRouter basename="/oopsiinkedagain">
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/estudio" element={<Estudio />} />
