@@ -24,6 +24,21 @@
 html {
   scroll-behavior: smooth;
 }
+
+@keyframes small-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-small-bounce {
+  animation: small-bounce 1s ease-in-out infinite;
+}
+
 /* 
 @keyframes load {
   0% {

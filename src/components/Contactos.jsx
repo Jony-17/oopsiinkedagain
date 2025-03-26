@@ -1,7 +1,12 @@
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMapPin, faPhone, faClock } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMapPin,
+  faPhone,
+  faClock,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 import NavBar from "./Navbar";
@@ -106,6 +111,16 @@ function Contactos() {
                 >
                   <FontAwesomeIcon icon={faInstagram} className="ml-2 mr-2" />
                   /oopsiinkedagain
+                </p>
+              </div>
+
+              <div className="bg-[#090909] mt-4 p-4 transition-all">
+                <p
+                  className="text-lg text-[#FFFFFF] flex items-center gap-2"
+                  style={{ fontFamily: "'Yrsa', serif" }}
+                >
+                  <FontAwesomeIcon icon={faEnvelope} className="ml-2 mr-2" />
+                  oopsiinkedagain@gmail.com
                 </p>
               </div>
 

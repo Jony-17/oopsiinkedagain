@@ -1,16 +1,30 @@
 import { useState } from "react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+
 import NavBar from "./Navbar";
 import Footer from "./Footer";
 import ScrollTop from "./ScrollTop";
 
 function Estudio() {
+  function slugify(title) {
+    return title
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/[^\w-]+/g, "");
+  }
+
   const cardsData = [
     {
       id: 1,
       name: "Marília",
       role: "Tatuadora",
       image: "/assets/foto.jpg",
+      description:
+        "Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork. Apaixonada em transformar sonhos em artes eternas na pele.",
       hoverImage: "/assets/image1.png",
       instagram: "https://www.instagram.com",
       whatsapp: "https://www.whatsapp.com",
@@ -20,6 +34,8 @@ function Estudio() {
       name: "Ana",
       role: "Designer",
       image: "/assets/foto.jpg",
+      description:
+        "Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork. Apaixonada em transformar sonhos em artes eternas na pele.",
       hoverImage: "/assets/image1.png",
       instagram: "https://www.instagram.com",
       whatsapp: "https://www.whatsapp.com",
@@ -29,6 +45,8 @@ function Estudio() {
     //   name: "Carlos",
     //   role: "Fotógrafo",
     //   image: "/assets/foto.jpg",
+    //   description:
+    //     "Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork. Apaixonada em transformar sonhos em artes eternas na pele.",
     //   hoverImage: "/assets/image1.png",
     //   instagram: "https://www.instagram.com",
     //   whatsapp: "https://www.whatsapp.com",
@@ -148,7 +166,7 @@ function Estudio() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center">
+        {/* <div className="flex flex-col items-center">
           <div className="flex justify-center flex-wrap gap-[100px] pt-[150px]">
             <div
               className="h-[400px] w-[400px] bg-[url('/assets/foto.jpg')] bg-center bg-no-repeat bg-cover 
@@ -193,62 +211,83 @@ function Estudio() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        {/* <div className="relative flex items-center justify-center mt-[150px] mb-[50px]">
+        <div className="relative flex flex-col items-center mt-[150px] mb-[30px]">
           <h2
             className="text-5xl text-[#FFFFFF] font-bold mt-3"
             style={{ fontFamily: "'Source Serif 4', serif" }}
           >
             Equipa
           </h2>
-        </div> */}
+          <p
+            className="text-xl text-[#969595] font-light italic text-justify mt-3 mb-10"
+            style={{ fontFamily: "'Yrsa', serif" }}
+          >
+            Marcamos momentos, desenhamos histórias
+          </p>
+        </div>
 
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-8 max-w-[90%] mx-auto place-items-center"> */}
-        {/* --- */}
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mt-8 max-w-[90%] mx-auto place-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {cardsData.map((card) => (
             <div
-              key={card.id}
-              className="w-full max-w-md rounded overflow-hidden shadow-lg bg-[#090909]"
+              key={card.name}
+              className="flex flex-col sm:flex-row h-auto sm:h-[370px] bg-[#090909] shadow-lg rounded-lg overflow-hidden"
             >
               <img
-                className="w-full h-[350px] object-cover"
-                src={imageSrc[card.id] || card.image}
-                alt="Imagem do Card"
-                onMouseEnter={() => handleMouseEnter(card.id)}
-                onMouseLeave={() => handleMouseLeave(card.id)}
+                className="w-full sm:w-[400px] object-cover h-[300px] sm:h-full"
+                src={card.image}
+                alt={card.name}
               />
-              <div className="px-6 py-4">
-                <div className="font-bold text-white text-2xl mb-2 flex justify-center">
-                  {card.name}
+              <div className="flex flex-col gap-[15px] sm:gap-[30px] w-full sm:w-2/3 p-[1.5rem] sm:p-[2.25rem]">
+                <div className="flex flex-col gap-[10px]">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-white">
+                    {card.name}
+                  </h2>
+                  <p className="text-white uppercase text-sm sm:text-base">
+                    {card.role}
+                  </p>
                 </div>
-                <p className="text-white text-base flex justify-center uppercase">
-                  {card.role}
+                <p className="text-white mt-2 leading-[20px] sm:leading-[25px] text-sm sm:text-base">
+                  {card.description}
                 </p>
-              </div>
-              <div className="px-6 pt-4 pb-6 gap-[15px] text-white flex justify-center">
-                <a
-                  href={card.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-gray-400 transition"
-                >
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
-
-                <a
-                  href={card.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-gray-400 transition"
-                >
-                  <FontAwesomeIcon icon={faWhatsapp} />
-                </a>
+                <div className="flex justify-between items-center mt-4">
+                  <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white text-xl flex items-center"
+                  >
+                    <FontAwesomeIcon icon={faInstagram} className="mr-2" />
+                  </a>
+                  <div className="flex items-center">
+                    <a
+                      href={`/estudio/${slugify(card.name)}`}
+                      className="flex items-center justify-center text-white gap-[5px]"
+                    >
+                      Sobre mim
+                      <svg
+                        style={{ rotate: "270deg", cursor: "pointer" }}
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-4 w-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="white"
+                        strokeWidth={2}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           ))}
-        </div> */}
+        </div>
 
         <div className="flex items-center justify-center h-[200px] text-white p-[3rem] mt-[150px]">
           <div className="relative max-w-2xl text-center">

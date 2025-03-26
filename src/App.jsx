@@ -35,6 +35,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Importing components for the pages
 import Home from "./components/Home";
 import Estudio from "./components/Estudio";
+import EstudioTeam from "./components/EstudioTeam";
 import Galeria from "./components/Galeria";
 import Informacoes from "./components/Informacoes";
 import Contactos from "./components/Contactos";
@@ -49,6 +50,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/estudio" element={<Estudio />} />
+          <Route path="/estudio/:slug" element={<EstudioTeam />} />
           <Route path="/galeria" element={<Galeria />} />
           <Route path="/informacoes" element={<Informacoes />} />
           <Route path="/contactos" element={<Contactos />} />
