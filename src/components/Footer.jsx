@@ -1,6 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock, faMapPin } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import {
+  faEnvelope,
+  faMapPin,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
@@ -12,76 +16,56 @@ function Footer() {
       ></section>
 
       {/* Section Footer */}
-      <section className="relative bg-[#090909] flex flex-col items-center text-center pb-5">
-        <div className="flex flex-col items-center w-full max-w-[1200px] px-6 text-lg md:text-xl gap-9">
-          {/* Logo */}
-          <div className="flex justify-center">
-            <img
-              src="/assets/logo.png"
-              className="max-h-13 max-w-[200px] w-auto md:max-w-[250px]"
-            />
-          </div>
+      <section className="relative bg-[#090909] text-white py-10">
+        <div className="w-full max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row items-start justify-between">
+          {/* Coluna 1 - Morada e Contactos */}
+          <div className="flex flex-col md:flex-row gap-6 md:gap-[5rem]">
+            {/* Morada */}
+            <div className="text-left">
+              <h3
+                className="text-[2.65rem] font-bold uppercase"
+                style={{ fontFamily: "'Anton', sans-serif", fontWeight: 500 }}
+              >
+                Morada
+              </h3>
+              <p className="mt-2 flex items-center gap-2">
+                <FontAwesomeIcon icon={faMapPin} className="rotate-[20deg]" />
+                Rua Almeida Garrett 20
+                <br />
+                4430-300 Vila Nova de Gaia
+              </p>
+            </div>
 
-          {/* Endereço e horário */}
-          <div className="flex flex-col items-center gap-3">
-            <p
-              className="text-[#FFFFFF] flex items-center gap-2"
-              style={{ fontFamily: "'Yrsa', serif" }}
-            >
-              <FontAwesomeIcon
-                icon={faMapPin}
-                className="mr-2 rotate-[20deg]"
-              />
-              Rua Almeida Garrett 20, Vila Nova de Gaia
-            </p>
-
-            <div
-              className="text-[#FFFFFF] flex items-center gap-2"
-              style={{ fontFamily: "'Yrsa', serif" }}
-            >
-              <FontAwesomeIcon icon={faClock} />
-              <div className="flex flex-col items-center">
-                <div className="flex flex-col items-center">
-                  <span className="font-bold">Segunda - Sexta</span>
-                  <span>10h - 18h</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <span className="font-bold">Sábado</span>
-                  <span>9h - 13h</span>
-                </div>
-              </div>
+            {/* Contactos */}
+            <div className="text-left">
+              <h3
+                className="text-[2.65rem] font-bold uppercase"
+                style={{ fontFamily: "'Anton', sans-serif", fontWeight: 500 }}
+              >
+                Contactos
+              </h3>
+              <p className="mt-2 flex items-center gap-2">
+                <FontAwesomeIcon icon={faPhone} /> +351 933 333 333
+              </p>
+              <p className="mt-2 flex items-center gap-2">
+                <FontAwesomeIcon icon={faInstagram} />
+                /oopsiinkedagain
+              </p>
+              <p className="mt-2 flex items-center gap-2">
+                <FontAwesomeIcon icon={faEnvelope} />
+                opsiinkedagain@gmail.com
+              </p>
             </div>
           </div>
 
-          {/* Links sociais */}
-          <div className="flex justify-center gap-6 text-[#FFFFFF] text-2xl">
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-400 transition"
-            >
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-
-            <a
-              href="https://www.whatsapp.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-400 transition"
-            >
-              <FontAwesomeIcon icon={faWhatsapp} />
-            </a>
+          {/* Coluna 2 - Logo */}
+          <div className="flex justify-center md:justify-end mt-6 md:mt-0">
+            <img
+              src="/assets/logo.png"
+              className="max-h-[8rem] md:max-h-[9rem]"
+            />
           </div>
         </div>
-
-        {/* Copyright */}
-        <p
-          className="text-xl text-[#969595] font-light italic text-center mt-6"
-          style={{ fontFamily: "'Yrsa', serif" }}
-        >
-          © 2025 Todos os direitos reservados a Oops I Inked Again
-        </p>
       </section>
     </div>
   );

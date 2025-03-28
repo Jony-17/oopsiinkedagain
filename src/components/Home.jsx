@@ -68,8 +68,16 @@ function Home() {
       {/* Overlay para escurecer a imagem de fundo */}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
       {/* Conteúdo principal centralizado */}
-      <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
-        <h3 className="text-lg sm:text-xl uppercase font-bold">
+      <div className="relative z-10 flex flex-col justify-end items-start h-full text-left text-white px-6 sm:pl-[10rem] sm:pr-[4rem] pb-[9.5rem] sm:pb-20">
+        <h1
+          className="text-6xl sm:text-[110px] uppercase font-bold leading-tight sm:leading-[107px]"
+          style={{ fontFamily: "'Anton', sans-serif", fontWeight: 500 }}
+        >
+          Oops I <br />
+          <span className="w-full inline-block">Inked</span>{" "}
+          <span className="block sm:inline">Again.</span>
+        </h1>
+        {/* <h3 className="text-lg sm:text-xl uppercase font-bold">
           Bem-vindos ao meu estúdio
         </h3>
         <h1 className="text-4xl sm:text-7xl uppercase font-bold mt-3">
@@ -77,11 +85,11 @@ function Home() {
         </h1>
         <h2 className="text-5xl sm:text-7xl uppercase font-bold mt-3">
           Fineline & Body Art
-        </h2>
+        </h2> */}
         <a
           href="https://wa.me/1234567890"
           target="_blank"
-          className="mt-12 px-6 py-3 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700"
+          className="mt-12 px-6 py-3 border-2 font-semibold border-white bg-white text-[#444444] uppercase transition duration-700"
         >
           Faça a sua marcação
         </a>
