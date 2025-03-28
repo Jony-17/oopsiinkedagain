@@ -124,7 +124,7 @@ function Informacoes() {
                     : "opacity-0 max-h-0 duration-600"
                 }`}
               >
-                <p className="text-white text-base text-justify">
+                <p className="text-white sm:text-base text-sm text-justify">
                   {item.resposta}
                 </p>
               </div>

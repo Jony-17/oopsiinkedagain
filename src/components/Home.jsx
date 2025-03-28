@@ -94,7 +94,7 @@ function Home() {
           Faça a sua marcação
         </a>
 
-        <div className="absolute bottom-4 right-[0.3rem] sm:right-4 flex flex-col space-y-4">
+        <div className="absolute bottom-4 right-[-1.7rem] sm:right-4 flex flex-col space-y-4">
           <a
             href="https://www.instagram.com"
             target="_blank"
@@ -175,7 +175,7 @@ function Home() {
             {/* <div className="relative w-screen flex items-center justify-between mt-4"> */}
             <div className="relative mt-6">
               <div className="absolute inset-0 flex items-center">
-                <span className="block border-t-2 border-white w-screen -translate-x-2/4"></span>
+                <span className="block border-t-2 border-white w-screen -translate-x-2/4 hidden sm:block"></span>
               </div>
               <div className="relative flex items-center justify-end">
                 <a
@@ -238,7 +238,7 @@ function Home() {
               Tattoos
             </h2>
             <a
-              className="text-[#727171] uppercase mx-4"
+              className="text-[#727171] uppercase mx-4 text-sm"
               style={{ fontFamily: "'Source Serif 4', serif" }}
               href="/galeria"
             >

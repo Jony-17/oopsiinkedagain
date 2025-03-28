@@ -30,7 +30,7 @@ function Contactos() {
       >
         <div className="flex flex-col-reverse sm:flex-row justify-center items-center gap-[50px] sm:gap-[100px] flex-wrap">
           {/* Mapa */}
-          <div className="h-[300px] sm:h-[500px] w-full sm:w-[50%]">
+          <div className="h-[300px] sm:h-[500px] w-full sm:w-[50%] z-0">
             <MapContainer
               style={{ height: "100%", width: "100%" }}
               center={markerLocation}
@@ -49,6 +49,7 @@ function Contactos() {
           <div className="flex flex-col items-start w-full sm:w-[40%]">
             <div className="relative w-full">
               <div className="relative flex items-center w-full">
+                <span className="absolute left-[-10px] border-t-2 border-[#727171] w-[35vw] -translate-x-full"></span>
                 <h1 className="text-xl uppercase text-[#727171] font-bold pr-4">
                   Contactos
                 </h1>
