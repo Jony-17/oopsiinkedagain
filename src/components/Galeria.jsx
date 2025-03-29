@@ -112,7 +112,7 @@ function Galeria() {
         </div> */}
       </section>
 
-      <section className="bg-[#101010] pt-[150px] pb-[70px]" id="tattoos">
+      <section className="bg-[#101010] pt-[100px] pb-[70px]" id="tattoos">
         <div
           className="relative h-[25vh] bg-cover bg-center"
           style={{ backgroundImage: "url(/assets/background1.png)" }}

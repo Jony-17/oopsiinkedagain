@@ -89,12 +89,12 @@ function Home() {
         <a
           href="https://wa.me/1234567890"
           target="_blank"
-          className="mt-12 px-6 py-3 border-2 font-semibold border-white bg-white text-[#444444] uppercase transition duration-700"
+          className="mt-12 px-6 py-3 border-2 font-semibold border-white bg-white text-[#444444] uppercase transition duration-700 text-sm"
         >
           Faça a sua marcação
         </a>
 
-        <div className="absolute bottom-4 right-[-1.7rem] sm:right-4 flex flex-col space-y-4">
+        <div className="absolute bottom-4 right-[-1.7rem] sm:right-4 flex flex-col space-y-4 text-[14px]">
           <a
             href="https://www.instagram.com"
             target="_blank"
@@ -217,7 +217,7 @@ function Home() {
             <img
               src="/assets/image3.png"
               alt="Estúdio"
-              className="absolute top-[16rem] left-[8rem] max-w-[70%] sm:max-w-xs md:max-w-sm lg:max-w-md"
+              className="absolute top-[16rem] left-[6rem] max-w-[70%] sm:max-w-xs md:max-w-sm lg:max-w-md"
               // className="max-w-full mt-4 md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:max-w-[60%]"
             />
           </div>
@@ -292,7 +292,7 @@ function Home() {
       </section>
 
       {/* Section */}
-      <section className="bg-[#101010] pt-[150px] pb-[70px]" id="tattoos">
+      <section className="bg-[#101010] pt-[120px] pb-[70px]" id="tattoos">
         <div
           className="relative h-[25vh] bg-cover bg-center"
           style={{ backgroundImage: "url(/assets/background1.png)" }}
@@ -308,7 +308,7 @@ function Home() {
 
       {/* Section Informações */}
       <section
-        className="bg-[#101010] pt-[150px] pb-[70px] px-[5%] sm:px-[10%] md:px-[15%]"
+        className="bg-[#101010] pt-[100px] pb-[70px] px-[5%] sm:px-[10%] md:px-[15%]"
         id="tattoos"
       >
         <div className="w-full">
@@ -362,7 +362,7 @@ function Home() {
                     : "opacity-0 max-h-0 duration-600"
                 }`}
               >
-                <p className="text-white text-base text-justify">
+                <p className="text-white sm:text-base text-sm text-justify">
                   {item.resposta}
                 </p>
               </div>

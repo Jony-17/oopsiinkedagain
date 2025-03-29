@@ -128,7 +128,7 @@ function Estudio() {
         </p>
         {/* </div> */}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-8 max-w-[80%] mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-8 max-w-full sm:max-w-[80%] mx-auto">
           {/* Imagem 1*/}
           <div className="flex justify-center col-span-1 sm:col-span-2 md:col-span-2">
             <img
@@ -289,7 +289,7 @@ function Estudio() {
           ))}
         </div>
 
-        <div className="flex items-center justify-center h-[200px] text-white p-[3rem] mt-[150px]">
+        <div className="flex items-center justify-center h-[200px] text-white p-[3rem] mt-[230px]">
           <div className="relative max-w-2xl text-center">
             <span
               className="absolute top-[-20px] left-[-60px] text-9xl"
