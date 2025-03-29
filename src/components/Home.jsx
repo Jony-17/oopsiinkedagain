@@ -89,12 +89,12 @@ function Home() {
         <a
           href="https://wa.me/1234567890"
           target="_blank"
-          className="mt-12 px-6 py-3 border-2 font-semibold border-white bg-white text-[#444444] uppercase transition duration-700 text-sm"
+          className="mt-12 px-6 py-3 border-2 font-semibold border-white bg-white text-[#444444] uppercase transition duration-700 text-[12px]"
         >
           Faça a sua marcação
         </a>
 
-        <div className="absolute bottom-4 right-[-1.7rem] sm:right-4 flex flex-col space-y-4 text-[14px]">
+        <div className="absolute bottom-4 right-[0.3rem] sm:right-4 flex flex-col space-y-4 text-[14px]">
           <a
             href="https://www.instagram.com"
             target="_blank"

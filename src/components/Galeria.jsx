@@ -58,7 +58,7 @@ function Galeria() {
             O meu trabalho
           </h1>
 
-          <div className="flex flex-wrap gap-4 justify-center mt-8">
+          <div className="flex flex-wrap gap-[0.6rem] justify-center mt-8">
             <button
               className={`mt-4 mb-6 px-6 py-3 border uppercase transition duration-700 ${
                 category === "Todas"
@@ -92,7 +92,7 @@ function Galeria() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8 max-w-[80%] mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8 max-w-full sm:max-w-[80%] mx-auto">
           {imagensFiltradas.map((img, index) => (
             <div key={index} className="flex justify-center">
               <img
