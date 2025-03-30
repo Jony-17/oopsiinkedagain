@@ -52,7 +52,7 @@ function Galeria() {
             Galeria
           </h2>
           <h1
-            className="text-5xl text-[#FFFFFF] text-center font-bold mt-3"
+            className="text-4xl sm:text-5xl text-[#FFFFFF] text-center font-bold mt-3"
             style={{ fontFamily: "'Libre Baskerville', serif" }}
           >
             O meu trabalho

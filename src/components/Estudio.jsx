@@ -94,7 +94,7 @@ function Estudio() {
         </div>
 
         <h2
-          className="text-5xl text-[#FFFFFF] font-bold mt-3"
+          className="text-4xl sm:text-5xl text-[#FFFFFF] font-bold mt-3"
           style={{ fontFamily: "'Source Serif 4', serif" }}
         >
           Oops I Inked Again
@@ -228,7 +228,7 @@ function Estudio() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-[50px] sm:gap-[40px]">
           {cardsData.map((card) => (
             <div
               key={card.name}

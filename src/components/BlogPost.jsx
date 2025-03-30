@@ -72,7 +72,7 @@ function BlogPost() {
             </h2>
           </div>
           <h2
-            className="text-5xl text-[#FFFFFF] font-bold mt-7"
+            className="text-4xl sm:text-5xl text-[#FFFFFF] font-bold mt-7"
             style={{ fontFamily: "'Source Serif 4', serif" }}
           >
             {noticia.titulo}

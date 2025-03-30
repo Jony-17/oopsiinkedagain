@@ -232,7 +232,7 @@ function Home() {
         <div className="w-full">
           <div className="flex justify-between items-end">
             <h2
-              className="text-5xl text-[#FFFFFF] font-bold mt-3"
+              className="text-4xl sm:text-5xl text-[#FFFFFF] font-bold mt-3"
               style={{ fontFamily: "'Source Serif 4', serif" }}
             >
               Tattoos
@@ -314,7 +314,7 @@ function Home() {
         <div className="w-full">
           <div className="flex justify-between items-end">
             <h2
-              className="text-5xl text-[#FFFFFF] font-bold mt-3"
+              className="text-4xl sm:text-5xl text-[#FFFFFF] font-bold mt-3"
               style={{ fontFamily: "'Source Serif 4', serif" }}
             >
               Informações
@@ -458,7 +458,7 @@ function Home() {
             >
               <a
                 href="https://wa.me/1234567890"
-                className="px-6 py-5 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700"
+                className="text-[10px] sm:text-base px-6 py-5 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700"
               >
                 Contacte-nos
               </a>
