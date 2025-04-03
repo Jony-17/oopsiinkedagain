@@ -49,13 +49,11 @@ function Contactos() {
           <div className="flex flex-col items-start w-full sm:w-[40%]">
             <div className="relative w-full">
               <div className="relative flex items-center w-full">
-                <span className="absolute left-[-10px] border-t-2 border-[#727171] w-[35vw] -translate-x-full"></span>
                 <h1 className="text-xl uppercase text-[#727171] font-bold pr-4">
                   Contactos
                 </h1>
                 <span
-                  className="absolute border-t-2 border-[#727171] w-[34vw] 
-  translate-x-[-635px] sm:translate-x-[-300px] left-full"
+                  className="absolute border-t-2 border-[#727171] w-[37vw] sm:translate-x-[-300px] right-[102%] sm:left-[80%]"
                 ></span>
               </div>
 

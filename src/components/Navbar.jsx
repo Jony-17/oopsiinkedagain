@@ -1,5 +1,3 @@
-
-
 import { Link, useLocation } from "react-router-dom";
 import logo from "/assets/logo.png";
 import React, { useState } from "react";
@@ -24,11 +22,15 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
             {/* Logo - Sempre visível à esquerda */}
             <div className="absolute sm:hidden left-6 top-1/2 transform -translate-y-1/2 lg:relative lg:translate-y-0">
               <Link to="/">
-                <img src={logo} alt="Início" className="max-h-13 max-w-[150px]" />
+                <img
+                  src={logo}
+                  alt="Início"
+                  className="max-h-13 max-w-[150px]"
+                />
               </Link>
             </div>
 
-            {/*      <!-- Navigation links --> */}
+            {/* <!-- Navigation links --> */}
             <ul
               role="menubar"
               aria-label="Select page"

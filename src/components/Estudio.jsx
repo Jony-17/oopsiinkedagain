@@ -8,6 +8,8 @@ import Footer from "./Footer";
 import ScrollTop from "./ScrollTop";
 
 function Estudio() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   function slugify(title) {
     return title
       .normalize("NFD")
@@ -54,20 +56,6 @@ function Estudio() {
   ];
 
   const [imageSrc, setImageSrc] = useState({});
-
-  const handleMouseEnter = (id) => {
-    setImageSrc((prevState) => ({
-      ...prevState,
-      [id]: cardsData.find((card) => card.id === id).hoverImage,
-    }));
-  };
-
-  const handleMouseLeave = (id) => {
-    setImageSrc((prevState) => ({
-      ...prevState,
-      [id]: cardsData.find((card) => card.id === id).image,
-    }));
-  };
 
   return (
     <>
@@ -128,13 +116,15 @@ function Estudio() {
         </p>
         {/* </div> */}
 
+        {/* Galeria de imagens */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-8 max-w-full sm:max-w-[80%] mx-auto">
           {/* Imagem 1*/}
           <div className="flex justify-center col-span-1 sm:col-span-2 md:col-span-2">
             <img
               src="/assets/image1.png"
               alt="Imagem 1"
-              className="w-full h-[300px] object-cover"
+              className="w-full h-[300px] object-cover cursor-pointer"
+              onClick={() => setSelectedImage("/assets/image1.png")}
             />
           </div>
 
@@ -143,7 +133,8 @@ function Estudio() {
             <img
               src="/assets/image2.png"
               alt="Imagem 2"
-              className="w-full h-[300px] object-cover"
+              className="w-full h-[300px] object-cover cursor-pointer"
+              onClick={() => setSelectedImage("/assets/image2.png")}
             />
           </div>
 
@@ -152,7 +143,8 @@ function Estudio() {
             <img
               src="/assets/image3.png"
               alt="Imagem 3"
-              className="w-full h-[300px] object-cover"
+              className="w-full h-[300px] object-cover cursor-pointer"
+              onClick={() => setSelectedImage("/assets/image3.png")}
             />
           </div>
 
@@ -161,10 +153,33 @@ function Estudio() {
             <img
               src="/assets/image1.png"
               alt="Imagem 4"
-              className="w-full h-[300px] object-cover"
+              className="w-full h-[300px] object-cover cursor-pointer"
+              onClick={() => setSelectedImage("/assets/image1.png")}
             />
           </div>
         </div>
+
+        {/* Modal para exibir a imagem selecionada */}
+        {selectedImage && (
+          <div
+            className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-50"
+            onClick={() => setSelectedImage(null)}
+          >
+            <div className="relative max-w-[500px] mx-auto">
+              <button
+                className="absolute top-2 right-2 text-white text-2xl font-bold"
+                onClick={() => setSelectedImage(null)}
+              >
+                ✕
+              </button>
+              <img
+                src={selectedImage}
+                alt="Imagem ampliada"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+          </div>
+        )}
 
         {/* <div className="flex flex-col items-center">
           <div className="flex justify-center flex-wrap gap-[100px] pt-[150px]">
@@ -241,14 +256,23 @@ function Estudio() {
               />
               <div className="flex flex-col gap-[15px] sm:gap-[30px] w-full sm:w-2/3 p-[1.5rem] sm:p-[2.25rem]">
                 <div className="flex flex-col gap-[10px]">
-                  <h2 className="text-2xl sm:text-3xl font-bold text-white">
+                  <h2
+                    className="text-2xl sm:text-4xl font-bold text-white"
+                    style={{ fontFamily: "'Yrsa', serif" }}
+                  >
                     {card.name}
                   </h2>
-                  <p className="text-white uppercase text-sm sm:text-base">
+                  <p
+                    className="text-white uppercase text-base sm:text-lg"
+                    style={{ fontFamily: "'Yrsa', serif" }}
+                  >
                     {card.role}
                   </p>
                 </div>
-                <p className="text-white mt-2 leading-[20px] sm:leading-[25px] text-sm sm:text-base">
+                <p
+                  className="text-white mt-2 leading-[20px] sm:leading-[25px] text-base sm:text-lg"
+                  style={{ fontFamily: "'Yrsa', serif" }}
+                >
                   {card.description}
                 </p>
                 <div className="flex justify-between items-center mt-4">

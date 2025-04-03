@@ -9,6 +9,7 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 function EstudioTeam() {
   const { slug } = useParams();
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const cardsData = [
     {
@@ -134,14 +135,14 @@ function EstudioTeam() {
             <div className="flex flex-col items-center gap-[20px] mb-[50px]">
               <h1
                 className="text-7xl text-white"
-                style={{ fontFamily: "'Source Serif 4', serif" }}
+                style={{ fontFamily: "'Yrsa', serif" }}
               >
                 {card.name}
               </h1>
               <div className="flex gap-[40px]">
                 <h3
                   className="text-lg text-[#727171] uppercase"
-                  style={{ fontFamily: "'Source Serif 4', serif" }}
+                  style={{ fontFamily: "'Yrsa', serif" }}
                 >
                   {card.role}
                 </h3>
@@ -181,12 +182,34 @@ function EstudioTeam() {
               <img
                 src={image.src}
                 alt={`Imagem ${index + 1}`}
-                className="w-full h-[300px] object-cover"
+                className="w-full h-[300px] object-cover cursor-pointer"
+                loading="lazy"
+                onClick={() => setSelectedImage(image.src)}
               />
             </div>
           ))}
         </div>
       </section>
+
+      {selectedImage && (
+        <div
+          className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-50"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative max-w-3xl mx-auto">
+            <button
+              className="absolute top-2 right-2 text-white text-2xl font-bold"
+              onClick={() => setSelectedImage(null)}
+            >
+              ✕
+            </button>
+            <img
+              src={selectedImage}
+              className="max-w-full max-h-screen object-contain"
+            />
+          </div>
+        </div>
+      )}
 
       <Footer />
       <ScrollTop />

@@ -54,6 +54,8 @@ function Home() {
     );
   };
 
+  const [selectedImage, setSelectedImage] = useState(null);
+  
   return (
     <div
       className="relative h-screen bg-cover bg-center"
@@ -66,7 +68,7 @@ function Home() {
       />
 
       {/* Overlay para escurecer a imagem de fundo */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-[0.2]"></div>
       {/* Conteúdo principal centralizado */}
       <div className="relative z-10 flex flex-col justify-end items-start h-full text-left text-white px-6 sm:pl-[10rem] sm:pr-[4rem] pb-[9.5rem] sm:pb-20">
         <h1
@@ -252,14 +254,16 @@ function Home() {
               <img
                 src="/assets/tattoo1.png"
                 alt="Imagem 1"
-                className="w-full h-[230px] object-cover md:rounded-tl-3xl"
+                className="w-full h-[230px] object-cover md:rounded-tl-3xl cursor-pointer"
+                onClick={() => setSelectedImage("/assets/tattoo1.png")}
               />
             </div>
             <div className="flex justify-center">
               <img
                 src="/assets/tattoo2.png"
                 alt="Imagem 2"
-                className="w-full h-[230px] object-cover"
+                className="w-full h-[230px] object-cover cursor-pointer"
+                onClick={() => setSelectedImage("/assets/tattoo2.png")}
               />
             </div>
 
@@ -268,7 +272,8 @@ function Home() {
               <img
                 src="/assets/tattoo5.png"
                 alt="Imagem 5"
-                className="w-full h-[230px] md:h-[468px] object-cover md:rounded-tr-3xl md:rounded-br-3xl"
+                className="w-full h-[230px] md:h-[468px] object-cover md:rounded-tr-3xl md:rounded-br-3xl cursor-pointer"
+                onClick={() => setSelectedImage("/assets/tattoo5.png")}
               />
             </div>
 
@@ -277,17 +282,41 @@ function Home() {
               <img
                 src="/assets/tattoo3.png"
                 alt="Imagem 3"
-                className="w-full h-[230px] object-cover md:rounded-bl-3xl"
+                className="w-full h-[230px] object-cover md:rounded-bl-3xl cursor-pointer"
+                onClick={() => setSelectedImage("/assets/tattoo3.png")}
               />
             </div>
             <div className="flex justify-center">
               <img
                 src="/assets/tattoo4.png"
                 alt="Imagem 4"
-                className="w-full h-[230px] object-cover"
+                className="w-full h-[230px] object-cover cursor-pointer"
+                onClick={() => setSelectedImage("/assets/tattoo4.png")}
               />
             </div>
           </div>
+
+          {/* Modal para exibir a imagem selecionada */}
+          {selectedImage && (
+            <div
+              className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-50"
+              onClick={() => setSelectedImage(null)}
+            >
+              <div className="relative max-w-[500px] mx-auto">
+                <button
+                  className="absolute top-2 right-2 text-white text-2xl font-bold"
+                  onClick={() => setSelectedImage(null)}
+                >
+                  ✕
+                </button>
+                <img
+                  src={selectedImage}
+                  alt="Imagem ampliada"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
