@@ -34,7 +34,10 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
             <ul
               role="menubar"
               aria-label="Select page"
-              className={`absolute left-0 top-0 z-[-1] w-full justify-center overflow-hidden overflow-y-auto overscroll-contain px-8 pb-12 pt-24 mt-12 sm:mt-0 transition-[opacity,visibility] duration-300 backdrop-blur-2xl lg:backdrop-blur-none lg:visible lg:relative lg:top-0 lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-center lg:overflow-visible lg:bg-[#101010]/0 lg:px-0 lg:py-0 lg:opacity-100 ${
+              // className={`absolute left-0 top-0 z-[-1] w-full justify-center overflow-hidden overflow-y-auto overscroll-contain px-8 pb-12 pt-24 mt-12 sm:mt-0 transition-[opacity,visibility] duration-300 backdrop-blur-2xl lg:backdrop-blur-none lg:visible lg:relative lg:top-0 lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-center lg:overflow-visible lg:bg-[#101010]/0 lg:px-0 lg:py-0 lg:opacity-100 ${
+              //   isToggleOpen ? "visible opacity-100" : "invisible opacity-0"
+              // }`}
+              className={`fixed inset-0 z-50 flex flex-col items-center justify-center bg-black transition-all duration-300 lg:relative lg:z-0 lg:flex-row lg:h-full lg:w-auto lg:items-center lg:bg-transparent ${
                 isToggleOpen ? "visible opacity-100" : "invisible opacity-0"
               }`}
             >
@@ -134,9 +137,9 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
                 </Link>
               </li>
             </ul>
-            {/*      <!-- Mobile trigger --> */}
+            {/* <!-- Mobile trigger --> */}
             <button
-              className={`absolute right-6 order-10 block h-10 w-10 self-center lg:hidden ${
+              className={`absolute right-6 order-10 z-50 block h-10 w-10 self-center lg:hidden ${
                 isToggleOpen
                   ? "visible opacity-100 [&_span:nth-child(1)]:w-6 [&_span:nth-child(1)]:translate-y-0 [&_span:nth-child(1)]:rotate-45 [&_span:nth-child(2)]:-rotate-45 [&_span:nth-child(3)]:w-0 "
                   : ""

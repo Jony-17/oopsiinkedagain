@@ -92,7 +92,7 @@ function BlogPost() {
               <div className="flex flex-col">
                 {noticia.conteudos.map((conteudo, index) => (
                   <div key={index} className="mt-[40px] py-6 rounded-lg">
-                    <h1 className="text-4xl text-white mb-4 pb-2">
+                    <h1 className="text-3xl text-white mb-4 pb-2">
                       {conteudo.subtitulo}
                     </h1>
                     <p

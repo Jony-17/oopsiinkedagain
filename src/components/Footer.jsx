@@ -23,7 +23,7 @@ function Footer() {
             {/* Morada */}
             <div className="text-left">
               <h3
-                className="text-[2.65rem] font-bold uppercase"
+                className="text-[2.35rem] font-bold uppercase"
                 style={{ fontFamily: "'Anton', sans-serif", fontWeight: 500 }}
               >
                 Morada
@@ -39,7 +39,7 @@ function Footer() {
             {/* Contactos */}
             <div className="text-left">
               <h3
-                className="text-[2.65rem] font-bold uppercase"
+                className="text-[2.35rem] font-bold uppercase"
                 style={{ fontFamily: "'Anton', sans-serif", fontWeight: 500 }}
               >
                 Contactos

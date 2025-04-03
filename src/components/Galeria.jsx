@@ -36,7 +36,10 @@ function Galeria() {
           <h2 className="text-xl uppercase text-[#727171] font-bold">
             Galeria
           </h2>
-          <h1 className="text-4xl sm:text-5xl text-[#FFFFFF] text-center font-bold mt-3">
+          <h1
+            className="text-4xl sm:text-5xl text-[#FFFFFF] text-center font-bold mt-3"
+            style={{ fontFamily: "'Source Serif 4', serif" }}
+          >
             O meu trabalho
           </h1>
 
