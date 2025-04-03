@@ -10,7 +10,7 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
     <>
       {/*<!-- Header --> */}
       <header
-        className={`fixed lg:absolute z-20 w-full h-[15vh] ${bgColor} shadow-lg`}
+        className={`fixed lg:absolute z-20 w-full h-[15vh] ${bgColor}`}
         style={{ boxShadow: shadow }}
       >
         <div className="relative mx-auto max-w-full lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem] h-full">
@@ -37,8 +37,15 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
               // className={`absolute left-0 top-0 z-[-1] w-full justify-center overflow-hidden overflow-y-auto overscroll-contain px-8 pb-12 pt-24 mt-12 sm:mt-0 transition-[opacity,visibility] duration-300 backdrop-blur-2xl lg:backdrop-blur-none lg:visible lg:relative lg:top-0 lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-center lg:overflow-visible lg:bg-[#101010]/0 lg:px-0 lg:py-0 lg:opacity-100 ${
               //   isToggleOpen ? "visible opacity-100" : "invisible opacity-0"
               // }`}
-              className={`fixed inset-0 z-50 flex flex-col items-center justify-center bg-black transition-all duration-300 lg:relative lg:z-0 lg:flex-row lg:h-full lg:w-auto lg:items-center lg:bg-transparent ${
-                isToggleOpen ? "visible opacity-100" : "invisible opacity-0"
+
+              // className={`fixed inset-0 z-50 flex flex-col items-center justify-center bg-black transition-all duration-300 lg:relative lg:z-0 lg:flex-row lg:h-full lg:w-auto lg:items-center lg:bg-transparent ${
+              //   isToggleOpen ? "visible opacity-100" : "invisible opacity-0"
+              // }`}
+
+              className={`fixed inset-0 z-50 flex flex-col items-center justify-center w-full h-full bg-black transition-all duration-300 lg:relative lg:z-0 lg:flex-row lg:h-auto lg:w-auto lg:items-center lg:bg-transparent ${
+                isToggleOpen
+                  ? "visible opacity-100"
+                  : "invisible opacity-0 lg:visible lg:opacity-100"
               }`}
             >
               {!(location.pathname === "/") && (
@@ -136,6 +143,28 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
                   Blog
                 </Link>
               </li>
+
+              <div className="flex items-center mt-[100px] sm:hidden">
+                <li role="none">
+                  <a
+                    href="https://wa.me/1234567890"
+                    target="_blank"
+                    className="uppercase px-6 py-4 text-white hover:text-[#565656]"
+                  >
+                    WhatsApp
+                  </a>
+                </li>
+
+                <li role="none">
+                  <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    className="uppercase px-6 py-4 text-white hover:text-[#565656]"
+                  >
+                    Instagram
+                  </a>
+                </li>
+              </div>
             </ul>
             {/* <!-- Mobile trigger --> */}
             <button

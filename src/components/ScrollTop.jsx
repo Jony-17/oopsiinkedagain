@@ -27,7 +27,7 @@ function ScrollTop() {
   return (
     <div>
       <button
-        className="hidden fixed bottom-5 right-5 z-[99] text-[16px] border-none outline-none bg-[#616161] text-white cursor-pointer p-4 rounded-[10px]"
+        className="hidden fixed bottom-5 right-5 text-[16px] border-none outline-none bg-[#616161] text-white cursor-pointer p-4 rounded-[10px]"
         ref={scrollToTop}
         onClick={scrollTopFunction}
         id="scrollToTopBtn"

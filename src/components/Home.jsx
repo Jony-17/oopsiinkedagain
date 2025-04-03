@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronLeft,
@@ -54,8 +54,26 @@ function Home() {
     );
   };
 
+  const backgroundTop = useRef(null);
+  const [bgColor, setBgColor] = useState("bg-transparent"); // Começa transparente
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setBgColor("bg-[#090909] lg:bg-transparent shadow-lg transition-all duration-300");
+      } else {
+        setBgColor("bg-transparent transition-all duration-300");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const [selectedImage, setSelectedImage] = useState(null);
-  
+
   return (
     <div
       className="relative h-screen bg-cover bg-center"
@@ -63,14 +81,15 @@ function Home() {
     >
       {/* Navbar fora do fluxo do layout principal */}
       <NavBar
-        bgColor="bg-[#090909] lg:bg-transparent"
+        // bgColor="bg-[#090909] lg:bg-transparent"
+        bgColor={bgColor} ref={backgroundTop}
         shadow="sm:inset 0 -20px 20px rgb(22, 22, 22) lg:inset 0"
       />
 
       {/* Overlay para escurecer a imagem de fundo */}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-[0.2]"></div>
       {/* Conteúdo principal centralizado */}
-      <div className="relative z-10 flex flex-col justify-end items-start h-full text-left text-white px-6 sm:pl-[10rem] sm:pr-[4rem] pb-[9.5rem] sm:pb-20">
+      <div className="relative z-10 flex flex-col justify-end items-start h-full text-left text-white px-6 sm:pl-[10rem] sm:pr-[4rem] pb-[5.5rem] sm:pb-20">
         <h1
           className="text-6xl sm:text-[110px] uppercase font-bold leading-tight sm:leading-[107px]"
           style={{ fontFamily: "'Anton', sans-serif", fontWeight: 500 }}
@@ -96,7 +115,7 @@ function Home() {
           Faça a sua marcação
         </a>
 
-        <div className="absolute bottom-4 right-[0.3rem] sm:right-4 flex flex-col space-y-4 text-[14px]">
+        <div className="absolute bottom-4 right-[0.3rem] sm:right-4 hidden sm:flex flex-col space-y-4 text-[14px]">
           <a
             href="https://www.instagram.com"
             target="_blank"
@@ -115,7 +134,7 @@ function Home() {
           </a>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <div className="absolute bottom-8 left-1/2 hidden sm:flex transform -translate-x-1/2">
           <a
             href="#estudio"
             className="flex flex-col items-center justify-center text-white"
