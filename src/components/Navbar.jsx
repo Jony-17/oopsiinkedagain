@@ -88,6 +88,20 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
                 </Link>
               </li>
 
+              <li role="none" className="flex items-center">
+                <Link
+                  role="menuitem"
+                  className={`uppercase px-6 py-4 hover:text-[#565656] ${
+                    location.pathname === "/agendamento"
+                      ? "text-[#565656]"
+                      : "text-[#FFFFFF]"
+                  }`}
+                  to="/agendamento"
+                >
+                  Agendamento
+                </Link>
+              </li>
+
               <li role="none" className="hidden lg:flex items-center">
                 <Link
                   role="menuitem"

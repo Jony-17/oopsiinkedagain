@@ -60,7 +60,9 @@ function Home() {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
-        setBgColor("bg-[#090909] lg:bg-transparent shadow-lg transition-all duration-300");
+        setBgColor(
+          "bg-[#090909] lg:bg-transparent shadow-lg transition-all duration-300"
+        );
       } else {
         setBgColor("bg-transparent transition-all duration-300");
       }
@@ -82,7 +84,8 @@ function Home() {
       {/* Navbar fora do fluxo do layout principal */}
       <NavBar
         // bgColor="bg-[#090909] lg:bg-transparent"
-        bgColor={bgColor} ref={backgroundTop}
+        bgColor={bgColor}
+        ref={backgroundTop}
         shadow="sm:inset 0 -20px 20px rgb(22, 22, 22) lg:inset 0"
       />
 
@@ -94,8 +97,8 @@ function Home() {
           className="text-6xl sm:text-[110px] uppercase font-bold leading-tight sm:leading-[107px]"
           style={{ fontFamily: "'Anton', sans-serif", fontWeight: 500 }}
         >
-          Oops I <br />
-          <span className="w-full inline-block">Inked</span>{" "}
+          Oops!<br />
+          <span className="w-full inline-block">I Inked</span>{" "}
           <span className="block sm:inline">Again.</span>
         </h1>
         {/* <h3 className="text-lg sm:text-xl uppercase font-bold">
