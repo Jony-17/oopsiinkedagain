@@ -97,7 +97,8 @@ function Home() {
           className="text-6xl sm:text-[110px] uppercase font-bold leading-tight sm:leading-[107px]"
           style={{ fontFamily: "'Anton', sans-serif", fontWeight: 500 }}
         >
-          Oops!<br />
+          Oops!
+          <br />
           <span className="w-full inline-block">I Inked</span>{" "}
           <span className="block sm:inline">Again.</span>
         </h1>
@@ -111,8 +112,7 @@ function Home() {
           Fineline & Body Art
         </h2> */}
         <a
-          href="https://wa.me/1234567890"
-          target="_blank"
+          href="/orçamento"
           className="mt-12 px-6 py-3 border-2 font-semibold border-white bg-white text-[#444444] uppercase transition duration-700 text-[12px]"
         >
           Faça a sua marcação
@@ -422,7 +422,7 @@ function Home() {
         </div>
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
           <a
-            href="/informacoes"
+            href="/informações"
             className="mt-12 px-6 py-3 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700"
           >
             Mostrar mais
@@ -508,8 +508,8 @@ function Home() {
               }}
             >
               <a
-                href="https://wa.me/1234567890"
-                className="text-[10px] sm:text-base px-6 py-5 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700"
+                href="/contactos"
+                className="text-[13px] sm:text-base px-6 py-5 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700"
               >
                 Contacte-nos
               </a>

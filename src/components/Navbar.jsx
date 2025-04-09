@@ -92,7 +92,7 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
                 <Link
                   role="menuitem"
                   className={`uppercase px-6 py-4 hover:text-[#565656] ${
-                    location.pathname === "/orçamento"
+                    decodeURIComponent(location.pathname) === "/orçamento"
                       ? "text-[#565656]"
                       : "text-[#FFFFFF]"
                   }`}
@@ -120,11 +120,11 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
                 <Link
                   role="menuitem"
                   className={`uppercase px-6 py-4 hover:text-[#565656] ${
-                    location.pathname === "/informacoes"
+                    decodeURIComponent(location.pathname) === "/informações"
                       ? "text-[#565656]"
                       : "text-[#FFFFFF]"
                   }`}
-                  to="/informacoes"
+                  to="/informações"
                 >
                   Informações
                 </Link>

@@ -4,9 +4,9 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Home from "./components/Home";
 import Estudio from "./components/Estudio";
 import EstudioTeam from "./components/EstudioTeam";
-import Galeria from "./components/Galeria";
+// import Galeria from "./components/Galeria";
 import Orçamento from "./components/Orçamento";
-import Informacoes from "./components/Informacoes";
+import Informações from "./components/Informações";
 import Contactos from "./components/Contactos";
 import Blog from "./components/Blog";
 import BlogPost from "./components/BlogPost";
@@ -31,8 +31,8 @@ function App() {
           <Route path="/estudio" element={<Estudio />} />
           <Route path="/estudio/:slug" element={<EstudioTeam />} />
           {/* <Route path="/galeria" element={<Galeria />} /> */}
-          <Route path="/Orçamento" element={<Orçamento />} />
-          <Route path="/informacoes" element={<Informacoes />} />
+          <Route path="/orçamento" element={<Orçamento />} />
+          <Route path="/informações" element={<Informações />} />
           <Route path="/contactos" element={<Contactos />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />

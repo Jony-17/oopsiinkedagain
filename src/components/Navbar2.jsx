@@ -59,9 +59,9 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
 
           <li className="mx-4">
             <Link
-              to="/informacoes"
+              to="/informações"
               className={`no-underline hover:text-[#565656] uppercase ${
-                location.pathname === "/informacoes"
+                location.pathname === "/informações"
                   ? "text-[#565656]"
                   : "text-[#FFFFFF]"
               }`}

@@ -324,8 +324,8 @@ function Estudio() {
               className="text-3xl font-handwritten leading-relaxed"
               style={{ fontFamily: "'Shadows Into Light', serif" }}
             >
-              Não podemos mudar, não podemos nos afastar do que somos enquanto
-              não aceitarmos profundamente o que somos.
+              O significado de uma tatuagem não pode ser explicado, apenas
+              sentido.
             </p>
             <span
               className="absolute bottom-[-100px] right-[-30px] text-9xl"
@@ -333,12 +333,12 @@ function Estudio() {
             >
               ”
             </span>
-            <p
+            {/* <p
               className="mt-5 text-xl"
               style={{ fontFamily: "'Shadows Into Light', serif" }}
             >
               — Carl Rogers
-            </p>
+            </p> */}
           </div>
         </div>
       </section>

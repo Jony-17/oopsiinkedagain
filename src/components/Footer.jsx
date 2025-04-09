@@ -10,10 +10,10 @@ function Footer() {
   return (
     <div>
       {/* Section Contactos */}
-      <section
+      {/* <section
         className="bg-[#101010] pb-[70px] px-[15%]"
         id="tattoos"
-      ></section>
+      ></section> */}
 
       {/* Section Footer */}
       <section className="relative bg-[#090909] text-white py-10">
