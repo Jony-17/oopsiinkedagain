@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
+import Galeria from "./Galeria";
 import NavBar from "./Navbar";
 import Footer from "./Footer";
 import ScrollTop from "./ScrollTop";
@@ -117,8 +118,7 @@ function Estudio() {
         {/* </div> */}
 
         {/* Galeria de imagens */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-8 max-w-full sm:max-w-[80%] mx-auto">
-          {/* Imagem 1*/}
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-8 max-w-full sm:max-w-[80%] mx-auto">
           <div className="flex justify-center col-span-1 sm:col-span-2 md:col-span-2">
             <img
               src="/assets/image1.png"
@@ -128,7 +128,6 @@ function Estudio() {
             />
           </div>
 
-          {/* Imagem 2*/}
           <div className="flex justify-center">
             <img
               src="/assets/image2.png"
@@ -138,7 +137,6 @@ function Estudio() {
             />
           </div>
 
-          {/* Imagem 3*/}
           <div className="flex justify-center">
             <img
               src="/assets/image3.png"
@@ -148,7 +146,6 @@ function Estudio() {
             />
           </div>
 
-          {/* Imagem 4*/}
           <div className="flex justify-center col-span-1 sm:col-span-2 md:col-span-2">
             <img
               src="/assets/image1.png"
@@ -157,7 +154,7 @@ function Estudio() {
               onClick={() => setSelectedImage("/assets/image1.png")}
             />
           </div>
-        </div>
+        </div> */}
 
         {/* Modal para exibir a imagem selecionada */}
         {selectedImage && (
@@ -313,7 +310,9 @@ function Estudio() {
           ))}
         </div>
 
-        <div className="flex items-center justify-center h-[200px] text-white p-[3rem] mt-[230px]">
+        <Galeria />
+
+        <div className="flex items-center justify-center h-[200px] text-white p-[3rem] mt-[150px]">
           <div className="relative max-w-2xl text-center">
             <span
               className="absolute top-[-20px] left-[-60px] text-9xl"

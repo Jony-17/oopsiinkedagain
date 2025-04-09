@@ -74,7 +74,7 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
                 </Link>
               </li>
 
-              <li role="none" className="flex items-center">
+              {/* <li role="none" className="flex items-center">
                 <Link
                   role="menuitem"
                   className={`uppercase px-6 py-4 hover:text-[#565656] ${
@@ -86,19 +86,19 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
                 >
                   Galeria
                 </Link>
-              </li>
+              </li> */}
 
               <li role="none" className="flex items-center">
                 <Link
                   role="menuitem"
                   className={`uppercase px-6 py-4 hover:text-[#565656] ${
-                    location.pathname === "/agendamento"
+                    location.pathname === "/orçamento"
                       ? "text-[#565656]"
                       : "text-[#FFFFFF]"
                   }`}
-                  to="/agendamento"
+                  to="/orçamento"
                 >
-                  Agendamento
+                  Orçamento
                 </Link>
               </li>
 

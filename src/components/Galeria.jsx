@@ -15,6 +15,14 @@ function Galeria() {
     { src: "/assets/image3.png", alt: "Imagem 4", category: "Tattoos" },
     { src: "/assets/image1.png", alt: "Imagem 5", category: "Estúdio" },
     { src: "/assets/image2.png", alt: "Imagem 6", category: "Tattoos" },
+    { src: "/assets/image1.png", alt: "Imagem 5", category: "Estúdio" },
+    { src: "/assets/image2.png", alt: "Imagem 6", category: "Tattoos" },
+    { src: "/assets/image1.png", alt: "Imagem 5", category: "Estúdio" },
+    { src: "/assets/image2.png", alt: "Imagem 6", category: "Tattoos" },
+    { src: "/assets/image1.png", alt: "Imagem 5", category: "Estúdio" },
+    { src: "/assets/image2.png", alt: "Imagem 6", category: "Tattoos" },
+    { src: "/assets/image1.png", alt: "Imagem 5", category: "Estúdio" },
+    { src: "/assets/image2.png", alt: "Imagem 6", category: "Tattoos" },
   ];
 
   const imagensFiltradas =
@@ -24,16 +32,12 @@ function Galeria() {
 
   return (
     <>
-      <div>
-        <NavBar
-          bgColor="bg-[#101010]"
-          shadow="inset 0 -20px 20px rgb(22, 22, 22)"
-        />
-      </div>
-
-      <section className="bg-[#101010] pt-[calc(150px+64px)] pb-[70px] px-[5%] sm:px-[10%] lg:px-[15%]">
+      <section
+        className="bg-[#101010] pt-[calc(150px+64px)] pb-[70px] px-0"
+        style={{ gridColumnGap: "3.75vw", gridRowGap: "3.75vw" }}
+      >
         <div className="relative flex flex-col items-center">
-          <h2 className="text-xl uppercase text-[#727171] font-bold">
+          {/* <h2 className="text-xl uppercase text-[#727171] font-bold">
             Galeria
           </h2>
           <h1
@@ -43,7 +47,6 @@ function Galeria() {
             O meu trabalho
           </h1>
 
-          {/* Botões de categoria */}
           <div className="flex flex-wrap gap-[0.6rem] justify-center mt-8">
             {["Todas", "Estúdio", "Tattoos"].map((cat) => (
               <button
@@ -58,11 +61,11 @@ function Galeria() {
                 {cat}
               </button>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* Grid de Imagens */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8 max-w-full sm:max-w-[80%] mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8 max-w-full sm:max-w-full mx-auto">
           {imagensFiltradas.map((img, index) => (
             <div key={index} className="flex justify-center">
               <img
@@ -98,9 +101,6 @@ function Galeria() {
           </div>
         )}
       </section>
-
-      <Footer />
-      <ScrollTop />
     </>
   );
 }

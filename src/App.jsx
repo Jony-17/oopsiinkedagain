@@ -5,7 +5,7 @@ import Home from "./components/Home";
 import Estudio from "./components/Estudio";
 import EstudioTeam from "./components/EstudioTeam";
 import Galeria from "./components/Galeria";
-import Agendamento from "./components/Agendamento";
+import Orçamento from "./components/Orçamento";
 import Informacoes from "./components/Informacoes";
 import Contactos from "./components/Contactos";
 import Blog from "./components/Blog";
@@ -30,8 +30,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/estudio" element={<Estudio />} />
           <Route path="/estudio/:slug" element={<EstudioTeam />} />
-          <Route path="/galeria" element={<Galeria />} />
-          <Route path="/agendamento" element={<Agendamento />} />
+          {/* <Route path="/galeria" element={<Galeria />} /> */}
+          <Route path="/Orçamento" element={<Orçamento />} />
           <Route path="/informacoes" element={<Informacoes />} />
           <Route path="/contactos" element={<Contactos />} />
           <Route path="/blog" element={<Blog />} />
