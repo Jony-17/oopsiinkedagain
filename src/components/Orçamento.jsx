@@ -5,29 +5,40 @@ import Footer from "./Footer";
 import ScrollTop from "./ScrollTop";
 
 function Orçamento() {
-  const [form, setForm] = useState({
+  const initialForm = {
     name: "",
     email: "",
     telemovel: "",
     data_nascimento: "",
     preferencia_contacto: "",
+    preferencia_artista: "Não tenho preferência",
+    n_tatuagens: "",
+    ideia_tatuagens: "",
+    zona: "",
+    tamanho_tatuagens: "",
     piercing: "",
     joia: "",
     disponibilidade: "",
     questoes: "",
     images: [],
-  });
+  };
+
+  const [form, setForm] = useState(initialForm);
 
   const [uploading, setUploading] = useState(false);
   const [showForm, setShowForm] = useState(false);
   const [serviceType, setServiceType] = useState("");
 
+  const [successMessage, setSuccessMessage] = useState("");
+
   const handleButtonClick = (service) => {
+    setForm(initialForm);
     setServiceType(service);
     setShowForm(true);
   };
 
   const handleBackButtonClick = () => {
+    setForm(initialForm);
     setServiceType("");
     setShowForm(false);
   };
@@ -85,6 +96,11 @@ function Orçamento() {
       telemovel: form.telemovel,
       data_nascimento: form.data_nascimento,
       preferencia_contacto: form.preferencia_contacto,
+      preferencia_artista: form.preferencia_artista,
+      n_tatuagens: form.n_tatuagens,
+      ideia_tatuagens: form.ideia_tatuagens,
+      zona: form.zona,
+      tamanho_tatuagens: form.tamanho_tatuagens,
       piercing: form.piercing,
       joia: form.joia,
       disponibilidade: form.disponibilidade,
@@ -103,7 +119,7 @@ function Orçamento() {
         "JYOMSlbMPg-scmNj4"
       );
 
-      alert("Formulário enviado com sucesso!");
+      setSuccessMessage("✅ Formulário enviado com sucesso!");
     } catch (error) {
       console.error(error);
       alert("Erro ao enviar formulário.");
@@ -393,6 +409,7 @@ function Orçamento() {
                 </p>
                 <input
                   type="file"
+                  required
                   multiple
                   accept="image/*"
                   onChange={handleFileChange}
@@ -491,6 +508,10 @@ function Orçamento() {
               >
                 {uploading ? "A carregar..." : "Enviar"}
               </button>
+
+              {successMessage && (
+                <p className="text-green-600 mt-4">{successMessage}</p>
+              )}
             </form>
           </div>
         )}
@@ -747,6 +768,10 @@ function Orçamento() {
               >
                 {uploading ? "A carregar..." : "Enviar"}
               </button>
+
+              {successMessage && (
+                <p className="text-green-600 mt-4">{successMessage}</p>
+              )}
             </form>
           </div>
         )}

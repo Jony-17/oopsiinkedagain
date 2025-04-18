@@ -35,7 +35,7 @@ function Estudio() {
     {
       id: 2,
       name: "Ana",
-      role: "Designer",
+      role: "Bodypiercer",
       image: "/assets/foto.jpg",
       description:
         "Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork. Apaixonada em transformar sonhos em artes eternas na pele.",
@@ -312,7 +312,7 @@ function Estudio() {
 
         <Galeria />
 
-        <div className="flex items-center justify-center h-[200px] text-white p-[3rem] mt-[150px]">
+        <div className="flex items-center justify-center h-[200px] text-white p-[3rem] mt-[100px]">
           <div className="relative max-w-2xl text-center">
             <span
               className="absolute top-[-20px] left-[-60px] text-9xl"

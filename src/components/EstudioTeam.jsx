@@ -45,7 +45,7 @@ function EstudioTeam() {
     {
       id: 2,
       name: "Ana",
-      role: "Designer",
+      role: "Bodypiercer",
       image: "/assets/foto.jpg",
       description:
         "Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork. Apaixonada em transformar sonhos em artes eternas na pele. Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork. Apaixonada em transformar sonhos em artes eternas na pele.",
@@ -175,6 +175,54 @@ function EstudioTeam() {
             />
           </div>
         </div>
+
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-8 max-w-[90%] mx-auto mt-[200px]">
+          {card.images.map((image, index) => (
+            <div key={index} className={`flex justify-center ${image.span}`}>
+              <img
+                src={image.src}
+                alt={`Imagem ${index + 1}`}
+                className="w-full h-[300px] object-cover cursor-pointer"
+                loading="lazy"
+                onClick={() => setSelectedImage(image.src)}
+              />
+            </div>
+          ))}
+        </div> */}
+
+        {card.role === "Bodypiercer" ? (
+          <>
+            <div className="">
+              <h2
+                className="text-white text-[50px] mt-[200px] mb-[20px]"
+                style={{ fontFamily: "'Yrsa', serif" }}
+              >
+                Catálogo
+              </h2>
+            </div>
+            <div className="relative max-w-[100%] mx-auto overflow-hidden">
+              <div
+                ref={carouselRef}
+                className="flex gap-4 overflow-x-auto scroll-smooth scrollbar-hide pb-4"
+                style={{ scrollSnapType: "x mandatory" }}
+              >
+                {card.images.map((image, index) => (
+                  <div
+                    key={index}
+                    className="flex-shrink-0 w-[300px] scroll-snap-start"
+                  >
+                    <img
+                      src={image.src}
+                      alt={`Imagem ${index + 1}`}
+                      className="w-full h-[300px] object-cover rounded-lg cursor-pointer"
+                      onClick={() => setSelectedImage(image.src)}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </>
+        ) : null}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-8 max-w-[90%] mx-auto mt-[200px]">
           {card.images.map((image, index) => (

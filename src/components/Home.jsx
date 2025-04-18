@@ -435,7 +435,7 @@ function Home() {
         className="bg-[#101010] pt-[150px] pb-[70px] px-[5%] md:px-0"
         id="tattoos"
       >
-        <div className="flex flex-col md:flex-row justify-between md:items-center space-y-6 md:space-y-0">
+        <div className="flex flex-col md:flex-row justify-between md:items-center space-y-6 md:space-y-0 mb-[50px]">
           {/* Imagem da galeria */}
           <div className="relative w-full md:w-[60vh] h-[40vh] md:h-[50vh] bg-[#090909] bg-center mx-auto md:ml-[150px] overflow-hidden">
             <div className="relative w-full h-full">
@@ -479,9 +479,9 @@ function Home() {
           </div>
 
           {/* Texto e botão de contacto w-[90%] */}
-          <div className="relative w-full rounded-lg md:w-[60vh] h-auto md:h-[50vh] bg-[#090909] bg-center">
+          <div className="relative w-full rounded-lg md:w-[60vh] h-auto md:h-[80%] bg-[#090909] bg-center">
             {/* Secção do texto h-[200px]*/}
-            <div className="relative z-10 h-[50%] text-white my-8 px-6 md:px-[50px]">
+            <div className="relative z-10 h-[80%] text-white my-8 px-6 md:px-[50px]">
               <h2
                 className="text-2xl md:text-4xl text-[#FFFFFF] font-bold"
                 style={{ fontFamily: "'Source Serif 4', serif" }}
