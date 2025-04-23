@@ -52,6 +52,13 @@ function EstudioTeam() {
       hoverImage: "/assets/image1.png",
       instagram: "https://www.instagram.com",
       whatsapp: "https://www.whatsapp.com",
+      catalogo: [
+        { src: "/assets/tattoo1.png", span: "col-span-1" },
+        { src: "/assets/tattoo4.png", span: "col-span-1" },
+        { src: "/assets/tattoo3.png", span: "col-span-1" },
+        { src: "/assets/tattoo5.png", span: "col-span-1" },
+        { src: "/assets/tattoo6.jpg", span: "col-span-1" },
+      ],
       images: [
         {
           src: "/assets/tattoo2.png",
@@ -192,7 +199,7 @@ function EstudioTeam() {
 
         {card.role === "Bodypiercer" ? (
           <>
-            <div className="">
+            <div>
               <h2
                 className="text-white text-[50px] mt-[200px] mb-[20px]"
                 style={{ fontFamily: "'Yrsa', serif" }}
@@ -206,16 +213,16 @@ function EstudioTeam() {
                 className="flex gap-4 overflow-x-auto scroll-smooth scrollbar-hide pb-4"
                 style={{ scrollSnapType: "x mandatory" }}
               >
-                {card.images.map((image, index) => (
+                {card.catalogo.map((catalogo, index) => (
                   <div
                     key={index}
                     className="flex-shrink-0 w-[300px] scroll-snap-start"
                   >
                     <img
-                      src={image.src}
+                      src={catalogo.src}
                       alt={`Imagem ${index + 1}`}
                       className="w-full h-[300px] object-cover rounded-lg cursor-pointer"
-                      onClick={() => setSelectedImage(image.src)}
+                      onClick={() => setSelectedImage(catalogo.src)}
                     />
                   </div>
                 ))}

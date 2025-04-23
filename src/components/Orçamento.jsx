@@ -527,6 +527,11 @@ function Orçamento() {
                 passo para a tua próxima nova tattoo! Antes de preencheres este
                 formulário, por favor, lê com atenção o seguinte texto:
               </p>
+              <p>
+                Se ainda não viste a nossa tabela de preços,{" "}
+                <a className="cursor-pointer underline" href="estudio/ana">clica aqui</a> para
+                veres o nosso catálogo de perfurações e jóias.
+              </p>
               <ol className="list-disc pl-6 space-y-2 leading-[30px]">
                 <li>
                   Entraremos em contacto contigo para te dar o teu orçamento e

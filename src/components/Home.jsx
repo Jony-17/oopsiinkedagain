@@ -113,7 +113,7 @@ function Home() {
         </h2> */}
         <a
           href="/orçamento"
-          className="mt-12 px-6 py-3 border-2 font-semibold border-white bg-white text-[#444444] uppercase transition duration-700 text-[12px]"
+          className="mt-12 px-6 py-3 border-2 font-semibold border-white bg-white text-[#444444] hover:bg-transparent hover:text-[#fff] uppercase transition duration-700 text-[12px]"
         >
           Faça a sua marcação
         </a>
@@ -262,7 +262,7 @@ function Home() {
               Tattoos
             </h2>
             <a
-              className="text-[#727171] uppercase mx-4 text-sm"
+              className="hidden text-[#727171] uppercase mx-4 text-sm"
               style={{ fontFamily: "'Source Serif 4', serif" }}
               href="/galeria"
             >

@@ -251,7 +251,7 @@ function Estudio() {
                 src={card.image}
                 alt={card.name}
               />
-              <div className="flex flex-col gap-[15px] sm:gap-[30px] w-full sm:w-2/3 p-[1.5rem] sm:p-[2.25rem]">
+              <div className="flex flex-col gap-[15px] sm:gap-[20px] w-full sm:w-2/3 p-[1.5rem] sm:p-[2.25rem]">
                 <div className="flex flex-col gap-[10px]">
                   <h2
                     className="text-2xl sm:text-4xl font-bold text-white"
