@@ -94,7 +94,7 @@ function Home() {
       {/* Conteúdo principal centralizado */}
       <div className="relative z-10 flex flex-col justify-end items-start h-full text-left text-white px-6 sm:pl-[10rem] sm:pr-[4rem] pb-[5.5rem] sm:pb-20">
         <h1
-          className="text-6xl sm:text-[110px] uppercase font-bold leading-tight sm:leading-[107px]"
+          className="text-5xl sm:text-6xl md:text-[90px] lg:text-[110px] uppercase font-bold leading-tight sm:leading-[107px]"
           style={{ fontFamily: "'Anton', sans-serif", fontWeight: 500 }}
         >
           Oops!
