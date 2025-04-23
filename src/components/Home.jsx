@@ -94,7 +94,7 @@ function Home() {
       {/* Conteúdo principal centralizado */}
       <div className="relative z-10 flex flex-col justify-end items-start h-full text-left text-white px-6 sm:pl-[10rem] sm:pr-[4rem] pb-[5.5rem] sm:pb-20">
         <h1
-          className="text-6xl sm:text-7xl md:text-[70px] lg:text-[90px] xl:text-[110px] uppercase font-bold leading-tight lg:leading-[90px] xl:leading-[110px]"
+          className="text-6xl sm:text-7xl md:text-[50px] lg:text-[70px] xl:text-[90px] 2xl:text-[110px] uppercase font-bold leading-tight lg:leading-[70px] xl:leading-[90px] 2xl:leading-[110px]"
           style={{ fontFamily: "'Anton', sans-serif", fontWeight: 500 }}
         >
           Oops!
@@ -199,7 +199,7 @@ function Home() {
             {/* <div className="relative w-screen flex items-center justify-between mt-4"> */}
             <div className="relative mt-6">
               <div className="absolute inset-0 flex items-center">
-                <span className="block border-t-2 border-white w-screen -translate-x-2/4 hidden sm:block lg:block"></span>
+                <span className="block border-t-2 border-white w-screen -translate-x-2/4 hidden sm:block"></span>
               </div>
               <div className="relative flex items-center justify-end">
                 <a
@@ -234,14 +234,14 @@ function Home() {
             <img
               src="/assets/image2.png"
               alt="Estúdio"
-              className="max-w-[70%] sm:max-w-xs md:max-w-sm lg:max-w-[19rem] xl:max-w-lg"
+              className="max-w-[70%] sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-[23rem] 2xl:max-w-xl"
             />
 
             {/* Segunda imagem, posicionada absolutamente sobre a primeira */}
             <img
               src="/assets/image3.png"
               alt="Estúdio"
-              className="absolute top-[16rem] left-[6rem] max-w-[70%] sm:max-w-xs md:max-w-sm lg:max-w-[19rem] xl:max-w-lg"
+              className="absolute top-[16rem] left-[10rem] xl:left-[7rem] max-w-[70%] sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-[23rem] 2xl:max-w-xl"
               // className="max-w-full mt-4 md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:max-w-[60%]"
             />
           </div>
