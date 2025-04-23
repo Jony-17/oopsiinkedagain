@@ -27,7 +27,7 @@ function Estudio() {
       role: "Tatuadora",
       image: "/assets/foto.jpg",
       description:
-        "Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork. Apaixonada em transformar sonhos em artes eternas na pele.",
+        "Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork.",
       hoverImage: "/assets/image1.png",
       instagram: "https://www.instagram.com",
       whatsapp: "https://www.whatsapp.com",
@@ -38,7 +38,7 @@ function Estudio() {
       role: "Bodypiercer",
       image: "/assets/foto.jpg",
       description:
-        "Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork. Apaixonada em transformar sonhos em artes eternas na pele.",
+        "Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork.",
       hoverImage: "/assets/image1.png",
       instagram: "https://www.instagram.com",
       whatsapp: "https://www.whatsapp.com",
@@ -272,7 +272,7 @@ function Estudio() {
                 >
                   {card.description}
                 </p>
-                <div className="flex justify-between items-center mt-4">
+                <div className="flex justify-between items-center xl:mt-[4rem] 2xl:mt-[5rem]">
                   <a
                     href="https://www.instagram.com"
                     target="_blank"

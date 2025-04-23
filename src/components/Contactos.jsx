@@ -28,7 +28,8 @@ function Contactos() {
         className="bg-[#101010] pt-[calc(150px+64px)] pb-[70px] px-[5%] sm:px-[10%] md:px-[15%]"
         id="informações"
       >
-        <div className="flex flex-col-reverse sm:flex-row justify-center items-center gap-[50px] sm:gap-[100px] flex-wrap">
+        {/*sm:gap-[100px]*/}
+        <div className="flex flex-col-reverse sm:flex-row justify-center items-center gap-[50px] xl:gap-[80px] 2xl:gap-[100px] flex-wrap">
           {/* Mapa */}
           <div className="h-[300px] sm:h-[500px] w-full sm:w-[50%] z-0">
             <MapContainer
@@ -52,14 +53,12 @@ function Contactos() {
                 <h1 className="text-xl uppercase text-[#727171] font-bold pr-4">
                   Contactos
                 </h1>
-                <span
-                  className="absolute border-t-2 border-[#727171] w-[37vw] right-[102%] sm:hidden"
-                ></span>
+                <span className="absolute border-t-2 border-[#727171] w-[37vw] right-[102%] sm:hidden"></span>
                 {/* sm:translate-x-[-300px] sm:left-[80%] */}
               </div>
 
               <h1
-                className="text-4xl sm:text-5xl text-[#FFFFFF] font-bold mt-3"
+                className="text-5xl sm:text-xl xl:text-4xl 2xl:text-5xl text-[#FFFFFF] font-bold mt-3"
                 style={{ fontFamily: "'Source Serif 4', serif" }}
               >
                 Onde nos encontrar

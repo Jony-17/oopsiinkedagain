@@ -175,7 +175,7 @@ function EstudioTeam() {
           <div className="flex-shrink-0">
             <img
               src={imageSrc[card.id] || card.image}
-              className="w-[500px] h-[500px] object-cover rounded-tl-3xl rounded-br-3xl transition-all duration-300 ease-in-out hover:scale-105 cursor-pointer animate-small-bounce"
+              className="xl:w-[400px] xl:h-[400px] 2xl:w-[450px] 2xl:h-[450px] object-cover rounded-tl-3xl rounded-br-3xl transition-all duration-300 ease-in-out hover:scale-105 cursor-pointer animate-small-bounce"
               alt={`${card.name}`}
               onMouseEnter={() => handleMouseEnter(card.id)}
               onMouseLeave={() => handleMouseLeave(card.id)}

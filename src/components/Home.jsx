@@ -94,7 +94,7 @@ function Home() {
       {/* Conteúdo principal centralizado */}
       <div className="relative z-10 flex flex-col justify-end items-start h-full text-left text-white px-6 sm:pl-[10rem] sm:pr-[4rem] pb-[5.5rem] sm:pb-20">
         <h1
-          className="text-6xl sm:text-7xl md:text-[50px] lg:text-[70px] xl:text-[90px] 2xl:text-[110px] uppercase font-bold leading-tight lg:leading-[70px] xl:leading-[90px] 2xl:leading-[110px]"
+          className="text-6xl sm:text-7xl md:text-[50px] lg:text-[70px] xl:text-[80px] 2xl:text-[110px] uppercase font-bold leading-tight lg:leading-[70px] xl:leading-[80px] 2xl:leading-[110px]"
           style={{ fontFamily: "'Anton', sans-serif", fontWeight: 500 }}
         >
           Oops!
@@ -198,12 +198,14 @@ function Home() {
 
             {/* <div className="relative w-screen flex items-center justify-between mt-4"> */}
             <div className="relative mt-6">
-              <div className="absolute inset-0 flex items-center">
+              {/* <div className="absolute inset-0 flex items-center">
                 <span className="block border-t-2 border-white w-screen -translate-x-2/4 hidden sm:block"></span>
-              </div>
-              <div className="relative flex items-center justify-end">
+              </div> */}
+              <div className="relative flex items-center">
+                {/* justify-end */}
+                {/* mx-4 */}
                 <a
-                  className="text-[#FFFFFF] uppercase mx-4"
+                  className="text-[#FFFFFF] uppercase"
                   style={{ fontFamily: "'Source Serif 4', serif" }}
                   href="/estudio"
                 >
@@ -349,7 +351,7 @@ function Home() {
           style={{ backgroundImage: "url(/assets/background1.png)" }}
         >
           <h2
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl sm:text-3xl md:text-4xl lg:text-4xl uppercase font-bold w-full text-center"
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl uppercase font-bold w-full text-center"
             style={{ fontFamily: "'Source Serif 4', serif" }}
           >
             Entre em contacto e obtenha o seu orçamento
