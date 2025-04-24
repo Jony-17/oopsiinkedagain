@@ -24,16 +24,16 @@ function EstudioTeam() {
       whatsapp: "https://www.whatsapp.com",
       images: [
         {
-          src: "/assets/tattoo1.png",
+          src: "/assets/tattoo1.jpg",
           span: "col-span-1 sm:col-span-2 md:col-span-2",
         },
-        { src: "/assets/tattoo2.png", span: "col-span-1" },
-        { src: "/assets/tattoo3.png", span: "col-span-1" },
-        { src: "/assets/tattoo4.png", span: "col-span-1" },
-        { src: "/assets/tattoo6.jpg", span: "col-span-1" },
-        { src: "/assets/tattoo6.jpg", span: "col-span-1" },
+        { src: "/assets/tattoo2.jpg", span: "col-span-1" },
+        { src: "/assets/tattoo3.jpg", span: "col-span-1" },
+        { src: "/assets/tattoo1.jpg", span: "col-span-1" },
+        { src: "/assets/tattoo2.jpg", span: "col-span-1" },
+        { src: "/assets/tattoo3.jpg", span: "col-span-1" },
         {
-          src: "/assets/tattoo1.png",
+          src: "/assets/tattoo1.jpg",
           span: "col-span-1 sm:col-span-2 md:col-span-2",
         },
         // {
@@ -237,7 +237,7 @@ function EstudioTeam() {
               <img
                 src={image.src}
                 alt={`Imagem ${index + 1}`}
-                className="w-full h-[300px] object-cover cursor-pointer"
+                className="w-full h-[400px] object-cover cursor-pointer"
                 loading="lazy"
                 onClick={() => setSelectedImage(image.src)}
               />

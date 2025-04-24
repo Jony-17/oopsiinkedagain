@@ -11,9 +11,9 @@ import ScrollTop from "./ScrollTop";
 // import Loader from "./Loader";
 
 const images = [
-  "/assets/tattoo1.png",
-  "/assets/tattoo2.png",
-  "/assets/tattoo3.png",
+  "/assets/tattoo1.jpg",
+  "/assets/tattoo2.jpg",
+  "/assets/tattoo3.jpg",
 ];
 
 function Home() {
@@ -243,7 +243,7 @@ function Home() {
             <img
               src="/assets/image3.png"
               alt="Estúdio"
-              className="absolute top-[16rem] left-[10rem] xl:left-[7rem] max-w-[70%] sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-[23rem] 2xl:max-w-xl"
+              className="absolute top-[16rem] left-[6rem] xl:left-[7rem] 2xl:left-[10rem] max-w-[70%] sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-[23rem] 2xl:max-w-xl"
               // className="max-w-full mt-4 md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:max-w-[60%]"
             />
           </div>
@@ -276,46 +276,47 @@ function Home() {
             {/* Primeira linha com as imagens 1 e 2 */}
             <div className="flex justify-center">
               <img
-                src="/assets/tattoo1.png"
+                src="/assets/tattoo1.jpg"
                 alt="Imagem 1"
-                className="w-full h-[230px] object-cover md:rounded-tl-3xl cursor-pointer"
-                onClick={() => setSelectedImage("/assets/tattoo1.png")}
+                className="w-full h-[330px] object-cover md:rounded-tl-3xl cursor-pointer"
+                onClick={() => setSelectedImage("/assets/tattoo1.jpg")}
               />
+              {/*w-full h-[330px] object-scale-down object-center cursor-pointer*/}
             </div>
             <div className="flex justify-center">
               <img
-                src="/assets/tattoo2.png"
+                src="/assets/tattoo2.jpg"
                 alt="Imagem 2"
-                className="w-full h-[230px] object-cover cursor-pointer"
-                onClick={() => setSelectedImage("/assets/tattoo2.png")}
+                className="w-full h-[330px] object-cover cursor-pointer"
+                onClick={() => setSelectedImage("/assets/tattoo2.jpg")}
               />
             </div>
 
             {/* Terceira linha com a imagem 5 ocupando as linhas 2 e 4 */}
             <div className="flex justify-center md:col-span-1 md:row-span-3">
               <img
-                src="/assets/tattoo5.png"
+                src="/assets/tattoo3.jpg"
                 alt="Imagem 5"
-                className="w-full h-[230px] md:h-[468px] object-cover md:rounded-tr-3xl md:rounded-br-3xl cursor-pointer"
-                onClick={() => setSelectedImage("/assets/tattoo5.png")}
+                className="w-full h-[330px] md:h-[668px] object-cover md:rounded-tr-3xl md:rounded-br-3xl cursor-pointer"
+                onClick={() => setSelectedImage("/assets/tattoo3.jpg")}
               />
             </div>
 
             {/* Segunda linha com as imagens 3 e 4 */}
             <div className="flex justify-center">
               <img
-                src="/assets/tattoo3.png"
+                src="/assets/tattoo3.jpg"
                 alt="Imagem 3"
-                className="w-full h-[230px] object-cover md:rounded-bl-3xl cursor-pointer"
-                onClick={() => setSelectedImage("/assets/tattoo3.png")}
+                className="w-full h-[330px] object-cover md:rounded-bl-3xl cursor-pointer"
+                onClick={() => setSelectedImage("/assets/tattoo3.jpg")}
               />
             </div>
             <div className="flex justify-center">
               <img
-                src="/assets/tattoo4.png"
+                src="/assets/tattoo1.jpg"
                 alt="Imagem 4"
-                className="w-full h-[230px] object-cover cursor-pointer"
-                onClick={() => setSelectedImage("/assets/tattoo4.png")}
+                className="w-full h-[330px] object-cover cursor-pointer"
+                onClick={() => setSelectedImage("/assets/tattoo1.jpg")}
               />
             </div>
           </div>

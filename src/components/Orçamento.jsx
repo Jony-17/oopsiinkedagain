@@ -187,8 +187,8 @@ function Orçamento() {
               className="text-[30px] sm:text-[40px] text-white mb-8"
               style={{ fontFamily: "'Source Serif 4', serif" }}
             >
-              Qual dos nossos serviços pretendes obter um orçamento?
-            </h1>
+              Pretendes realizar uma tatuagem?
+            </h1> {/*Qual dos nossos serviços pretendes obter um orçamento?*/}
             <p className="text-white mb-8">
               O preenchimento dos formulários servem apenas para conseguirmos
               realizar o teu orçamento sem compromisso. O mesmo não garante
@@ -202,12 +202,12 @@ function Orçamento() {
               >
                 Orçamento Tatuagem
               </button>
-              <button
+              {/* <button
                 onClick={() => handleButtonClick("Piercing")}
                 className="bg-black text-white py-3 px-8 rounded-lg shadow-lg hover:bg-gray-700 transform hover:scale-105 transition-all duration-300"
               >
                 Orçamento Piercing
-              </button>
+              </button> */}
             </div>
           </div>
         )}

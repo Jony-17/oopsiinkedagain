@@ -9,20 +9,20 @@ function Galeria() {
   const [selectedImage, setSelectedImage] = useState(null); // Estado para modal
 
   const imagens = [
-    { src: "/assets/image1.png", alt: "Imagem 1", category: "Estúdio" },
+    { src: "/assets/tattoo1.jpg", alt: "Imagem 1", category: "Estúdio" },
     { src: "/assets/image2.png", alt: "Imagem 2", category: "Tattoos" },
-    { src: "/assets/image3.png", alt: "Imagem 3", category: "Estúdio" },
+    { src: "/assets/tattoo2.jpg", alt: "Imagem 3", category: "Estúdio" },
     { src: "/assets/image3.png", alt: "Imagem 4", category: "Tattoos" },
-    { src: "/assets/image1.png", alt: "Imagem 5", category: "Estúdio" },
+    { src: "/assets/tattoo3.jpg", alt: "Imagem 5", category: "Estúdio" },
     { src: "/assets/image2.png", alt: "Imagem 6", category: "Tattoos" },
-    { src: "/assets/image1.png", alt: "Imagem 5", category: "Estúdio" },
+    { src: "/assets/tattoo3.jpg", alt: "Imagem 5", category: "Estúdio" },
     { src: "/assets/image2.png", alt: "Imagem 6", category: "Tattoos" },
-    { src: "/assets/image1.png", alt: "Imagem 5", category: "Estúdio" },
+    { src: "/assets/tattoo2.jpg", alt: "Imagem 5", category: "Estúdio" },
     { src: "/assets/image2.png", alt: "Imagem 6", category: "Tattoos" },
-    { src: "/assets/image1.png", alt: "Imagem 5", category: "Estúdio" },
+    { src: "/assets/tattoo2.jpg", alt: "Imagem 5", category: "Estúdio" },
     { src: "/assets/image2.png", alt: "Imagem 6", category: "Tattoos" },
-    { src: "/assets/image1.png", alt: "Imagem 5", category: "Estúdio" },
-    { src: "/assets/image2.png", alt: "Imagem 6", category: "Tattoos" },
+    { src: "/assets/tattoo3.jpg", alt: "Imagem 5", category: "Estúdio" },
+    { src: "/assets/tattoo1.jpg", alt: "Imagem 6", category: "Tattoos" },
   ];
 
   const imagensFiltradas =

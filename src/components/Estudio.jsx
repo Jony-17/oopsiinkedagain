@@ -32,17 +32,17 @@ function Estudio() {
       instagram: "https://www.instagram.com",
       whatsapp: "https://www.whatsapp.com",
     },
-    {
-      id: 2,
-      name: "Ana",
-      role: "Bodypiercer",
-      image: "/assets/foto.jpg",
-      description:
-        "Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork.",
-      hoverImage: "/assets/image1.png",
-      instagram: "https://www.instagram.com",
-      whatsapp: "https://www.whatsapp.com",
-    },
+    // {
+    //   id: 2,
+    //   name: "Ana",
+    //   role: "Bodypiercer",
+    //   image: "/assets/foto.jpg",
+    //   description:
+    //     "Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork.",
+    //   hoverImage: "/assets/image1.png",
+    //   instagram: "https://www.instagram.com",
+    //   whatsapp: "https://www.whatsapp.com",
+    // },
     // {
     //   id: 3,
     //   name: "Carlos",
