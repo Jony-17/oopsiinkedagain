@@ -380,7 +380,10 @@ function Home() {
       <section className="bg-[#101010] pt-[120px] pb-[70px]" id="tattoos">
         <div
           className="relative h-[40vh] bg-cover bg-center"
-          style={{ backgroundImage: "url(/assets/bb.jpg)" }}
+          style={{
+            backgroundImage:
+              "url(https://res.cloudinary.com/dr9j4bjys/image/upload/v1745961653/foto2_u9q6q1.jpg)",
+          }}
         >
           <h2
             className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl uppercase font-bold w-full text-center"
@@ -538,7 +541,8 @@ function Home() {
             <div
               className="relative h-[45%] bg-cover bg-center flex items-baseline justify-between p-6 md:px-[50px]"
               style={{
-                backgroundImage: "url('/assets/bb.jpg')",
+                backgroundImage:
+                  "url('https://res.cloudinary.com/dr9j4bjys/image/upload/v1745961653/foto2_u9q6q1.jpg')",
                 boxShadow: "inset 0 10px 10px rgba(9, 9, 9, 100%)",
               }}
             >

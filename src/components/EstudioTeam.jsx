@@ -16,23 +16,40 @@ function EstudioTeam() {
       id: 1,
       name: "Marília",
       role: "Tatuadora",
-      image: "/assets/equipa/marilia.jpg",
+      image:
+        "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745961203/marilia_qd36bd.jpg",
       description:
         "Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork. Apaixonada em transformar sonhos em artes eternas na pele. ",
-      hoverImage: "/assets/equipa/marilia2.jpg",
+      hoverImage:
+        "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745961203/marilia2_rl0wl4.jpg",
       instagram: "https://www.instagram.com/marilialoureiroj5/",
       images: [
         {
-          src: "/assets/tattoo1.jpg",
+          src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960078/tattoo1_zstdtm.jpg",
           span: "col-span-1 sm:col-span-2 md:col-span-2",
         },
-        { src: "/assets/tattoo3.jpg", span: "col-span-1" },
-        { src: "/assets/tattoo6.jpg", span: "col-span-1" },
-        { src: "/assets/tattoo2.jpg", span: "col-span-1" },
-        { src: "/assets/tattoo5.jpg", span: "col-span-1" },
-        { src: "/assets/tattoo4.jpg", span: "col-span-1" },
+        {
+          src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo3_mesizk.jpg",
+          span: "col-span-1",
+        },
+        {
+          src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo6_sjxeu6.jpg",
+          span: "col-span-1",
+        },
+        {
+          src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960078/tattoo2_peobqh.jpg",
+          span: "col-span-1",
+        },
+        {
+          src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo5_jrxh01.jpg",
+          span: "col-span-1",
+        },
+        {
+          src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo4_dfkqfm.jpg",
+          span: "col-span-1",
+        },
         // {
-        //   src: "/assets/tattoo1.jpg",
+        //   src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960078/tattoo1_zstdtm.jpg",
         //   span: "col-span-1 sm:col-span-2 md:col-span-2",
         // },
         // {
@@ -56,7 +73,10 @@ function EstudioTeam() {
         { src: "/assets/tattoo4.png", span: "col-span-1" },
         { src: "/assets/tattoo3.png", span: "col-span-1" },
         { src: "/assets/tattoo5.png", span: "col-span-1" },
-        { src: "/assets/tattoo6.jpg", span: "col-span-1" },
+        {
+          src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo6_sjxeu6.jpg",
+          span: "col-span-1",
+        },
       ],
       images: [
         {
@@ -67,7 +87,10 @@ function EstudioTeam() {
         { src: "/assets/tattoo4.png", span: "col-span-1" },
         { src: "/assets/tattoo3.png", span: "col-span-1" },
         { src: "/assets/tattoo5.png", span: "col-span-1" },
-        { src: "/assets/tattoo6.jpg", span: "col-span-1" },
+        {
+          src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo6_sjxeu6.jpg",
+          span: "col-span-1",
+        },
         {
           src: "/assets/tattoo4.png",
           span: "col-span-1 sm:col-span-2 md:col-span-2",

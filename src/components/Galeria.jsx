@@ -9,20 +9,76 @@ function Galeria() {
   const [selectedImage, setSelectedImage] = useState(null); // Estado para modal
 
   const imagens = [
-    { src: "/assets/estudio/estudio1.jpg", alt: "Imagem 1", category: "Estúdio" },
-    { src: "/assets/estudio/estudio2.jpg", alt: "Imagem 2", category: "Tattoos" },
-    { src: "/assets/estudio/estudio3.jpg", alt: "Imagem 3", category: "Estúdio" },
-    { src: "/assets/estudio/estudio4.jpg", alt: "Imagem 4", category: "Tattoos" },
-    { src: "/assets/estudio/estudio5.jpg", alt: "Imagem 5", category: "Estúdio" },
-    { src: "/assets/estudio/estudio6.jpg", alt: "Imagem 6", category: "Tattoos" },
-    { src: "/assets/estudio/estudio7.jpg", alt: "Imagem 5", category: "Estúdio" },
-    { src: "/assets/estudio/estudio8.jpg", alt: "Imagem 6", category: "Tattoos" },
-    { src: "/assets/tattoo1.jpg", alt: "Imagem 5", category: "Estúdio" },
-    { src: "/assets/tattoo2.jpg", alt: "Imagem 6", category: "Tattoos" },
-    { src: "/assets/tattoo3.jpg", alt: "Imagem 5", category: "Estúdio" },
-    { src: "/assets/tattoo4.jpg", alt: "Imagem 6", category: "Tattoos" },
-    { src: "/assets/tattoo5.jpg", alt: "Imagem 5", category: "Estúdio" },
-    { src: "/assets/tattoo6.jpg", alt: "Imagem 6", category: "Tattoos" },
+    {
+      src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960391/estudio1_aqc8lf.jpg",
+      alt: "Imagem 1",
+      category: "Estúdio",
+    },
+    {
+      src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960391/estudio2_e8w7ze.jpg",
+      alt: "Imagem 2",
+      category: "Tattoos",
+    },
+    {
+      src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960391/estudio3_zqctjz.jpg",
+      alt: "Imagem 3",
+      category: "Estúdio",
+    },
+    {
+      src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960391/estudio4_yxhxv9.jpg",
+      alt: "Imagem 4",
+      category: "Tattoos",
+    },
+    {
+      src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960391/estudio5_rsvs5t.jpg",
+      alt: "Imagem 5",
+      category: "Estúdio",
+    },
+    {
+      src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960391/estudio6_oin186.jpg",
+      alt: "Imagem 6",
+      category: "Tattoos",
+    },
+    {
+      src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960391/estudio7_xw68yh.jpg",
+      alt: "Imagem 5",
+      category: "Estúdio",
+    },
+    {
+      src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960392/estudio8_deqqja.jpg",
+      alt: "Imagem 6",
+      category: "Tattoos",
+    },
+    {
+      src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960078/tattoo1_zstdtm.jpg",
+      alt: "Imagem 5",
+      category: "Estúdio",
+    },
+    {
+      src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960078/tattoo2_peobqh.jpg",
+      alt: "Imagem 6",
+      category: "Tattoos",
+    },
+    {
+      src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo3_mesizk.jpg",
+      alt: "Imagem 5",
+      category: "Estúdio",
+    },
+    {
+      src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo4_dfkqfm.jpg",
+      alt: "Imagem 6",
+      category: "Tattoos",
+    },
+    {
+      src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo5_jrxh01.jpg",
+      alt: "Imagem 5",
+      category: "Estúdio",
+    },
+    {
+      src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo6_sjxeu6.jpg",
+      alt: "Imagem 6",
+      category: "Tattoos",
+    },
   ];
 
   const imagensFiltradas =

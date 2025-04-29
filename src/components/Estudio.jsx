@@ -25,7 +25,8 @@ function Estudio() {
       id: 1,
       name: "Marília",
       role: "Tatuadora",
-      image: "/assets/equipa/marilia.jpg",
+      image:
+        "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745961203/marilia_qd36bd.jpg",
       description:
         "Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork.",
       hoverImage: "/assets/image1.png",
