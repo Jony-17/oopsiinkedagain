@@ -11,9 +11,9 @@ import ScrollTop from "./ScrollTop";
 // import Loader from "./Loader";
 
 const images = [
-  "/assets/tattoo1.jpg",
-  "/assets/tattoo3.jpg",
-  "/assets/tattoo5.jpg",
+  "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960078/tattoo1_zstdtm.jpg",
+  "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo3_mesizk.jpg",
+  "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo5_jrxh01.jpg",
 ];
 
 function Home() {
@@ -79,7 +79,10 @@ function Home() {
   return (
     <div
       className="relative h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url(/assets/foto.jpg)" }}
+      style={{
+        backgroundImage:
+          "url(https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960409/foto_t2l7ug.jpg)",
+      }}
     >
       {/* Navbar fora do fluxo do layout principal */}
       <NavBar
@@ -234,7 +237,7 @@ function Home() {
           <div className="relative">
             {/* Primeira imagem */}
             <img
-              src="/assets/estudio/estudio1.jpg"
+              src="https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960391/estudio1_aqc8lf.jpg"
               alt="Estúdio"
               loading="lazy"
               className="max-w-[70%] sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-[23rem] 2xl:max-w-[26rem]"
@@ -242,7 +245,7 @@ function Home() {
 
             {/* Segunda imagem, posicionada absolutamente sobre a primeira */}
             <img
-              src="/assets/estudio/estudio2.jpg"
+              src="https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960391/estudio2_e8w7ze.jpg"
               alt="Estúdio"
               loading="lazy"
               className="absolute top-[15rem] left-[6rem] xl:left-[7rem] 2xl:left-[10rem] max-w-[70%] sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-[23rem] 2xl:max-w-[26rem] 2xl:top-[19rem]"
@@ -278,52 +281,72 @@ function Home() {
             {/* Primeira linha com as imagens 1 e 2 */}
             <div className="flex justify-center">
               <img
-                src="/assets/tattoo1.jpg"
+                src="https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960078/tattoo1_zstdtm.jpg"
                 alt="Imagem 1"
                 loading="lazy"
                 className="w-full h-[330px] object-cover md:rounded-tl-3xl cursor-pointer"
-                onClick={() => setSelectedImage("/assets/tattoo1.jpg")}
+                onClick={() =>
+                  setSelectedImage(
+                    "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960078/tattoo1_zstdtm.jpg"
+                  )
+                }
               />
               {/*w-full h-[330px] object-scale-down object-center cursor-pointer*/}
             </div>
             <div className="flex justify-center">
               <img
-                src="/assets/tattoo2.jpg"
+                src="https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960078/tattoo2_peobqh.jpg"
                 alt="Imagem 2"
                 loading="lazy"
                 className="w-full h-[330px] object-cover cursor-pointer"
-                onClick={() => setSelectedImage("/assets/tattoo2.jpg")}
+                onClick={() =>
+                  setSelectedImage(
+                    "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960078/tattoo2_peobqh.jpg"
+                  )
+                }
               />
             </div>
 
             {/* Terceira linha com a imagem 5 ocupando as linhas 2 e 4 */}
             <div className="flex justify-center md:col-span-1 md:row-span-3">
               <img
-                src="/assets/tattoo4.jpg"
+                src="https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo4_dfkqfm.jpg"
                 alt="Imagem 5"
                 loading="lazy"
                 className="w-full h-[330px] md:h-[668px] object-cover md:rounded-tr-3xl md:rounded-br-3xl cursor-pointer"
-                onClick={() => setSelectedImage("/assets/tattoo4.jpg")}
+                onClick={() =>
+                  setSelectedImage(
+                    "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo4_dfkqfm.jpg"
+                  )
+                }
               />
             </div>
 
             {/* Segunda linha com as imagens 3 e 4 */}
             <div className="flex justify-center">
               <img
-                src="/assets/tattoo3.jpg"
+                src="https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo3_mesizk.jpg"
                 alt="Imagem 3"
                 loading="lazy"
                 className="w-full h-[330px] object-cover md:rounded-bl-3xl cursor-pointer"
-                onClick={() => setSelectedImage("/assets/tattoo3.jpg")}
+                onClick={() =>
+                  setSelectedImage(
+                    "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo3_mesizk.jpg"
+                  )
+                }
               />
             </div>
             <div className="flex justify-center">
               <img
-                src="/assets/tattoo6.jpg"
+                src="https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo6_sjxeu6.jpg"
                 alt="Imagem 4"
                 loading="lazy"
                 className="w-full h-[330px] object-cover cursor-pointer"
-                onClick={() => setSelectedImage("/assets/tattoo6.jpg")}
+                onClick={() =>
+                  setSelectedImage(
+                    "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo6_sjxeu6.jpg"
+                  )
+                }
               />
             </div>
           </div>
