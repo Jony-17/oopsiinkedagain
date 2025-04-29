@@ -9,20 +9,20 @@ function Galeria() {
   const [selectedImage, setSelectedImage] = useState(null); // Estado para modal
 
   const imagens = [
-    { src: "/assets/tattoo1.jpg", alt: "Imagem 1", category: "Estúdio" },
-    { src: "/assets/image2.png", alt: "Imagem 2", category: "Tattoos" },
-    { src: "/assets/tattoo2.jpg", alt: "Imagem 3", category: "Estúdio" },
-    { src: "/assets/image3.png", alt: "Imagem 4", category: "Tattoos" },
+    { src: "/assets/estudio/estudio1.jpg", alt: "Imagem 1", category: "Estúdio" },
+    { src: "/assets/estudio/estudio2.jpg", alt: "Imagem 2", category: "Tattoos" },
+    { src: "/assets/estudio/estudio3.jpg", alt: "Imagem 3", category: "Estúdio" },
+    { src: "/assets/estudio/estudio4.jpg", alt: "Imagem 4", category: "Tattoos" },
+    { src: "/assets/estudio/estudio5.jpg", alt: "Imagem 5", category: "Estúdio" },
+    { src: "/assets/estudio/estudio6.jpg", alt: "Imagem 6", category: "Tattoos" },
+    { src: "/assets/estudio/estudio7.jpg", alt: "Imagem 5", category: "Estúdio" },
+    { src: "/assets/estudio/estudio8.jpg", alt: "Imagem 6", category: "Tattoos" },
+    { src: "/assets/tattoo1.jpg", alt: "Imagem 5", category: "Estúdio" },
+    { src: "/assets/tattoo2.jpg", alt: "Imagem 6", category: "Tattoos" },
     { src: "/assets/tattoo3.jpg", alt: "Imagem 5", category: "Estúdio" },
-    { src: "/assets/image2.png", alt: "Imagem 6", category: "Tattoos" },
-    { src: "/assets/tattoo3.jpg", alt: "Imagem 5", category: "Estúdio" },
-    { src: "/assets/image2.png", alt: "Imagem 6", category: "Tattoos" },
-    { src: "/assets/tattoo2.jpg", alt: "Imagem 5", category: "Estúdio" },
-    { src: "/assets/image2.png", alt: "Imagem 6", category: "Tattoos" },
-    { src: "/assets/tattoo2.jpg", alt: "Imagem 5", category: "Estúdio" },
-    { src: "/assets/image2.png", alt: "Imagem 6", category: "Tattoos" },
-    { src: "/assets/tattoo3.jpg", alt: "Imagem 5", category: "Estúdio" },
-    { src: "/assets/tattoo1.jpg", alt: "Imagem 6", category: "Tattoos" },
+    { src: "/assets/tattoo4.jpg", alt: "Imagem 6", category: "Tattoos" },
+    { src: "/assets/tattoo5.jpg", alt: "Imagem 5", category: "Estúdio" },
+    { src: "/assets/tattoo6.jpg", alt: "Imagem 6", category: "Tattoos" },
   ];
 
   const imagensFiltradas =

@@ -343,7 +343,7 @@ function Orçamento() {
                 <label htmlFor="contact_wpp">WhatsApp</label>
               </div>
 
-              <div>
+              {/* <div>
                 <label className="block text-lg font-bold mt-[30px] mb-1">
                   Preferência de artista*
                 </label>
@@ -360,7 +360,7 @@ function Orçamento() {
                   <option value="Maggie">Maggie</option>
                   <option value="João">João</option>
                 </select>
-              </div>
+              </div> */}
 
               <div>
                 <label className="block text-lg font-bold mt-[30px] mb-1">

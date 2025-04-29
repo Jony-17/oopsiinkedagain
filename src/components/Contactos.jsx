@@ -86,7 +86,7 @@ function Contactos() {
                     icon={faMapPin}
                     className="ml-2 mr-2 rotate-[20deg]"
                   />
-                  Rua Almeida Garrett 20, Vila Nova de Gaia
+                  Rua Almeida Garrett 20, 4430-300 Vila Nova de Gaia
                 </p>
               </div>
 
@@ -99,7 +99,7 @@ function Contactos() {
                     icon={faPhone}
                     className="ml-2 mr-2 rotate-[10deg] text-sm"
                   />
-                  +351 933 333 333
+                  +351 962 112 592
                 </p>
               </div>
 
@@ -119,7 +119,7 @@ function Contactos() {
                   style={{ fontFamily: "'Yrsa', serif" }}
                 >
                   <FontAwesomeIcon icon={faEnvelope} className="ml-2 mr-2" />
-                  oopsiinkedagain@gmail.com
+                  oops.i.inked.again@gmail.com
                 </p>
               </div>
 

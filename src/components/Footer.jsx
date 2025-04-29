@@ -45,7 +45,7 @@ function Footer() {
                 Contactos
               </h3>
               <p className="mt-2 flex items-center gap-2">
-                <FontAwesomeIcon icon={faPhone} /> +351 933 333 333
+                <FontAwesomeIcon icon={faPhone} /> +351 962 112 592
               </p>
               <p className="mt-2 flex items-center gap-2">
                 <FontAwesomeIcon icon={faInstagram} />
@@ -53,7 +53,7 @@ function Footer() {
               </p>
               <p className="mt-2 flex items-center gap-2">
                 <FontAwesomeIcon icon={faEnvelope} />
-                opsiinkedagain@gmail.com
+                oops.i.inked.again@gmail.com
               </p>
             </div>
           </div>

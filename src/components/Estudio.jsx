@@ -25,12 +25,11 @@ function Estudio() {
       id: 1,
       name: "Marília",
       role: "Tatuadora",
-      image: "/assets/foto.jpg",
+      image: "/assets/equipa/marilia.jpg",
       description:
         "Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork.",
       hoverImage: "/assets/image1.png",
-      instagram: "https://www.instagram.com",
-      whatsapp: "https://www.whatsapp.com",
+      instagram: "https://www.instagram.com/marilialoureiroj5/",
     },
     // {
     //   id: 2,
@@ -86,7 +85,7 @@ function Estudio() {
           className="text-4xl sm:text-5xl text-[#FFFFFF] font-bold mt-3"
           style={{ fontFamily: "'Source Serif 4', serif" }}
         >
-          Oops I Inked Again
+          Oops! I Inked Again
         </h2>
         <p
           className="text-xl text-[#969595] font-light italic text-justify mt-6 mb-20"
@@ -274,7 +273,7 @@ function Estudio() {
                 </p>
                 <div className="flex justify-between items-center xl:mt-[4rem] 2xl:mt-[5rem]">
                   <a
-                    href="https://www.instagram.com"
+                    href={card.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white text-xl flex items-center"
@@ -315,7 +314,7 @@ function Estudio() {
         <div className="flex items-center justify-center h-[200px] text-white p-[3rem] mt-[100px]">
           <div className="relative max-w-2xl text-center">
             <span
-              className="absolute top-[-20px] left-[-60px] text-9xl"
+              className="absolute top-[-20px] left-[-50px] 2xl:left-[-80px] text-9xl"
               style={{ fontFamily: "'Libre Baskerville', serif" }}
             >
               “
@@ -324,11 +323,10 @@ function Estudio() {
               className="text-3xl font-handwritten leading-relaxed"
               style={{ fontFamily: "'Shadows Into Light', serif" }}
             >
-              O significado de uma tatuagem não pode ser explicado, apenas
-              sentido.
+              Marca a tua história. Coleciona arte!
             </p>
             <span
-              className="absolute bottom-[-100px] right-[-30px] text-9xl"
+              className="absolute bottom-[-100px] right-[-40px] 2xl:right-[-80px] text-9xl"
               style={{ fontFamily: "'Libre Baskerville', serif" }}
             >
               ”

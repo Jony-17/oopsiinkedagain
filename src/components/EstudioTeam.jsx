@@ -16,26 +16,25 @@ function EstudioTeam() {
       id: 1,
       name: "Marília",
       role: "Tatuadora",
-      image: "/assets/foto.jpg",
+      image: "/assets/equipa/marilia.jpg",
       description:
         "Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork. Apaixonada em transformar sonhos em artes eternas na pele. ",
-      hoverImage: "/assets/image1.png",
-      instagram: "https://www.instagram.com",
-      whatsapp: "https://www.whatsapp.com",
+      hoverImage: "/assets/equipa/marilia2.jpg",
+      instagram: "https://www.instagram.com/marilialoureiroj5/",
       images: [
         {
           src: "/assets/tattoo1.jpg",
           span: "col-span-1 sm:col-span-2 md:col-span-2",
         },
-        { src: "/assets/tattoo2.jpg", span: "col-span-1" },
         { src: "/assets/tattoo3.jpg", span: "col-span-1" },
-        { src: "/assets/tattoo1.jpg", span: "col-span-1" },
+        { src: "/assets/tattoo6.jpg", span: "col-span-1" },
         { src: "/assets/tattoo2.jpg", span: "col-span-1" },
-        { src: "/assets/tattoo3.jpg", span: "col-span-1" },
-        {
-          src: "/assets/tattoo1.jpg",
-          span: "col-span-1 sm:col-span-2 md:col-span-2",
-        },
+        { src: "/assets/tattoo5.jpg", span: "col-span-1" },
+        { src: "/assets/tattoo4.jpg", span: "col-span-1" },
+        // {
+        //   src: "/assets/tattoo1.jpg",
+        //   span: "col-span-1 sm:col-span-2 md:col-span-2",
+        // },
         // {
         //   src: "/assets/tattoo1.png",
         //   span: "col-span-1 sm:col-span-2 md:col-span-3", // Novamente, para dar equilíbrio ao layout
@@ -154,7 +153,7 @@ function EstudioTeam() {
                   {card.role}
                 </h3>
                 <a
-                  href="https://www.instagram.com"
+                  href={card.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white text-xl flex items-center"

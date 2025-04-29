@@ -171,7 +171,7 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
 
                 <li role="none">
                   <a
-                    href="https://www.instagram.com"
+                    href="https://www.instagram.com/oopsiinkedagain/"
                     target="_blank"
                     className="uppercase px-6 py-4 text-white hover:text-[#565656]"
                   >

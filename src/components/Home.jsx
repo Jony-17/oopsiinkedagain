@@ -12,8 +12,8 @@ import ScrollTop from "./ScrollTop";
 
 const images = [
   "/assets/tattoo1.jpg",
-  "/assets/tattoo2.jpg",
   "/assets/tattoo3.jpg",
+  "/assets/tattoo5.jpg",
 ];
 
 function Home() {
@@ -79,7 +79,7 @@ function Home() {
   return (
     <div
       className="relative h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url(/assets/image1.png)" }}
+      style={{ backgroundImage: "url(/assets/foto.jpg)" }}
     >
       {/* Navbar fora do fluxo do layout principal */}
       <NavBar
@@ -100,7 +100,7 @@ function Home() {
           Oops!
           <br />
           <span className="w-full inline-block">I Inked</span>{" "}
-          <span className="block sm:inline">Again.</span>
+          <span className="block sm:inline">Again</span>
         </h1>
         {/* <h3 className="text-lg sm:text-xl uppercase font-bold">
           Bem-vindos ao meu estúdio
@@ -120,7 +120,7 @@ function Home() {
 
         <div className="absolute bottom-4 right-[0.3rem] sm:right-4 hidden sm:flex flex-col space-y-4 text-[14px]">
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/oopsiinkedagain/"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-12 text-[#BFBFBF] rotate-[270deg] uppercase no-underline hover:text-white transition duration-300"
@@ -128,7 +128,7 @@ function Home() {
             INSTAGRAM
           </a>
           <a
-            href="https://wa.me/1234567890"
+            href="https://wa.me/351962112592?text=Olá%2C%20gostaria%20de%20obter%20mais%20informações!"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-12 text-[#BFBFBF] rotate-[270deg] uppercase no-underline hover:text-white transition duration-300"
@@ -178,7 +178,7 @@ function Home() {
               className="text-5xl text-[#FFFFFF] font-bold mt-3"
               style={{ fontFamily: "'Source Serif 4', serif" }}
             >
-              Oops I Inked Again
+              Oops! I Inked Again
             </h2>
             <p
               className="text-xl text-[#969595] font-light italic text-justify mt-3"
@@ -209,7 +209,7 @@ function Home() {
                   style={{ fontFamily: "'Source Serif 4', serif" }}
                   href="/estudio"
                 >
-                  Leia a nossa história
+                  A nossa história
                 </a>
                 <svg
                   style={{ rotate: "270deg", cursor: "pointer" }}
@@ -234,16 +234,16 @@ function Home() {
           <div className="relative">
             {/* Primeira imagem */}
             <img
-              src="/assets/image2.png"
+              src="/assets/estudio/estudio1.jpg"
               alt="Estúdio"
-              className="max-w-[70%] sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-[23rem] 2xl:max-w-xl"
+              className="max-w-[70%] sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-[23rem] 2xl:max-w-[26rem]"
             />
 
             {/* Segunda imagem, posicionada absolutamente sobre a primeira */}
             <img
-              src="/assets/image3.png"
+              src="/assets/estudio/estudio2.jpg"
               alt="Estúdio"
-              className="absolute top-[16rem] left-[6rem] xl:left-[7rem] 2xl:left-[10rem] max-w-[70%] sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-[23rem] 2xl:max-w-xl"
+              className="absolute top-[19rem] left-[6rem] xl:left-[7rem] 2xl:left-[10rem] max-w-[70%] sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-[23rem] 2xl:max-w-[26rem]"
               // className="max-w-full mt-4 md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:max-w-[60%]"
             />
           </div>
@@ -295,10 +295,10 @@ function Home() {
             {/* Terceira linha com a imagem 5 ocupando as linhas 2 e 4 */}
             <div className="flex justify-center md:col-span-1 md:row-span-3">
               <img
-                src="/assets/tattoo3.jpg"
+                src="/assets/tattoo4.jpg"
                 alt="Imagem 5"
                 className="w-full h-[330px] md:h-[668px] object-cover md:rounded-tr-3xl md:rounded-br-3xl cursor-pointer"
-                onClick={() => setSelectedImage("/assets/tattoo3.jpg")}
+                onClick={() => setSelectedImage("/assets/tattoo4.jpg")}
               />
             </div>
 
@@ -313,10 +313,10 @@ function Home() {
             </div>
             <div className="flex justify-center">
               <img
-                src="/assets/tattoo1.jpg"
+                src="/assets/tattoo6.jpg"
                 alt="Imagem 4"
                 className="w-full h-[330px] object-cover cursor-pointer"
-                onClick={() => setSelectedImage("/assets/tattoo1.jpg")}
+                onClick={() => setSelectedImage("/assets/tattoo6.jpg")}
               />
             </div>
           </div>
@@ -348,8 +348,8 @@ function Home() {
       {/* Section */}
       <section className="bg-[#101010] pt-[120px] pb-[70px]" id="tattoos">
         <div
-          className="relative h-[25vh] bg-cover bg-center"
-          style={{ backgroundImage: "url(/assets/background1.png)" }}
+          className="relative h-[40vh] bg-cover bg-center"
+          style={{ backgroundImage: "url(/assets/bb.jpg)" }}
         >
           <h2
             className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl uppercase font-bold w-full text-center"
@@ -506,7 +506,7 @@ function Home() {
             <div
               className="relative h-[45%] bg-cover bg-center flex items-baseline justify-between p-6 md:px-[50px]"
               style={{
-                backgroundImage: "url('/assets/background1.png')",
+                backgroundImage: "url('/assets/bb.jpg')",
                 boxShadow: "inset 0 10px 10px rgba(9, 9, 9, 100%)",
               }}
             >
