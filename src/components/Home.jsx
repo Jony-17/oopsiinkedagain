@@ -236,6 +236,7 @@ function Home() {
             <img
               src="/assets/estudio/estudio1.jpg"
               alt="Estúdio"
+              loading="lazy"
               className="max-w-[70%] sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-[23rem] 2xl:max-w-[26rem]"
             />
 
@@ -243,6 +244,7 @@ function Home() {
             <img
               src="/assets/estudio/estudio2.jpg"
               alt="Estúdio"
+              loading="lazy"
               className="absolute top-[19rem] left-[6rem] xl:left-[7rem] 2xl:left-[10rem] max-w-[70%] sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-[23rem] 2xl:max-w-[26rem]"
               // className="max-w-full mt-4 md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:max-w-[60%]"
             />
@@ -278,6 +280,7 @@ function Home() {
               <img
                 src="/assets/tattoo1.jpg"
                 alt="Imagem 1"
+                loading="lazy"
                 className="w-full h-[330px] object-cover md:rounded-tl-3xl cursor-pointer"
                 onClick={() => setSelectedImage("/assets/tattoo1.jpg")}
               />
@@ -287,6 +290,7 @@ function Home() {
               <img
                 src="/assets/tattoo2.jpg"
                 alt="Imagem 2"
+                loading="lazy"
                 className="w-full h-[330px] object-cover cursor-pointer"
                 onClick={() => setSelectedImage("/assets/tattoo2.jpg")}
               />
@@ -297,6 +301,7 @@ function Home() {
               <img
                 src="/assets/tattoo4.jpg"
                 alt="Imagem 5"
+                loading="lazy"
                 className="w-full h-[330px] md:h-[668px] object-cover md:rounded-tr-3xl md:rounded-br-3xl cursor-pointer"
                 onClick={() => setSelectedImage("/assets/tattoo4.jpg")}
               />
@@ -307,6 +312,7 @@ function Home() {
               <img
                 src="/assets/tattoo3.jpg"
                 alt="Imagem 3"
+                loading="lazy"
                 className="w-full h-[330px] object-cover md:rounded-bl-3xl cursor-pointer"
                 onClick={() => setSelectedImage("/assets/tattoo3.jpg")}
               />
@@ -315,6 +321,7 @@ function Home() {
               <img
                 src="/assets/tattoo6.jpg"
                 alt="Imagem 4"
+                loading="lazy"
                 className="w-full h-[330px] object-cover cursor-pointer"
                 onClick={() => setSelectedImage("/assets/tattoo6.jpg")}
               />
@@ -337,6 +344,7 @@ function Home() {
                 <img
                   src={selectedImage}
                   alt="Imagem ampliada"
+                  loading="lazy"
                   className="w-full h-auto object-contain"
                 />
               </div>
@@ -450,6 +458,7 @@ function Home() {
                     index === currentIndex ? "opacity-100 z-10" : "opacity-0"
                   }`}
                   alt={`Tattoo ${index + 1}`}
+                  loading="lazy"
                 />
               ))}
             </div>
