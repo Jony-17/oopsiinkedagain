@@ -245,7 +245,7 @@ function Home() {
               src="/assets/estudio/estudio2.jpg"
               alt="Estúdio"
               loading="lazy"
-              className="absolute top-[19rem] left-[6rem] xl:left-[7rem] 2xl:left-[10rem] max-w-[70%] sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-[23rem] 2xl:max-w-[26rem]"
+              className="absolute top-[15rem] left-[6rem] xl:left-[7rem] 2xl:left-[10rem] max-w-[70%] sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-[23rem] 2xl:max-w-[26rem] 2xl:top-[19rem]"
               // className="max-w-full mt-4 md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:max-w-[60%]"
             />
           </div>
