@@ -70,7 +70,7 @@ function Contactos() {
                 className="text-xl text-[#969595] font-light italic text-justify mt-3 mb-10"
                 style={{ fontFamily: "'Yrsa', serif" }}
               >
-                Sinta-se à vontade para contactar o nosso estúdio caso tenha
+                Sente-te à vontade para contactar o nosso estúdio caso tenhas
                 alguma questão.
               </p>
             </div>
@@ -119,7 +119,7 @@ function Contactos() {
                   style={{ fontFamily: "'Yrsa', serif" }}
                 >
                   <FontAwesomeIcon icon={faEnvelope} className="ml-2 mr-2" />
-                  oops.i.inked.again@gmail.com
+                  oopsiinkedagain@gmail.com
                 </p>
               </div>
 

@@ -15,13 +15,13 @@ function EstudioTeam() {
     {
       id: 1,
       name: "Marília",
-      role: "Tatuadora",
+      role: "Tattoo Artist",
       image:
-        "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745961203/marilia_qd36bd.jpg",
+        "https://res.cloudinary.com/dr9j4bjys/image/upload/v1746048663/marilia_qd36bd.jpg",
       description:
-        "Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork. Apaixonada em transformar sonhos em artes eternas na pele. ",
+        "Apaixonada por transformar pequenos traços em grandes significados e micro tatuagens que capturam emoções nos mínimos detalhes. Encontro na magia da Disney uma fonte inesgotável de inspiração, onde cada linha e cada centímetro de pele contam histórias encantadas, cheias de ternura, nostalgia e imaginação, porque acredito que até as tatuagens mais pequenas podem ter um impacto profundo e eterno.",
       hoverImage:
-        "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745961203/marilia2_rl0wl4.jpg",
+        "https://res.cloudinary.com/dr9j4bjys/image/upload/v1746048910/marilia2_rl0wl4.jpg",
       instagram: "https://www.instagram.com/marilialoureiroj5/",
       images: [
         {
@@ -190,7 +190,7 @@ function EstudioTeam() {
               style={{ fontFamily: "'Source Serif 4', serif" }}
             >
               {card.description}
-              <span className="block mt-4">{card.description}</span>
+              {/* <span className="block mt-4">{card.description}</span> */}
             </p>
           </div>
 

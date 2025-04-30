@@ -118,7 +118,7 @@ function Home() {
           href="/orçamento"
           className="mt-12 px-6 py-3 border-2 font-semibold border-white bg-white text-[#444444] hover:bg-transparent hover:text-[#fff] uppercase transition duration-700 text-[12px]"
         >
-          Faça a sua marcação
+          Faz a tua marcação
         </a>
 
         <div className="absolute bottom-4 right-[0.3rem] sm:right-4 hidden sm:flex flex-col space-y-4 text-[14px]">
@@ -187,15 +187,14 @@ function Home() {
               className="text-xl text-[#969595] font-light italic text-justify mt-3"
               style={{ fontFamily: "'Yrsa', serif" }}
             >
-              Fundado em 2024, somos um estúdio de tatuagem no Porto. Fundado em
-              2024, somos um estúdio de tatuagem no Porto. Fundado em 2024,
-              somos um estúdio de tatuagem no Porto. Fundado em 2024, somos um
-              estúdio de tatuagem no Porto.{" "}
+              Nasce da paixão, da coragem e da crença de que cada traço tem um
+              poder imenso: o de eternizar momentos, dores, amores, sonhos e
+              conquistas. Ergue-se um espaço para os que têm histórias para
+              contar e coragem para as marcar na própria pele. Para os que olham
+              para o corpo como uma tela viva, e para a vida como a maior de
+              todas as artes.{" "}
               <span className="block mt-4">
-                Fundado em 2024, somos um estúdio de tatuagem no Porto. Fundado
-                em 2024, somos um estúdio de tatuagem no Porto. Fundado em 2024,
-                somos um estúdio de tatuagem no Porto. Fundado em 2024, somos um
-                estúdio de tatuagem no Porto.
+                Aqui marca-se a história e, sobretudo, coleciona-se a arte!
               </span>
             </p>
 
@@ -389,7 +388,7 @@ function Home() {
             className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl uppercase font-bold w-full text-center"
             style={{ fontFamily: "'Source Serif 4', serif" }}
           >
-            Entre em contacto e obtenha o seu orçamento
+            Entra em contacto e obtém o teu orçamento
           </h2>
         </div>
       </section>
@@ -524,16 +523,15 @@ function Home() {
                 className="text-2xl md:text-4xl text-[#FFFFFF] font-bold"
                 style={{ fontFamily: "'Source Serif 4', serif" }}
               >
-                Entre em contacto
+                Entra em contacto
               </h2>
               <p
                 className="text-lg md:text-xl text-[#969595] font-light italic text-justify mt-3"
                 style={{ fontFamily: "'Yrsa', serif" }}
               >
-                Fundado em 2024, somos um estúdio de tatuagem no Porto. Fundado
-                em 2024, somos um estúdio de tatuagem no Porto. Fundado em 2024,
-                somos um estúdio de tatuagem no Porto. Fundado em 2024, somos um
-                estúdio de tatuagem no Porto.
+                Sente-te à vontade para nos contactar — estamos aqui para tirar
+                dúvidas, partilhar ideias e ajudar a dar vida à tua próxima
+                tatuagem!
               </p>
             </div>
 
@@ -550,7 +548,7 @@ function Home() {
                 href="/contactos"
                 className="text-[13px] sm:text-base px-6 py-5 border-2 border-white text-white uppercase hover:bg-white hover:text-black transition duration-700"
               >
-                Contacte-nos
+                Contacta-nos
               </a>
             </div>
           </div>

@@ -53,7 +53,7 @@ function Footer() {
               </p>
               <p className="mt-2 flex items-center gap-2">
                 <FontAwesomeIcon icon={faEnvelope} />
-                oops.i.inked.again@gmail.com
+                oopsiinkedagain@gmail.com
               </p>
             </div>
           </div>

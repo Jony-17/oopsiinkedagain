@@ -24,11 +24,11 @@ function Estudio() {
     {
       id: 1,
       name: "Marília",
-      role: "Tatuadora",
+      role: "Tattoo Artist",
       image:
-        "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745961203/marilia_qd36bd.jpg",
+        "https://res.cloudinary.com/dr9j4bjys/image/upload/v1746048663/marilia_qd36bd.jpg",
       description:
-        "Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork.",
+        "Apaixonada por detalhes e micro tatuagens - e com um amor eterno pela magia da Disney.",
       hoverImage: "/assets/image1.png",
       instagram: "https://www.instagram.com/marilialoureiroj5/",
     },
@@ -94,27 +94,24 @@ function Estudio() {
           className="text-xl text-[#969595] font-light italic text-justify mt-6 mb-20"
           style={{ fontFamily: "'Yrsa', serif" }}
         >
-          Fundado em 2024, somos um estúdio de tatuagem no Porto. Fundado em
-          2024, somos um estúdio de tatuagem no Porto. Fundado em 2024, somos um
-          estúdio de tatuagem no Porto. Fundado em 2024, somos um estúdio de
-          tatuagem no Porto.Fundado em 2024, somos um estúdio de tatuagem no
-          Porto. Fundado em 2024, somos um estúdio de tatuagem no Porto. Fundado
-          em 2024, Fundado em 2024, somos um estúdio de tatuagem no Porto.
-          Fundado em 2024, somos um estúdio de tatuagem no Porto. Fundado em
-          2024, Fundado em 2024, somos um estúdio de tatuagem no Porto. Fundado
-          em 2024, somos um estúdio de tatuagem no Porto. Fundado em 2024,
-          Fundado em 2024, somos um estúdio de tatuagem no Porto. Fundado em
-          2024, somos um estúdio de tatuagem no Porto. Fundado em 2024, Fundado
-          em 2024, somos um estúdio de tatuagem no Porto. Fundado em 2024, somos
-          um estúdio de tatuagem no Porto. Fundado em 2024,{" "}
+          No nosso estúdio de tatuagens, acreditamos que cada tatuagem é uma
+          extensão da identidade de quem a usa — uma forma de expressão única,
+          pessoal e carregada de significado. Criámos um espaço onde a arte, o
+          profissionalismo e o respeito pelo corpo e pela história de cada
+          cliente se encontram.{" "}
           <span className="block mt-4">
-            Fundado em 2024, somos um estúdio de tatuagem no Porto. Fundado em
-            2024, somos um estúdio de tatuagem no Porto. Fundado em 2024, somos
-            um estúdio de tatuagem no Porto. Fundado em 2024, somos um estúdio
-            de tatuagem no Porto. Fundado em 2024, somos um estúdio de tatuagem
-            no Porto. Fundado em 2024, somos um estúdio de tatuagem no Porto.
-            Fundado em 2024, Fundado em 2024, somos um estúdio de tatuagem no
-            Porto.
+            Trabalhamos com um ambiente acolhedor, seguro e higienizado, onde
+            cada detalhe é pensado para garantir uma experiência confortável e
+            memorável. A nossa equipa de tatuadores é composta por artistas
+            dedicados, com estilos diversos e atenção especial à criação
+            personalizada — seja para um desenho delicado ou uma peça de grande
+            impacto.
+          </span>
+          <span className="block mt-4">
+            Aqui, valorizamos o processo tanto quanto o resultado final. Desde a
+            primeira conversa até ao momento em que te olhas ao espelho com a
+            tua nova tatuagem, estamos contigo para garantir que cada traço
+            conta a tua história da melhor forma possível.
           </span>
         </p>
         {/* </div> */}
@@ -246,10 +243,10 @@ function Estudio() {
           {cardsData.map((card) => (
             <div
               key={card.name}
-              className="flex flex-col sm:flex-row h-auto sm:h-[370px] xl:h-[295px] 2xl:h-[370px] bg-[#090909] shadow-lg rounded-lg overflow-hidden"
+              className="flex flex-col sm:flex-row h-auto sm:h-[370px] xl:h-[350px] 2xl:h-[370px] bg-[#090909] shadow-lg rounded-lg overflow-hidden"
             >
               <img
-                className="w-full object-cover h-[300px] sm:h-full"
+                className="w-full object-cover h-[300px] sm:h-full xl:w-[50%] 2xl:w-full"
                 src={card.image}
                 alt={card.name}
               />

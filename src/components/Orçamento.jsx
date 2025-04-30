@@ -188,13 +188,13 @@ function Orçamento() {
               style={{ fontFamily: "'Source Serif 4', serif" }}
             >
               Pretendes realizar uma tatuagem?
-            </h1> {/*Qual dos nossos serviços pretendes obter um orçamento?*/}
+            </h1>{" "}
+            {/*Qual dos nossos serviços pretendes obter um orçamento?*/}
             <p className="text-white mb-8">
               O preenchimento dos formulários servem apenas para conseguirmos
               realizar o teu orçamento sem compromisso. O mesmo não garante
               marcação da sessão.
             </p>
-
             <div className="flex gap-5 mb-5">
               <button
                 onClick={() => handleButtonClick("Tatuagem")}
@@ -219,34 +219,30 @@ function Orçamento() {
           >
             <div className="max-w-xl mx-auto sm:p-0 text-white shadow-md space-y-4 mt-[70px]">
               <p>
-                Obrigada pelo teu interesse no nosso estúdio. Este é o primeiro
-                passo para a tua próxima nova tattoo! Antes de preencheres este
-                formulário, por favor, lê com atenção o seguinte texto:
+                Obrigada por demonstrares interesse no nosso estúdio — este é o
+                primeiro passo rumo à tua próxima tatuagem! Antes de preencheres
+                o formulário, pedimos que leias com atenção as informações
+                abaixo:
               </p>
               <ol className="list-disc pl-6 space-y-2 leading-[30px]">
                 <li>
-                  Entraremos em contacto contigo para te dar o teu orçamento e
-                  falarmos sobre as tuas ideias até 1 dia útil após o envio.
-                  Caso não obtenhas resposta da nossa parte nesse período, entra
-                  em contacto através dos outros meios disponibilizados.
+                  Iremos contactar-te no prazo de 1 dia útil após o envio do
+                  formulário para te apresentarmos um orçamento. Se não
+                  receberes resposta nesse tempo, não hesites em entrar em
+                  contacto connosco através dos restantes meios disponíveis.
                 </li>
                 <li>
-                  O preenchimento deste formulário é apenas para conseguirmos
-                  realizar o teu orçamento sem compromisso. O mesmo não garante
-                  marcação da sessão.
+                  O envio deste formulário serve apenas para podermos preparar
+                  um orçamento personalizado, sem qualquer compromisso. A
+                  marcação da tua sessão só será confirmada após aceitação do
+                  orçamento e reserva de data.
                 </li>
                 <li>
-                  Para realizares a tua marcação, após receberes o teu
-                  orçamento, terás de fazer um depósito de um sinal (o valor
-                  será informado juntamente com o orçamento).
+                  Em caso de desistência, deves avisar o estúdio atempadamente
+                  (sujeito a sinal em posteriores marcações).
                 </li>
-                <li>
-                  O valor do sinal será abatido ao valor total do orçamento no
-                  dia da tua sessão (o mesmo só poderá ser reembolsado em caso
-                  de desistência com aviso prévio de no mínimo 48h).
-                </li>
-                <li>O valor mínimo de uma tatuagem no estúdio são 45€.</li>
-                <li>Apenas realizamos tatuagens a maiores de 18 anos.</li>
+                <li>O valor mínimo por tatuagem no nosso estúdio é de 35€.</li>
+                <li>Atendemos exclusivamente maiores de 18 anos.</li>
               </ol>
             </div>
             <form
@@ -377,7 +373,7 @@ function Orçamento() {
 
               <div>
                 <label className="block text-lg font-bold mt-[30px] mb-1">
-                  Explica a(s) tua(s) ideias do que gostavas de tatuar*
+                  Explica a(s) tua(s) ideia(s) do que gostavas de tatuar*
                 </label>
                 <p
                   className="text-[12px] mb-3"
@@ -404,7 +400,7 @@ function Orçamento() {
                   className="text-[12px] mb-3"
                   style={{ color: "rgb(103, 103, 103)" }}
                 >
-                  Conseguirás colocar nestes campo no mínimo 1 imagem e no
+                  Conseguirás colocar neste campo no mínimo 1 imagem e no
                   máximo 4 imagens. No máximo, imagens até 10MB.
                 </p>
                 <input
@@ -435,7 +431,7 @@ function Orçamento() {
 
               <div>
                 <label className="block text-lg font-bold mt-[30px] mb-1">
-                  Em qual das zona(s) do corpo gostavas de tatuar?*
+                  Em qual zona(s) do corpo gostavas de tatuar?*
                 </label>
                 <input
                   type="text"
@@ -448,7 +444,7 @@ function Orçamento() {
 
               <div>
                 <label className="block text-lg font-bold mt-[30px] mb-1">
-                  Qual seria o tamanho em centímetros para a(s) tatuagem(s)?*{" "}
+                  Qual seria o tamanho em centímetros para a(s) tatuagem(ns)?*{" "}
                 </label>
                 <p
                   className="text-[12px] mb-3"
@@ -529,8 +525,10 @@ function Orçamento() {
               </p>
               <p>
                 Se ainda não viste a nossa tabela de preços,{" "}
-                <a className="cursor-pointer underline" href="estudio/ana">clica aqui</a> para
-                veres o nosso catálogo de perfurações e jóias.
+                <a className="cursor-pointer underline" href="estudio/ana">
+                  clica aqui
+                </a>{" "}
+                para veres o nosso catálogo de perfurações e jóias.
               </p>
               <ol className="list-disc pl-6 space-y-2 leading-[30px]">
                 <li>
