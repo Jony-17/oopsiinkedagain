@@ -161,7 +161,7 @@ function NavBar({ bgColor = "bg-transparent", shadow }) {
               <div className="flex items-center mt-[100px] sm:hidden">
                 <li role="none">
                   <a
-                    href="https://wa.me/1234567890"
+                    href="https://wa.me/351962112592?text=Olá%2C%20gostaria%20de%20obter%20mais%20informações!"
                     target="_blank"
                     className="uppercase px-6 py-4 text-white hover:text-[#565656]"
                   >

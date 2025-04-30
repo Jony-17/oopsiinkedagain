@@ -79,6 +79,11 @@ function Galeria() {
       alt: "Imagem 6",
       category: "Tattoos",
     },
+    {
+      src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1746038820/tattoo7_pna2v1.jpg",
+      alt: "Imagem 7",
+      category: "Tattoos",
+    },
   ];
 
   const imagensFiltradas =

@@ -36,7 +36,8 @@ function Estudio() {
     //   id: 2,
     //   name: "Ana",
     //   role: "Bodypiercer",
-    //   image: "/assets/foto.jpg",
+    //   image:
+    //     "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745961203/marilia_qd36bd.jpg",
     //   description:
     //     "Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork.",
     //   hoverImage: "/assets/image1.png",
@@ -47,7 +48,8 @@ function Estudio() {
     //   id: 3,
     //   name: "Carlos",
     //   role: "Fotógrafo",
-    //   image: "/assets/foto.jpg",
+    //   image:
+    //     "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745961203/marilia_qd36bd.jpg",
     //   description:
     //     "Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork. Apaixonada em transformar sonhos em artes eternas na pele.",
     //   hoverImage: "/assets/image1.png",
@@ -244,14 +246,14 @@ function Estudio() {
           {cardsData.map((card) => (
             <div
               key={card.name}
-              className="flex flex-col sm:flex-row h-auto sm:h-[370px] bg-[#090909] shadow-lg rounded-lg overflow-hidden"
+              className="flex flex-col sm:flex-row h-auto sm:h-[370px] xl:h-[295px] 2xl:h-[370px] bg-[#090909] shadow-lg rounded-lg overflow-hidden"
             >
               <img
-                className="w-full sm:w-[400px] object-cover h-[300px] sm:h-full"
+                className="w-full object-cover h-[300px] sm:h-full"
                 src={card.image}
                 alt={card.name}
               />
-              <div className="flex flex-col gap-[15px] sm:gap-[20px] w-full sm:w-2/3 p-[1.5rem] sm:p-[2.25rem]">
+              <div className="flex flex-col gap-[15px] sm:gap-[20px] w-full sm:w-2/3 p-[1.5rem] sm:p-[2.25rem] xl:py-[1rem] xl:gap-0 2xl:p-[1.5rem] 2xl:gap-[20px]">
                 <div className="flex flex-col gap-[10px]">
                   <h2
                     className="text-2xl sm:text-4xl font-bold text-white"
@@ -272,7 +274,7 @@ function Estudio() {
                 >
                   {card.description}
                 </p>
-                <div className="flex justify-between items-center xl:mt-[4rem] 2xl:mt-[5rem]">
+                <div className="flex justify-between items-center xl:mt-[3rem] 2xl:mt-[5rem]">
                   <a
                     href={card.instagram}
                     target="_blank"
@@ -315,7 +317,7 @@ function Estudio() {
         <div className="flex items-center justify-center h-[200px] text-white p-[3rem] mt-[100px]">
           <div className="relative max-w-2xl text-center">
             <span
-              className="absolute top-[-20px] left-[-50px] 2xl:left-[-80px] text-9xl"
+              className="absolute top-[-20px] left-[-50px] xl:left-[-70px] 2xl:left-[-80px] text-9xl"
               style={{ fontFamily: "'Libre Baskerville', serif" }}
             >
               “
@@ -327,7 +329,7 @@ function Estudio() {
               Marca a tua história. Coleciona arte!
             </p>
             <span
-              className="absolute bottom-[-100px] right-[-40px] 2xl:right-[-80px] text-9xl"
+              className="absolute bottom-[-100px] right-[-40px] xl:right-[-70px] 2xl:right-[-80px] text-9xl"
               style={{ fontFamily: "'Libre Baskerville', serif" }}
             >
               ”

@@ -48,51 +48,8 @@ function EstudioTeam() {
           src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo4_dfkqfm.jpg",
           span: "col-span-1",
         },
-        // {
-        //   src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960078/tattoo1_zstdtm.jpg",
-        //   span: "col-span-1 sm:col-span-2 md:col-span-2",
-        // },
-        // {
-        //   src: "/assets/tattoo1.png",
-        //   span: "col-span-1 sm:col-span-2 md:col-span-3", // Novamente, para dar equilíbrio ao layout
-        // },
-      ],
-    },
-    {
-      id: 2,
-      name: "Ana",
-      role: "Bodypiercer",
-      image: "/assets/foto.jpg",
-      description:
-        "Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork. Apaixonada em transformar sonhos em artes eternas na pele. Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork. Apaixonada em transformar sonhos em artes eternas na pele.",
-      hoverImage: "/assets/image1.png",
-      instagram: "https://www.instagram.com",
-      whatsapp: "https://www.whatsapp.com",
-      catalogo: [
-        { src: "/assets/tattoo1.png", span: "col-span-1" },
-        { src: "/assets/tattoo4.png", span: "col-span-1" },
-        { src: "/assets/tattoo3.png", span: "col-span-1" },
-        { src: "/assets/tattoo5.png", span: "col-span-1" },
         {
-          src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo6_sjxeu6.jpg",
-          span: "col-span-1",
-        },
-      ],
-      images: [
-        {
-          src: "/assets/tattoo2.png",
-          span: "col-span-1 sm:col-span-2 md:col-span-2",
-        },
-        { src: "/assets/tattoo1.png", span: "col-span-1" },
-        { src: "/assets/tattoo4.png", span: "col-span-1" },
-        { src: "/assets/tattoo3.png", span: "col-span-1" },
-        { src: "/assets/tattoo5.png", span: "col-span-1" },
-        {
-          src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo6_sjxeu6.jpg",
-          span: "col-span-1",
-        },
-        {
-          src: "/assets/tattoo4.png",
+          src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1746038820/tattoo7_pna2v1.jpg",
           span: "col-span-1 sm:col-span-2 md:col-span-2",
         },
         // {
@@ -101,6 +58,49 @@ function EstudioTeam() {
         // },
       ],
     },
+    // {
+    //   id: 2,
+    //   name: "Ana",
+    //   role: "Bodypiercer",
+    //   image: "/assets/foto.jpg",
+    //   description:
+    //     "Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork. Apaixonada em transformar sonhos em artes eternas na pele. Tatuadora desde 2022, especialista em linhas finas e blackwork/dotwork. Apaixonada em transformar sonhos em artes eternas na pele.",
+    //   hoverImage: "/assets/image1.png",
+    //   instagram: "https://www.instagram.com",
+    //   whatsapp: "https://www.whatsapp.com",
+    //   catalogo: [
+    //     { src: "/assets/tattoo1.png", span: "col-span-1" },
+    //     { src: "/assets/tattoo4.png", span: "col-span-1" },
+    //     { src: "/assets/tattoo3.png", span: "col-span-1" },
+    //     { src: "/assets/tattoo5.png", span: "col-span-1" },
+    //     {
+    //       src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo6_sjxeu6.jpg",
+    //       span: "col-span-1",
+    //     },
+    //   ],
+    //   images: [
+    //     {
+    //       src: "/assets/tattoo2.png",
+    //       span: "col-span-1 sm:col-span-2 md:col-span-2",
+    //     },
+    //     { src: "/assets/tattoo1.png", span: "col-span-1" },
+    //     { src: "/assets/tattoo4.png", span: "col-span-1" },
+    //     { src: "/assets/tattoo3.png", span: "col-span-1" },
+    //     { src: "/assets/tattoo5.png", span: "col-span-1" },
+    //     {
+    //       src: "https://res.cloudinary.com/dr9j4bjys/image/upload/v1745960079/tattoo6_sjxeu6.jpg",
+    //       span: "col-span-1",
+    //     },
+    //     {
+    //       src: "/assets/tattoo4.png",
+    //       span: "col-span-1 sm:col-span-2 md:col-span-2",
+    //     },
+    //     // {
+    //     //   src: "/assets/tattoo1.png",
+    //     //   span: "col-span-1 sm:col-span-2 md:col-span-3", // Novamente, para dar equilíbrio ao layout
+    //     // },
+    //   ],
+    // },
   ];
 
   function slugify(text) {
