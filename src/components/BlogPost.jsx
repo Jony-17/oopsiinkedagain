@@ -10,32 +10,30 @@ function BlogPost() {
   const noticias = [
     {
       titulo: "Cuidados a ter com a pele",
-      textointro: "Fundado em 2024, somos um estúdio de tatuagem no Porto...",
+      textointro:
+        "Fazer uma tatuagem é mais do que marcar a pele — é marcar a história. Para garantir que o resultado final fique bonito, bem definido e saudável, os cuidados com a pele antes e depois da tatuagem são fundamentais. A pele é a 'tela' da tatuagem, e tratá-la com atenção faz toda a diferença no processo de cicatrização e na durabilidade dos traços e cores. Seja a tua primeira tattoo ou a décima, manter a pele bem cuidada é parte essencial da experiência. Abaixo, explicamos passo a passo como preparar a pele antes da sessão e como cuidar dela durante o processo de cicatrização.",
       conteudos: [
         {
-          subtitulo: "Introdução",
-          texto: "Aqui está o conteúdo de introdução...",
-        },
-        {
-          subtitulo: "Dicas Essenciais",
-          texto: "Aqui estão algumas dicas importantes...",
+          subtitulo: "Cuidados com a pele antes e depois da tatuagem",
+          texto:
+            "Antes de fazer uma tatuagem, é essencial preparar a pele para garantir um procedimento mais seguro e um resultado mais bonito. Manteres-te bem hidratado nos dias que antecedem a sessão ajuda a pele a ficar mais flexível e recetiva à tinta. Evita a exposição ao sol, queimaduras solares e qualquer tipo de irritação na área a ser tatuada. Nos dois dias anteriores, dorme bem, alimenta-te de forma equilibrada e evita álcool, drogas e medicamentos anticoagulantes, pois podem afinar o sangue e dificultar o processo.  No dia da tatuagem, toma banho normalmente, veste roupas confortáveis e que permitam fácil acesso à área a ser tatuada, e alimenta-te antes da sessão — isso ajuda a evitar quedas de tensão. Após a tatuagem, os cuidados são ainda mais importantes: mantém a área limpa, lavando suavemente com água fria e sabonete neutro, sempre com as mãos limpas. Aplica a pomada cicatrizante recomendada pelo tatuador e evita cobrir com roupas apertadas. Nos primeiros dias, evita completamente sol, mar, piscina, sauna e exercícios intensos. A pele passará por fases de descamação e comichão — é essencial não coçar, arrancar crostas ou esfregar a área. O uso contínuo de protetor solar, após a cicatrização completa, ajuda a preservar as cores e definição da tatuagem por muito mais tempo. Lembra-te: cada corpo reage de forma diferente, e seguir corretamente as orientações do tatuador é o melhor caminho para garantir uma cicatrização tranquila, sem infecções, manchas ou desbotamentos.",
         },
       ],
     },
-    {
-      titulo: "Dicas...",
-      textointro: "Mais um artigo com informações relevantes...",
-      conteudos: [
-        {
-          subtitulo: "Parte 1",
-          texto: "Aqui está a primeira parte...",
-        },
-        {
-          subtitulo: "Parte 2",
-          texto: "Aqui está a segunda parte...",
-        },
-      ],
-    },
+    // {
+    //   titulo: "Dicas...",
+    //   textointro: "Mais um artigo com informações relevantes...",
+    //   conteudos: [
+    //     {
+    //       subtitulo: "Parte 1",
+    //       texto: "Aqui está a primeira parte...",
+    //     },
+    //     {
+    //       subtitulo: "Parte 2",
+    //       texto: "Aqui está a segunda parte...",
+    //     },
+    //   ],
+    // },
   ];
 
   const noticia = noticias.find(

@@ -22,19 +22,18 @@ function Home() {
 
   const listaInformacoes = [
     {
-      questao: "Quais são os valores e como posso obter um orçamento?",
-      resposta:
-        "O valor é por cada tatuagem, não por hora, porque cada tatuagem é única e diferente. O preço depende da complexidade dos desenhos escolhidos. Algumas tatuagens podem ser feitas no mesmo dia, mas projetos maiores e mais elaborados precisarão de várias sessões. Para obter um orçamento aproximado, por favor preencha o formulário na secção 'informações' ou visite o estúdio.",
+      questao: "Quais os métodos de pagamento aceites?",
+      resposta: "Numerário, transferência bancária, MbWay ou multibanco.",
     },
     {
-      questao: "Quanto tempo demora uma tatuagem?",
+      questao: "Quanto custa uma tatuagem?",
       resposta:
-        "O tempo de execução depende do tamanho, complexidade e localização da tatuagem. Pequenas tatuagens podem ser feitas em minutos, enquanto trabalhos maiores podem levar horas ou várias sessões.",
+        "O valor depende do tamanho, local do corpo, estilo e complexidade do desenho. Os orçamentos são personalizados mas o mínimo são 35€.",
     },
     {
-      questao: "Quais são os cuidados a ter depois da tatuagem?",
+      questao: "Com que antecedência devo agendar?",
       resposta:
-        "Após a tatuagem, é essencial manter a área limpa, aplicar pomada cicatrizante e evitar exposição ao sol. Também deve evitar água do mar e piscina nas primeiras semanas.",
+        "Depende da agenda de cada tatuador mas recomendamos no mínimo 3 dias úteis.",
     },
   ];
 
