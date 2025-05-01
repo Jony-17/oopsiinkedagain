@@ -117,7 +117,7 @@ function Home() {
           href="/orçamento"
           className="mt-12 px-6 py-3 border-2 font-semibold border-white bg-white text-[#444444] hover:bg-transparent hover:text-[#fff] uppercase transition duration-700 text-[12px]"
         >
-          Faz a tua marcação
+          Pede o teu orçamento
         </a>
 
         <div className="absolute bottom-4 right-[0.3rem] sm:right-4 hidden sm:flex flex-col space-y-4 text-[14px]">
@@ -130,7 +130,7 @@ function Home() {
             INSTAGRAM
           </a>
           <a
-            href="https://wa.me/351962112592?text=Olá%2C%20gostaria%20de%20obter%20mais%20informações!"
+            href="https://wa.me/351962112592?text=Olá%2C%20quero%20agendar%20uma%20tatuagem!"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-12 text-[#BFBFBF] rotate-[270deg] uppercase no-underline hover:text-white transition duration-300"
