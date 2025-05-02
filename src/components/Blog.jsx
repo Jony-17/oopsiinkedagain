@@ -16,12 +16,13 @@ function Estudio() {
   const noticias = [
     {
       titulo: "Cuidados a ter com a pele",
-      imagem: "/assets/image1.png",
+      imagem:
+        "https://res.cloudinary.com/dr9j4bjys/image/upload/v1746108866/cuidados-pele_bluowy.jpg",
     },
-    {
-      titulo: "Dicas...",
-      imagem: "/assets/image2.png",
-    },
+    // {
+    //   titulo: "Dicas...",
+    //   imagem: "/assets/image2.png",
+    // },
   ];
 
   return (
@@ -50,7 +51,7 @@ function Estudio() {
           className="text-5xl text-[#FFFFFF] font-bold mt-3"
           style={{ fontFamily: "'Source Serif 4', serif" }}
         >
-          Notícias
+          Dicas
         </h2>
         {/* Grid for Noticias */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[50px] sm:gap-[40px] mt-10">
@@ -69,7 +70,7 @@ function Estudio() {
                   href={`/blog/${slugify(noticia.titulo)}`}
                   className="outline-none border-none rounded-[5rem] uppercase text-[13px] sm:text-[15px] cursor-pointer mt-[20px] sm:mt-[30px] text-white transition duration-200 flex items-center justify-start gap-5 no-underline"
                 >
-                  Saiba mais
+                  Sabe mais
                   <FontAwesomeIcon
                     icon={faChevronRight}
                     className="ml-3 text-[13px] sm:text-[15px]"

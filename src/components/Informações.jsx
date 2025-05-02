@@ -9,34 +9,64 @@ function Informacoes() {
 
   const listaInformacoes = [
     {
-      questao: "Quais são os valores e como posso obter um orçamento?",
+      questao:
+        "É necessário agendar um horário ou aceitam clientes sem marcação?",
       resposta:
-        "O valor é por cada tatuagem, não por hora, porque cada tatuagem é única e diferente. O preço depende da complexidade dos desenhos escolhidos. Algumas tatuagens podem ser feitas no mesmo dia, mas projetos maiores e mais elaborados precisarão de várias sessões. Para obter um orçamento aproximado, por favor preencha o formulário na secção 'informações' ou visite o estúdio.",
+        "Trabalhamos com agendamento para garantir a qualidade e atenção que cada cliente merece. Atendimentos sem marcação são possíveis apenas em horários vagos.",
     },
     {
-      questao: "Quanto tempo demora uma tatuagem?",
-      resposta:
-        "O tempo de execução depende do tamanho, complexidade e localização da tatuagem. Pequenas tatuagens podem ser feitas em minutos, enquanto trabalhos maiores podem levar horas ou várias sessões.",
+      questao: "Quais os métodos de pagamento aceites?",
+      resposta: "Numerário, transferência bancária, MbWay ou multibanco.",
     },
     {
-      questao: "Quais são os cuidados a ter depois da tatuagem?",
+      questao: "Como me devo preparar para fazer uma tatuagem?",
       resposta:
-        "Após a tatuagem, é essencial manter a área limpa, aplicar pomada cicatrizante e evitar exposição ao sol. Também deve evitar água do mar e piscina nas primeiras semanas.",
+        "Dormir bem, alimentar-se, evitar o álcool ou drogas 24h antes da sessão. Traz roupas confortáveis.",
     },
     {
-      questao: "Quais são os cuidados a ter depois da tatuagem?",
+      questao: "Quanto custa uma tatuagem?",
       resposta:
-        "Após a tatuagem, é essencial manter a área limpa, aplicar pomada cicatrizante e evitar exposição ao sol. Também deve evitar água do mar e piscina nas primeiras semanas.",
+        "O valor depende do tamanho, local do corpo, estilo e complexidade do desenho. Os orçamentos são personalizados mas o mínimo são 35€.",
     },
     {
-      questao: "Quais são os cuidados a ter depois da tatuagem?",
+      questao: "Com que antecedência devo agendar?",
       resposta:
-        "Após a tatuagem, é essencial manter a área limpa, aplicar pomada cicatrizante e evitar exposição ao sol. Também deve evitar água do mar e piscina nas primeiras semanas.",
+        "Depende da agenda de cada tatuador mas recomendamos no mínimo 3 dias úteis.",
     },
     {
-      questao: "Quais são os cuidados a ter depois da tatuagem?",
+      questao: "Que cuidados devo ter após a tatuagem?",
       resposta:
-        "Após a tatuagem, é essencial manter a área limpa, aplicar pomada cicatrizante e evitar exposição ao sol. Também deve evitar água do mar e piscina nas primeiras semanas.",
+        "Lavar com sabonete neutro, aplicar pomada cicatrizante, evitar sol piscina ou praia, bem como, não coçar ou arrancar crostas. Explicamos tudo no dia da sessão.",
+    },
+    {
+      questao: "O estúdio segue normas de higiene e segurança?",
+      resposta:
+        "Sim, usamos materiais descartáveis, cartuchos esterilizados, luvas e ambiente higienizado conforme as normas de biossegurança atualmente em vigor.",
+    },
+    {
+      questao:
+        "É possível trazer um desenho próprio ou preciso de escolher do catálogo?",
+      resposta: "Podes trazer a tua ideia, referência ou arte.",
+    },
+    {
+      questao: "Como remarcar ou cancelar um agendamento?",
+      resposta:
+        "Contactar o estúdio no mínimo com 1 dia de antecedência. Cancelamentos em cima da hora ou o não comparecimento, podem resultar no pedido de um sinal numa próxima vez.",
+    },
+    {
+      questao: "Vendem ou indicam produtos para cicatrização?",
+      resposta:
+        "Sim, atualmente trabalhamos com a marca OTZI. Temos também disponível para compra no estúdio.",
+    },
+    {
+      questao: "Posso levar acompanhante no dia de tatuagem?",
+      resposta:
+        "Sim, desde que não comprometa o profissional. Limitamos a um acompanhante por cliente.",
+    },
+    {
+      questao: "O que acontece se me atrasar para o dia marcado?",
+      resposta:
+        "Atrasos até 15 minutos são tolerados. Após esse tempo, o atendimento terá de ser reagendado e pedido um sinal.",
     },
   ];
 

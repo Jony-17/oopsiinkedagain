@@ -182,15 +182,18 @@ function Orçamento() {
         )}
 
         {!showForm && (
-          <div className="flex flex-col items-left mt-[50px] sm:mt-[50px]">
-            <h1
-              className="text-[30px] sm:text-[40px] text-white mb-8"
+          <div className="flex flex-col items-left">
+            {/* mt-[50px] sm:mt-[50px] */}
+            <h2
+              // className="text-[30px] sm:text-[40px] text-white mb-8"
+              // style={{ fontFamily: "'Source Serif 4', serif" }}
+              className="text-5xl text-[#FFFFFF] font-bold mt-3"
               style={{ fontFamily: "'Source Serif 4', serif" }}
             >
               Pretendes realizar uma tatuagem?
-            </h1>{" "}
+            </h2>{" "}
             {/*Qual dos nossos serviços pretendes obter um orçamento?*/}
-            <p className="text-white mb-8">
+            <p className="text-white my-8">
               O preenchimento dos formulários servem apenas para conseguirmos
               realizar o teu orçamento sem compromisso. O mesmo não garante
               marcação da sessão.
@@ -400,8 +403,8 @@ function Orçamento() {
                   className="text-[12px] mb-3"
                   style={{ color: "rgb(103, 103, 103)" }}
                 >
-                  Conseguirás colocar neste campo no mínimo 1 imagem e no
-                  máximo 4 imagens. No máximo, imagens até 10MB.
+                  Conseguirás colocar neste campo no mínimo 1 imagem e no máximo
+                  4 imagens. No máximo, imagens até 10MB.
                 </p>
                 <input
                   type="file"
